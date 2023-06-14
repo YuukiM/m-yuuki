@@ -280,7 +280,7 @@
 								料金
 							</h4>
 							<p class="prices__item">
-								1時間 <span>5,000</span>円（税込）
+								1時間 <em>5,000</em>円（税込）
 							</p>
 						</div>
 						<div class="notes">
@@ -305,7 +305,7 @@
 								料金
 							</h4>
 							<p class="prices__item">
-								<span>5,000</span>円（税込）/ 月～
+								<em>5,000</em>円（税込）/ 月～
 							</p>
 						</div>
 					</div>
@@ -320,9 +320,7 @@
 						ce que<br>je peux vous offrir<br>et ces prix
 					</div>
 				</div>
-				<img src="<?php echo get_theme_file_uri('/images/tarifs-portrait@2x.png'); ?>" alt="ベンチの写真"
-						 class="photo photo--large"
-						 loading="lazy">
+				<img src="<?php echo get_theme_file_uri('/images/tarifs-portrait@2x.png'); ?>" alt="ベンチの写真" class="photo photo--large" loading="lazy">
 			</div>
 		</section>
 	</main>

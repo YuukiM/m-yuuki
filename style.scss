@@ -613,10 +613,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   font-size: 18px;
   text-align: center;
   margin: 0;
-}
-
-.prices__item span {
-  font-size: 24px;
+  em {
+    font-size: 32px;
+  }
 }
 
 .prices__notes {
