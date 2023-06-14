@@ -378,7 +378,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   width: fit-content;
   font-size: 34px;
   font-weight: normal;
-  margin: 0 auto 48px;
+  margin-inline: auto;
   padding: 0 0 10px 0;
 
   &::after {
@@ -391,6 +391,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
     translate: -50% 0;
     background-color: color.$accent-colour;
   }
+}
+
+.section__wrap {
+  margin-top: 48px;
 }
 
 .item-heading {
@@ -514,7 +518,6 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 /* Skills */
 
 .skills__primary {
-  margin: 0 0 40px 0;
   background-color: transparentize(color.$white, 0.5);
   border-radius: 10px;
   padding: 10%;
@@ -531,11 +534,16 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   container-type: inline-size;
 }
 
+.skills__secondary {
+  margin-top: 48px;
+}
+
 @container (min-width: 500px) {
   .skills__secondary {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 80px;
   }
 
   .skills__secondary .skill-item {
@@ -574,12 +582,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 
 /* Services and Prices */
 
-.services-prices__lead {
-  margin: 0 0 40px 0;
-}
 
 .services-prices__item {
-  margin: 0 0 40px 0;
+  margin-top: 40px;
 }
 
 .services-prices__item-heading {
@@ -649,6 +654,8 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   .header {
     width: 50%;
     left: 50%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
   }
 
   .portrait {
@@ -668,13 +675,17 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   }
 
   .section__heading {
-    margin: 0 auto 48px;
+    margin-inline: auto;
     padding: 0 0 20px 0;
     &::after {
       width: 48px;
       height: 5px;
       left: 50%;
     }
+  }
+
+  .section__wrap {
+    margin-top: 80px;
   }
 
   .section:nth-of-type(2n) .contents {
@@ -737,6 +748,8 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   .footer {
     width: 50%;
     left: 50%;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
 }
@@ -745,7 +758,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 
   .section__heading {
     font-size: 46px;
-    margin: 0 auto 80px;
+    margin-inline: auto;
     padding: 0 0 20px 0;
   }
 
@@ -780,7 +793,6 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   }
 
   .skills__primary {
-    margin: 0 0 100px;
     .skill-item {
       display: flex;
       flex-direction: row-reverse;
