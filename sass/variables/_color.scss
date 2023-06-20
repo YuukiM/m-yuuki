@@ -1,5 +1,7 @@
 $main-colour: #117dbf;
 $sub-colour: #d5eaff;
+$light-sub: #e8f3ff;
 $accent-colour: #a9bf04;
 $font-colour: #3f3f3f;
 $white: #ffffff;
+$translucent: transparentize($light-sub, 0.5);

@@ -518,7 +518,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 /* Skills */
 
 .skills__primary {
-  background-color: transparentize(color.$white, 0.5);
+  background-color: color.$translucent;
   border-radius: 10px;
   padding: 10%;
 }
@@ -596,7 +596,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 }
 
 .prices {
-  background-color: transparentize(color.$white, 0.5);
+  background-color: color.$translucent;
   margin-top: 20px;
   padding: 40px;
   border-radius: 10px;
@@ -621,6 +621,51 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 .prices__notes {
   text-align: center;
   margin: 0;
+}
+
+.voices {
+  background-color: color.$translucent;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.services-prices__contents {
+  container-type: inline-size;
+}
+
+.voices {
+  border-radius: 10px;
+}
+
+.voices__heading {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 400;
+  color: color.$main-colour;
+}
+
+.voices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.voices-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+@container (min-width: 500px) {
+  .voices-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .voices-list__item {
+    width: calc(100% / 3);
+  }
 }
 
 /* Footer */
@@ -737,11 +782,11 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   }
 
   .skills__primary {
-    background-color: transparentize(#efefef, 0.5);
+    background-color: color.$translucent;
   }
 
   .prices {
-    background-color: #efefef;
+    background-color: color.$light-sub;
   }
 
   .footer {
