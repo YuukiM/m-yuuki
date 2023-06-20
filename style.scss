@@ -592,6 +592,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 }
 
 .services-prices__contents {
+  container-type: inline-size;
   margin-bottom: 80px;
 }
 
@@ -624,17 +625,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 }
 
 .voices {
+  border-radius: 10px;
   background-color: color.$translucent;
   padding: 20px;
   margin-top: 40px;
-}
-
-.services-prices__contents {
-  container-type: inline-size;
-}
-
-.voices {
-  border-radius: 10px;
 }
 
 .voices__heading {
@@ -647,7 +641,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 .voices-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
 }
 
 .voices-list__item {
@@ -655,6 +649,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+.voices-list__text {
+  font-size: 14px;
 }
 
 @container (min-width: 500px) {
