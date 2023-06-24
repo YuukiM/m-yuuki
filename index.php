@@ -287,7 +287,7 @@
 								※ 対面の場合には、現地までの交通費別途
 							</p>
 							<p class="notes__item">
-								※ オンラインスクールfammのWebデザイン講座で宮崎の講座を受講されたかたは <a href="<?php site_url(); ?>/private-lesson/">こちらをご覧ください</a>。
+								※ オンラインスクールfammのWebデザイン講座で宮崎の講座を受講されたかたは <a href="<?php site_url(); ?>/private-lesson-famm/">こちらをご覧ください</a>。
 								<small>パスワードは資料用のパスワードと同じです。</small>
 							</p>
 						</div>
@@ -316,6 +316,7 @@
 								</li>
 							</ul>
 						</div>
+						<a href="/private-lesson" class="button services-prices__button">プライベートレッスンについて</a>
 					</div>
 					<div class="services-prices__item">
 						<h3 class="services-prices__item-heading item-heading">

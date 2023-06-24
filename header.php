@@ -49,4 +49,39 @@
 			</li>
 		</ul>
 	</header>
+<?php elseif(is_page("private-lesson-famm")): ?>
+	<!--nothing-->
+<?php elseif(is_page()): ?>
+<header class="page-header">
+	<h1 class="small-h1">宮崎祐樹のWeb制作レッスン</h1>
+	<ul class="gnav">
+		<li class="gnav__item">
+			<a href="/">メイントップ</a>
+		</li>
+		<li class="gnav__item">
+			<a href="/#Biography">経歴</a>
+		</li>
+		<li class="gnav__item">
+			<a href="/#Skills">スキル</a>
+		</li>
+		<li class="gnav__item">
+			<a href="/#Service">サービスと料金</a>
+		</li>
+	</ul>
+	<ul class="gnav gnav--bottom">
+		<li class="gnav__item">
+			<a href="#">プライベートレッスン</a>
+		</li>
+		<li class="gnav__item">
+			<a href="#content">内容</a>
+		</li>
+		<li class="gnav__item">
+			<a href="#price">料金</a>
+		</li>
+		<li class="gnav__item">
+			<a href="#inquiry">ご相談</a>
+		</li>
+	</ul>
+</header>
+
 <?php endif; ?>
