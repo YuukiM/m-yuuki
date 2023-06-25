@@ -1,11 +1,14 @@
 @use 'sass:math';
+@use "../functions/rem";
+@use "../functions/vw";
+
 $default-min-vp: 375px;
 $default-max-vp: 1024px;
 
 @function round($number, $decimals: 0) {
   $n: 1;
   @if $decimals > 0 {
-    @for $i from 1 through math.$decimals {
+    @for $i from 1 through $decimals {
       $n: $n * 10;
     }
   }
@@ -15,8 +18,8 @@ $default-max-vp: 1024px;
 @function sass_clamp($min-size, $max-size, $min-breakpoint: $default-min-vp, $max-breakpoint: $default-max-vp, $unit: vw) {
   $slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
   $slope-to-unit: round($slope * 100, 2);
-  $intercept-rem: round(rem($min-size - $slope * $min-breakpoint), 2);
-  $min-size-rem: round(rem($min-size), 2);
-  $max-size-rem: round(rem($max-size), 2);
+  $intercept-rem: round(rem.rem($min-size - $slope * $min-breakpoint), 2);
+  $min-size-rem: round(rem.rem($min-size), 2);
+  $max-size-rem: round(rem.rem($max-size), 2);
   @return clamp(#{$min-size-rem}, #{$slope-to-unit}#{$unit} + #{$intercept-rem}, #{$max-size-rem});
 }

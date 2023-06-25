@@ -8,18 +8,12 @@
 
 @use "sass/reset/reset";
 @use "sass/reset/additional-reset";
-@use "sass/variables/breakpoints";
-@use "sass/variables/color";
-@use "sass/variables/fonts";
-@use "sass/functions/strip-unit";
-@use "sass/functions/rem";
-@use "sass/functions/vw";
-@use "sass/functions/clamp";
 @use "sass/base/base";
 @use "sass/module/button";
 @use "sass/module/form";
 @use "sass/page/home";
 @use "sass/page/page";
+@use "sass/page/lesson-page";
 @use "sass/page/lp";
 
 /* CSS by Miyazaki Yuuki 2023 */

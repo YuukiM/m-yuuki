@@ -1,3 +1,5 @@
+@use "strip-unit";
+
 @function vw($px, $base: 375px) {
   $value: $px;
 
@@ -7,7 +9,7 @@
     @return $value;
   }
 
-  $value: (strip-unit($px) / strip-unit($base)) * 100vw;
+  $value: (strip-unit.strip-unit($px) / strip-unit.strip-unit($base)) * 100vw;
 
   @return $value;
 }

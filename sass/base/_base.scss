@@ -1,6 +1,8 @@
 /* Default settings */
-@use "../variables/color";
+@forward "../variables/fonts";
+@forward "../variables/color";
 @use "../variables/fonts";
+@use "../variables/color";
 
 html {
   scroll-behavior: smooth;

@@ -1,3 +1,5 @@
+@use "strip-unit";
+
 @function rem($px, $base: 16px) {
   $value: $px;
 
@@ -7,7 +9,7 @@
     @return $value;
   }
 
-  $value: calc(strip-unit($px) / strip-unit($base)) * 1rem;
+  $value: strip-unit.strip-unit($px) / strip-unit.strip-unit($base) * 1rem;
 
   @return $value;
 }
