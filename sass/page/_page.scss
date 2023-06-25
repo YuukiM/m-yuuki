@@ -1,0 +1,324 @@
+@use "../variables/color";
+@use "../variables/fonts";
+
+/* 経歴 */
+
+.profile {
+  main {
+    line-height: 1.7;
+    overflow: hidden;
+  }
+
+  .date {
+    display: none;
+    text-align: right;
+  }
+
+  .wp-block-group {
+    padding: 28px 20px;
+    @media screen and (min-width: 768px) {
+      padding: 56px 20px;
+    }
+  }
+
+  .wp-block-group:nth-of-type(2n) {
+    background-color: #edf8fe;
+  }
+
+  .wp-block-group__inner-container {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  h1 {
+    color: color.$main-colour;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  h2 {
+    color: color.$main-colour;
+    position: relative;
+    width: fit-content;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 0 auto 48px;
+    padding: 0 0 10px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 30px;
+      height: 3px;
+      left: 50%;
+      translate: -50% 0;
+      background-color: color.$accent-colour;
+    }
+  }
+
+  h3 {
+    margin: 48px 0 8px;
+    padding: 0;
+    font-size: 27px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h4 {
+    color: color.$main-colour;
+    margin: 24px 0 8px;
+  }
+
+  ul, ol, li {
+    list-style: disc;
+  }
+
+  li {
+    margin-left: 1em;
+    margin-bottom: 8px;
+  }
+
+  .profile-portrait {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    margin-bottom: 0;
+  }
+
+  .footer {
+    position: static;
+    width: 100%;
+    background-color: #edf8fe;
+  }
+
+
+  .wp-block-group .wp-block-vk-blocks-heading {
+    margin-top: 48px;
+    font-weight: 700;
+
+    i {
+      color: color.$main-colour;
+    }
+  }
+
+  .skill-detail {
+    padding-left: 2em;
+  }
+
+  .p0 {
+    padding: 0;
+  }
+
+  @media print {
+
+    a {
+      text-decoration: none !important;
+
+    }
+
+    .date {
+      display: block;
+    }
+
+    h2 {
+      border-bottom: 1px solid #000;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .vk_timeline_item_style {
+      display: none;
+    }
+
+    .vk_timeline_item_caption {
+      margin-bottom: 0.5em;
+    }
+
+    .vk_timeline .vk_timeline_item_content > *:last-child {
+      margin-bottom: 20px;
+    }
+
+    .profile-portrait {
+      display: none;
+    }
+
+
+    footer {
+      display: none;
+    }
+
+  }
+  @media screen and (min-width: 768px) {
+
+    html {
+      font-size: 120%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+
+    html {
+      font-size: 140%;
+    }
+
+  }
+
+}
+
+
+/* Landing page */
+
+.private-lesson,
+.mentoring {
+  font-size: 1rem;
+
+  .small-h1 {
+    text-align: center;
+    font-size: 14px;
+    background-color: #eee;
+    padding: 5px;
+  }
+
+  .lp-main-section {
+    background: linear-gradient(135deg, #bbe5ff 0%, #f0faff);
+    color: var(--main-colour);
+    scroll-margin: 120px;
+  }
+
+  h2 {
+    color: color.$main-colour;
+    position: relative;
+    width: fit-content;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 auto 48px;
+    padding: 0 0 10px 0;
+  }
+
+  .catch {
+    background-color: #FF7070;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    color: #ffffff;
+  }
+
+  .lp-title {
+    font-size: 2rem;
+    color: color.$main-colour;
+    font-weight: bold;
+  }
+
+  .lp-transparent-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2rem 1.5rem -2rem hsl(200 50% 20% / 40%) !important;
+  }
+
+  .lp-price-before {
+    position: relative;
+    text-decoration-line: line-through;
+    font-size: 1rem;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      translate: -50% 0;
+      box-sizing: border-box;
+      width: 10px;
+      height: 16px;
+      border: 10px solid #0000;
+      border-top: 15px solid #FF7070;
+    }
+    strong {
+      font-size: 1.2rem;
+    }
+  }
+
+  .lp-price-after {
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: color.$main-colour;
+    strong {
+      font-size: 1.6rem;
+    }
+  }
+
+  .lp-price-extra {
+    font-size: 1.2rem;
+    color: color.$main-colour;
+  }
+
+  .lp-price-extra strong {
+    font-size: 2rem;
+  }
+
+  .vk_flow {
+    .vk_flow_frame {
+      border-radius: 10px;
+      border: 1px solid #eee;
+      background-color: #fff;
+      box-shadow: 0 2rem 1.5rem -2rem hsl(200 50% 20% / 40%);
+      .vk_flow_frame_text_title {
+        color: color.$main-colour;
+      }
+    }
+    .vk_flow_frame_text_content {
+      line-height: 1.5;
+    }
+  }
+
+  .vk_prBlocks .vk_prBlocks_item h3.vk_prBlocks_item_title {
+    position: relative;
+    padding-bottom: 30px;
+    color: #117dbf;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      translate: -50% 0;
+      background-color: color.$accent-colour;
+      width: 2px;
+      height: 20px;
+    }
+  }
+
+  .vk_prBlocks .vk_prBlocks_item .vk_prBlocks_item_summary {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    position: static;
+    width: 100%;
+    background-color: #edf8fe;
+  }
+
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 48px;
+    }
+  }
+
+}
+
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: color.$white;
+}

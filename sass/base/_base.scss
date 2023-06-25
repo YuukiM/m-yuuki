@@ -1,0 +1,29 @@
+/* Default settings */
+@use "../variables/color";
+@use "../variables/fonts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: fonts.$occidental, fonts.$japanese, sans-serif;
+  font-style: normal;
+  color: color.$font-colour;
+  background-color: color.$white;
+}
+
+p {
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
