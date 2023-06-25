@@ -15,22 +15,5 @@
         <p>Sorry, no posts matched your criteria.</p>
     <?php endif; ?>
 </main>
-<?php
-//<style>
-//        @media screen and (min-width: 768px) {
-//            /* LP */
-//            html {
-//                font-size: 120%;
-//            }
-//        }
-//
-//        @media screen and (min-width: 1024px) {
-//            /* LP */
-//            html {
-//                font-size: 140%;
-//            }
-//        }
-//    </style>
-?>
 
 <?php get_footer(); ?>

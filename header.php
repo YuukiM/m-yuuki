@@ -70,9 +70,6 @@
 	</ul>
 	<ul class="gnav gnav--bottom">
 		<li class="gnav__item">
-			<a href="#">プライベートレッスン</a>
-		</li>
-		<li class="gnav__item">
 			<a href="#content">内容</a>
 		</li>
 		<li class="gnav__item">

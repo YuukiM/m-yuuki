@@ -358,6 +358,7 @@
 								</li>
 							</ul>
 						</div>
+						<a href="/mentoring" class="button services-prices__button">メンタリングについて</a>
 					</div>
 				</div>
 			</div>
