@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,12 +49,17 @@
 			</li>
 		</ul>
 	</header>
-<?php elseif(is_page("private-lesson-famm")): ?>
+<?php elseif(is_page('private-lesson-famm') || is_page('profile')): ?>
 	<!--nothing-->
-<?php elseif(is_page()): ?>
-<header class="page-header">
-	<h1 class="small-h1">宮崎祐樹のWeb制作レッスン</h1>
-	<ul class="gnav">
+<?php elseif(is_page('private-lesson') || is_page('mentoring') ): ?>
+<header class="lesson-header">
+	<div class="lesson-header__inner">
+		<p class="lesson__heading">
+			Yûki's Web Design Lessons
+		</p>
+		<p class="lesson__sub-heading">宮崎祐樹のWeb制作レッスン</p>
+	</div>
+<!--	<ul class="gnav">
 		<li class="gnav__item">
 			<a href="/">メイントップ</a>
 		</li>
@@ -67,18 +72,15 @@
 		<li class="gnav__item">
 			<a href="/#Service">サービスと料金</a>
 		</li>
-	</ul>
-	<ul class="gnav gnav--bottom">
+	</ul>-->
+	<!--<ul class="lesson-gnav">
 		<li class="gnav__item">
-			<a href="#content">内容</a>
+			<a href="private-lesson">プライベートレッスン</a>
 		</li>
 		<li class="gnav__item">
-			<a href="#price">料金</a>
+			<a href="mentoring">メンタリング</a>
 		</li>
-		<li class="gnav__item">
-			<a href="#inquiry">ご相談</a>
-		</li>
-	</ul>
+	</ul>-->
 </header>
 
 <?php endif; ?>

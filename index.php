@@ -153,7 +153,9 @@
 							</dl>
 						</li>
 					</ul>
-					<a href="https://m-yuuki.com/profile/" target="_blank" class="button">詳しい職務経歴</a>
+					<div class="button-wrap">
+						<a href="https://m-yuuki.com/profile/" target="_blank" class="button">詳しい職務経歴</a>
+					</div>
 				</div>
 			</div>
 			<div class="image-area biography__image">
@@ -241,7 +243,9 @@
 									d="M11.5 20.5c-3.1 0-7-1.2-9.3-2.4l-.3-.1.2-.2c2.5-2.1 2.6-3.7 2.7-5 0-.4.1-.7.2-1.1.8-3.1 3.4-5.1 6.5-5.1.6 0 1.1.1 1.7.2l.2.1 5.1-4c.1-.1.2-.1.3-.1.1 0 .3.1.4.1l3 3c.2.2.2.5 0 .7l-4 5.1.1.2c.3 1.1.3 2.3 0 3.5-.9 3-3.6 5.1-6.8 5.1zm-7.2-2.6c2.5 1 5.1 1.5 7.2 1.5 2.7 0 5.1-1.8 5.8-4.4.5-2 0-4.2-1.5-5.7l-.1-.1c-.8-.7-1.7-1.2-2.6-1.5-.5-.1-1-.2-1.6-.2-2.6 0-4.8 1.8-5.5 4.4-.1.2-.1.4-.1.9-.2 1.9-.6 3.2-1.7 4.4l-.5.5.6.2zM14.5 7.1c1.4.8 2.5 1.9 3.3 3.3l3.3-4.3-2.4-2.4-4.2 3.4z"/></svg>
 						</li>
 					</ul>
-					<a href="https://www.foriio.com/miyazakiYuuki" target="_blank" class="button">ポートフォリオ</a>
+					<div class="button-wrap">
+						<a href="https://www.foriio.com/miyazakiYuuki" target="_blank" class="button">ポートフォリオ</a>
+					</div>
 				</div>
 			</div>
 			<div class="image-area skills__images">
@@ -316,7 +320,9 @@
 								</li>
 							</ul>
 						</div>
-						<!--<a href="/private-lesson" class="button services-prices__button">プライベートレッスンについて</a>-->
+						<!--<div class="button-wrap">
+							<a href="/private-lesson" class="button services-prices__button">プライベートレッスンについて</a>
+						</div>-->
 					</div>
 					<div class="services-prices__item">
 						<h3 class="services-prices__item-heading item-heading">
@@ -358,7 +364,9 @@
 								</li>
 							</ul>
 						</div>
-						<!--<a href="/mentoring" class="button services-prices__button">メンタリングについて</a>-->
+						<!--<div class="button-wrap">
+							<a href="/mentoring" class="button services-prices__button">メンタリングについて</a>
+						</div>-->
 					</div>
 				</div>
 			</div>
