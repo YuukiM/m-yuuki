@@ -29,6 +29,24 @@
       }
       &:hover {
         text-decoration: none;
+        @include responsive.responsive(md) {
+          &::after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: color.$accent-colour;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            translate: -50% 0;
+          }
+        }
+      }
+    }
+    &.current-menu-item {
+      position: relative;
+      font-weight: 700;
+      @include responsive.responsive(md) {
         &::after {
           content: '';
           width: 50px;
@@ -39,20 +57,6 @@
           left: 50%;
           translate: -50% 0;
         }
-      }
-    }
-    &.current-menu-item {
-      position: relative;
-      font-weight: 700;
-      &::after {
-        content: '';
-        width: 50px;
-        height: 2px;
-        background-color: color.$accent-colour;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        translate: -50% 0;
       }
     }
   }
@@ -137,13 +141,71 @@
   flex-direction: column;
   gap: rem.rem(20px);
   max-width: 700px;
+  @include responsive.responsive(md) {
+    align-items: center;
+  }
+}
+
+.lesson-content--mentoring {
+  max-width: 1024px;
+  @include responsive.responsive(md) {
+    flex-direction: row;
+  }
 }
 
 .lesson-button {
   margin-top: 40px;
 }
 
-.lesson-transparent-box {
+.lesson-box {
+  position: relative;
+  padding: rem.rem(20px);
+  width: 100%;
+  border-radius: 10px;
+  background-color: color.$white;
+  max-width: 650px;
+  margin-inline: auto;
+}
+
+.lesson-box__fukidashi {
+  padding: rem.rem(10px);
+  min-width: 200px;
+  max-width: 60%;
+  margin: 0 auto 20px;
+  color: color.$white;
+  font-size: rem.rem(16px);
+  background: color.$main-colour;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 1;
+  @include responsive.responsive(md) {
+    position: absolute;
+    top: rem.rem(-55px);
+    left: 50%;
+    translate: -50% 0;
+    max-width: 100%;
+    margin: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50% 0;
+      border: 10px solid transparent;
+      border-top: 10px solid color.$main-colour;
+    }
+  }
+}
+
+.lesson-box--recommended {
+  box-shadow: 0 2rem 1.5rem -2rem hsl(200 50% 20% / 40%);
+  border: 2px solid color.$main-colour;
+  @include responsive.responsive(md) {
+    padding: rem.rem(56px) rem.rem(20px);
+  }
+}
+
+.lesson-box-transparent {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
@@ -166,6 +228,20 @@
   strong {
     font-size: #{clamp.sass_clamp(30px, 40px)};
   }
+}
+
+.lesson-detail {
+  margin-top: 32px;
+}
+
+.lesson-detail__heading {
+  font-size: #{clamp.sass_clamp(16px, 24px)};
+  text-align: center;
+  border-bottom: 1px dotted color.$main-colour;
+}
+
+.lesson-detail__list {
+  margin-top: 20px;
 }
 
 .lesson-notes {
