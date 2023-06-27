@@ -9,7 +9,7 @@
 	<main class="private-lesson">
 		<section class="lesson-hero-section">
 			<h2 class="lesson-hero-section__heading">
-				プライベートレッスン
+				<?php the_title(); ?>
 			</h2>
 		</section>
 		<section class="lesson-section">

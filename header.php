@@ -59,28 +59,11 @@
 		</p>
 		<p class="lesson__sub-heading">宮崎祐樹のWeb制作レッスン</p>
 	</div>
-<!--	<ul class="gnav">
-		<li class="gnav__item">
-			<a href="/">メイントップ</a>
-		</li>
-		<li class="gnav__item">
-			<a href="/#Biography">経歴</a>
-		</li>
-		<li class="gnav__item">
-			<a href="/#Skills">スキル</a>
-		</li>
-		<li class="gnav__item">
-			<a href="/#Service">サービスと料金</a>
-		</li>
-	</ul>-->
-	<!--<ul class="lesson-gnav">
-		<li class="gnav__item">
-			<a href="private-lesson">プライベートレッスン</a>
-		</li>
-		<li class="gnav__item">
-			<a href="mentoring">メンタリング</a>
-		</li>
-	</ul>-->
+	<?php
+		wp_nav_menu( array(
+			'theme_location' => 'lesson-page-menu'
+		) );
+	?>
 </header>
 
 <?php endif; ?>

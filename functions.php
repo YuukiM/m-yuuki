@@ -21,3 +21,13 @@ add_filter( 'auto_plugin_update_send_email', '__return_false' );
 
 // 「テーマ」の自動更新メール通知を停止する
 add_filter( 'auto_theme_update_send_email', '__return_false' );
+
+function register_my_menus() {
+	register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+		//'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+		'main-menu' => 'Main Menu',
+		'footer-menu'  => 'Footer Menu',
+		'lesson-page-menu'  => 'LessonPage Menu',
+	) );
+}
+add_action( 'after_setup_theme', 'register_my_menus' );

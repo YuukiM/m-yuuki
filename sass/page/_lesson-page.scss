@@ -5,13 +5,64 @@
 @use "../mixins/responsive";
 
 .lesson-header {
-  padding: rem.rem(10px);
+  @include responsive.responsive(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    @include responsive.responsive(md) {
+      flex-direction: row;
+    }
+  }
+  .menu-item {
+    a {
+      position: relative;
+      background-color: #fafafa;
+      display: block;
+      padding: rem.rem(10px);
+      color: color.$main-colour;
+      @include responsive.responsive(md) {
+        background-color: transparent;
+      }
+      &:hover {
+        text-decoration: none;
+        &::after {
+          content: '';
+          width: 50px;
+          height: 2px;
+          background-color: color.$accent-colour;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          translate: -50% 0;
+        }
+      }
+    }
+    &.current-menu-item {
+      position: relative;
+      font-weight: 700;
+      &::after {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: color.$accent-colour;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 0;
+      }
+    }
+  }
 }
 
 .lesson-header__inner {
   display: flex;
   flex-direction: column;
-  @include responsive.responsive(md) {
+  padding: rem.rem(10px);
+  @include responsive.responsive(lg) {
     flex-direction: row;
     align-items: center;
     gap: rem.rem(20px);
@@ -32,11 +83,13 @@
 
 .lesson-hero-section {
   padding: #{clamp.sass_clamp(40px, 80px)};
+  background: linear-gradient(135deg, #bbe5ff 0%, #f0faff);
 }
 
 .lesson-hero-section__heading {
   text-align: center;
   color: color.$main-colour;
+  font-size: #{clamp.sass_clamp(24px, 48px)};
 }
 
 .lesson-section {
