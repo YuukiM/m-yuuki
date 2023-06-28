@@ -14,9 +14,10 @@
 		</section>
 		<section class="lesson-section">
 			<div class="lesson-section__inner">
-				<p class="lesson-catch">いつでも教えてくれる人がいる、<br>絶対的な安心感</p>
+				<p class="lesson-catch">いつでも<br class="sp-only">教えてくれる人がいる<br>絶対的な安心感</p>
 				<p class="lesson-lead">
-					メンタリングサービスは、月々定額をお支払いいただくことで、いつでも質問できるチャットと定期ZOOMレッスンが受けられるサービスです。プライベートレッスンよりもお得に、継続して勉強できます。
+					メンタリングサービスは、月々定額をお支払いいただくことで、いつでも質問できるチャットと定期ZOOMレッスンが受けられるサービスです。
+					プライベートレッスンよりもお得に、継続して勉強できます。
 				</p>
 				<div class="lesson-button">
 					<a class="button" href="#inquiry">
@@ -50,13 +51,16 @@
 				<div class="lesson-content lesson-content--mentoring">
 					<div class="lesson-box">
 						<p class="lesson-price-title">ライトプラン</p>
-						<p class="lesson-price"><strong>5,000</strong>円</p>
+						<p class="lesson-price">月 <strong>5,000</strong>円</p>
 						<div class="lesson-detail">
 							<h3 class="lesson-detail__heading">プランに含まれるもの</h3>
 							<ul class="lesson-detail__list">
 								<li class="lesson-detail__list-item">ビデオ通話１時間</li>
 								<li class="lesson-detail__list-item">チャットでの質問</li>
 							</ul>
+							<a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2605?conversion_name=direct_message&tracking_code=25b2398615054ed9fe3f39b4235e0d2e" target="_blank">
+								<span>ストアカでプランを見る</span>
+							</a>
 						</div>
 					</div>
 					<div class="lesson-box lesson-box--recommended">
@@ -64,7 +68,7 @@
 							&emsp;おすすめ！
 						</p>
 						<p class="lesson-price-title">スタンダードプラン</p>
-						<p class="lesson-price"><strong>10,000</strong>円</p>
+						<p class="lesson-price">月 <strong>10,000</strong>円</p>
 						<div class="lesson-detail">
 							<h3 class="lesson-detail__heading">プランに含まれるもの</h3>
 							<ul class="lesson-detail__list">
@@ -72,11 +76,14 @@
 								<li class="lesson-detail__list-item">チャットでの質問</li>
 								<li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
 							</ul>
+							<a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2607?conversion_name=direct_message&tracking_code=73d78411ab559313fcb8affbee0beb72" target="_blank">
+								<span>ストアカでプランを見る</span>
+							</a>
 						</div>
 					</div>
 					<div class="lesson-box">
 						<p class="lesson-price-title">アドバンスドプラン</p>
-						<p class="lesson-price"><strong>15,000</strong>円</p>
+						<p class="lesson-price">月 <strong>15,000</strong>円</p>
 						<div class="lesson-detail">
 							<h3 class="lesson-detail__heading">プランに含まれるもの</h3>
 							<ul class="lesson-detail__list">
@@ -85,6 +92,9 @@
 								<li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
 								<li class="lesson-detail__list-item">チャットでの作品の添削</li>
 							</ul>
+							<a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2608?conversion_name=direct_message&tracking_code=f389b41e157b494f5f645768b5002816" target="_blank">
+								<span>ストアカでプランを見る</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -97,13 +107,13 @@
 				<ul class="feature-list">
 					<li class="feature-list__item">
 						<div class="feature-list__icon"><i class="fas fa-question-circle"></i></div>
-						<h3 class="feature-list__heading">口頭で質問できる</h3>
-						<p class="feature-list__text">文章でしづらい質問も口頭で質問。答えも口頭でわかりやすくお答えします。おひとりなので気軽に聞けるのもポイント！</p>
+						<h3 class="feature-list__heading">いつでも質問できる</h3>
+						<p class="feature-list__text">メンタリングサービスではいつでもチャットを使って講師に質問ができます。ちょっとわからないことが出たときなどにすぐ聞けます。</p>
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__icon"><i class="fa-solid fa-face-smile"></i></div>
-						<h3 class="feature-list__heading">実力に合わせて</h3>
-						<p class="feature-list__text">マンツーマンだから、ご自身の実力に合わせた内容でレッスンを受けることができます。</p>
+						<h3 class="feature-list__heading">やる気を後押し</h3>
+						<p class="feature-list__text">一人だけだとやる気を出せない、さぼってしまう…。メンタリングでは定期手にに進捗を伺うなど、やる気を後押しします。</p>
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__icon"><i class="fas fa-info-circle"></i></div>
@@ -114,11 +124,9 @@
 			</div>
 		</section>
 
-
 		<section class="lesson-section">
-
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">受講された方の声</h2>
+				<h2 class="lesson-section__heading">メンタリングを<br class="sp-only">契約された方の声</h2>
 				<ul class="feature-list">
 					<li class="feature-list__item">
 						<div class="feature-list__icon feature-list__icon--voice"><i class="fas fa-user"></i></div>
@@ -150,9 +158,10 @@
 						<dl class="lesson-flow__item">
 							<dt class="lesson-flow__item-title"><strong>STEP1</strong> まずはご相談ください</dt>
 							<dd class="lesson-flow__item-content">
-								下記のご相談フォームからご相談ください。
+								下記のご相談フォーム・もしくは<a href="https://www.street-academy.com/steachers/66562#subscription_service" target="_blank">ストアカ</a>からご相談ください(ストアカの登録が必要です)。
 								できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。
-								宮崎から改めてご連絡差し上げます。
+								宮崎から改めてご連絡差し上げます。<br>
+
 							</dd>
 						</dl>
 					</div>
