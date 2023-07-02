@@ -26,6 +26,19 @@
 			</div>
 		</section>
 
+		<section class="lesson-section">
+			<nav class="lesson-nav">
+				<ul class="lesson-nav-list">
+					<li class="lesson-nav-list__item"><a href="#content">内容</a></li>
+					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
+					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
+					<li class="lesson-nav-list__item"><a href="#voices">受講生の声</a></li>
+					<li class="lesson-nav-list__item"><a href="#flow">受講までの流れ</a></li>
+					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
+				</ul>
+			</nav>
+		</section>
+
 		<section class="lesson-section" id="content">
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">どんな内容？</h2>
@@ -64,7 +77,7 @@
 			</div>
 		</section>
 
-		<section class="lesson-section">
+		<section class="lesson-section" id="features">
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">プライベートレッスンの<br class="sp-only">いいところ</h2>
 				<ul class="feature-list">
@@ -88,8 +101,7 @@
 		</section>
 
 
-		<section class="lesson-section">
-
+		<section class="lesson-section" id="voices">
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">受講された方の声</h2>
 				<ul class="feature-list">
@@ -115,7 +127,7 @@
 			</div>
 		</section>
 
-		<section class="lesson-section">
+		<section class="lesson-section" id="flow">
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">受講までの流れ</h2>
 				<div class="lesson-flow">
