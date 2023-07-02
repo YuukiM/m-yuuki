@@ -1,5 +1,8 @@
 @use "../variables/color";
 @use "../variables/fonts";
+@use "../functions/rem";
+@use "../functions/clamp";
+@use "../mixins/responsive";
 
 /* Section */
 
@@ -269,7 +272,11 @@
 }
 
 .introduction__lead {
-  margin: 40px 0 0 0;
+  margin: 40px auto 0;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: rem.rem(20px);
 }
 
 .title {
