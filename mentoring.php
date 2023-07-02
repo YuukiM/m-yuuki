@@ -8,9 +8,9 @@
 <?php get_header(); ?>
 	<main class="private-lesson">
 		<section class="lesson-hero-section">
-			<h2 class="lesson-hero-section__heading">
+			<h1 class="lesson-hero-section__heading">
 				<?php the_title(); ?>
-			</h2>
+			</h1>
 		</section>
 		<section class="lesson-section">
 			<div class="lesson-section__inner">

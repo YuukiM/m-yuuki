@@ -320,9 +320,9 @@
 								</li>
 							</ul>
 						</div>
-						<!--<div class="button-wrap">
+						<div class="button-wrap">
 							<a href="/private-lesson" class="button services-prices__button">プライベートレッスンについて</a>
-						</div>-->
+						</div>
 					</div>
 					<div class="services-prices__item">
 						<h3 class="services-prices__item-heading item-heading">
@@ -364,9 +364,9 @@
 								</li>
 							</ul>
 						</div>
-						<!--<div class="button-wrap">
+						<div class="button-wrap">
 							<a href="/mentoring" class="button services-prices__button">メンタリングについて</a>
-						</div>-->
+						</div>
 					</div>
 				</div>
 			</div>
