@@ -17,13 +17,13 @@
       display: block;
       padding: rem.rem(20px);
       color: color.$main-colour;
-      @include responsive.responsive(md) {
+      @include responsive.responsive(lg) {
         background-color: transparent;
         padding: rem.rem(10px);
       }
       &:hover {
         text-decoration: none;
-        @include responsive.responsive(md) {
+        @include responsive.responsive(lg) {
           &::after {
             content: '';
             width: 50px;
@@ -42,7 +42,7 @@
       font-weight: 700;
       border-left: 5px solid color.$accent-colour;
       background-color: #fafafa;
-      @include responsive.responsive(md) {
+      @include responsive.responsive(lg) {
         border-left: none;
         background-color: transparent;
         &::after {
@@ -62,13 +62,13 @@
 
   .lesson-gnav {
     display: none;
-    @include responsive.responsive(md) {
+    @include responsive.responsive(lg) {
       display: initial;
     }
     .menu {
       display: flex;
       flex-direction: column;
-      @include responsive.responsive(md) {
+      @include responsive.responsive(lg) {
         flex-direction: row;
       }
     }
@@ -105,7 +105,7 @@
   border-radius: 50%;
   background: transparentize(color.$main-colour, 0.2);
   transition: background .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  @include responsive.responsive(md) {
+  @include responsive.responsive(lg) {
     display: none;
   }
   &::before, &::after {
@@ -174,7 +174,7 @@
   display: flex;
   flex-direction: column;
   padding: rem.rem(10px);
-  @include responsive.responsive(lg) {
+  @include responsive.responsive(xl) {
     flex-direction: row;
     align-items: center;
     gap: rem.rem(20px);
@@ -210,10 +210,26 @@
   &:nth-child(2n) {
     background-color: color.$white;
   }
+
+  &.lesson-section--price {
+    background: linear-gradient(135deg, #bbe5ff 0%, #f0faff);
+  }
+
+  &.lesson-section--private {
+    background-color: transparentize(color.$main-colour, 0.8);
+  }
+
+  &.lesson-section--mentoring {
+    background-color: transparentize(color.$main-colour, 0.2);
+  }
 }
 
 .lesson-section--price {
   background: linear-gradient(135deg, #bbe5ff 0%, #f0faff);
+}
+
+.lesson-section--private {
+  background-color: transparentize(color.$main-colour, 0.8);
 }
 
 .lesson-section__heading {
@@ -223,6 +239,20 @@
   text-align: center;
 }
 
+.lesson-section__heading--mentoring {
+  color: color.$white;
+}
+
+.lesson-section__sub-heading {
+  text-align: center;
+  color: color.$main-colour;
+  font-size: #{clamp.sass_clamp(16px, 20px)};
+}
+
+.lesson-section__sub-heading--mentoring {
+  color: color.$white;
+}
+
 .lesson-section__inner {
   max-width: 1024px;
   margin-inline: auto;
@@ -230,6 +260,15 @@
     flex-direction: row;
     gap: rem.rem(20px);
   }
+}
+
+.lesson-section__lesson-lead {
+  max-width: 700px;
+  margin: #{clamp.sass_clamp(40px, 80px)} auto;
+}
+
+.lesson-section__lesson-lead--mentoring {
+  color: color.$white;
 }
 
 .lesson-catch {
@@ -250,6 +289,7 @@
   flex-direction: column;
   gap: rem.rem(20px);
   max-width: 700px;
+  align-items: center;
   @include responsive.responsive(md) {
     align-items: center;
   }
@@ -305,11 +345,65 @@
   &::before {
     content: none;
   }
-
 }
 
 .lesson-button {
   margin-top: 40px;
+}
+
+.lesson-choice {
+  display: flex;
+  flex-direction: column;
+  gap: rem.rem(20px);
+  @include responsive.responsive(md) {
+    flex-direction: row;
+  }
+}
+
+.lesson-choice__item {
+  width: 50%;
+  a {
+    display: block;
+    padding: rem.rem(20px);
+    background-color: color.$main-colour;
+    color: color.$white;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid color.$main-colour;
+    transition: 0.2s;
+    &:hover {
+      text-decoration: none;
+      color: color.$main-colour;
+      background-color: color.$white;
+    }
+  }
+}
+
+.teacher {
+  margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
+  display: flex;
+  gap:  rem.rem(24px);
+  flex-direction: column;
+  @include responsive.responsive(md) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.teacher__image {
+  border-radius: 50%;
+  max-width: 300px;
+  margin-inline: auto;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.teacher__profile {
+  display: flex;
+  flex-direction: column;
+  gap: rem.rem(24px);
 }
 
 .lesson-box {

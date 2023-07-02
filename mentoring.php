@@ -186,7 +186,6 @@
 								下記のご相談フォーム・もしくは<a href="https://www.street-academy.com/steachers/66562#subscription_service" target="_blank">ストアカ</a>からご相談ください(ストアカの登録が必要です)。
 								できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。
 								宮崎から改めてご連絡差し上げます。<br>
-
 							</dd>
 						</dl>
 					</div>
