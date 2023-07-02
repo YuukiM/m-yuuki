@@ -10,22 +10,16 @@
     justify-content: space-between;
     align-items: center;
   }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    @include responsive.responsive(md) {
-      flex-direction: row;
-    }
-  }
+
   .menu-item {
     a {
       position: relative;
-      background-color: #fafafa;
       display: block;
-      padding: rem.rem(10px);
+      padding: rem.rem(20px);
       color: color.$main-colour;
       @include responsive.responsive(md) {
         background-color: transparent;
+        padding: rem.rem(10px);
       }
       &:hover {
         text-decoration: none;
@@ -46,7 +40,11 @@
     &.current-menu-item {
       position: relative;
       font-weight: 700;
+      border-left: 5px solid color.$accent-colour;
+      background-color: #fafafa;
       @include responsive.responsive(md) {
+        border-left: none;
+        background-color: transparent;
         &::after {
           content: '';
           width: 50px;
@@ -58,6 +56,116 @@
           translate: -50% 0;
         }
       }
+    }
+  }
+
+
+  .lesson-gnav {
+    display: none;
+    @include responsive.responsive(md) {
+      display: initial;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      @include responsive.responsive(md) {
+        flex-direction: row;
+      }
+    }
+
+  }
+
+  .lesson-nav-sp {
+    z-index: 10;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    width: rem.rem(280px);
+    height: 100%;
+    margin: 0;
+    background: color.$white;
+    transform: translateX(100%);
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+
+.drawer-open,
+.drawer-close {
+  cursor: pointer;
+  position: fixed;
+}
+
+.drawer-open {
+  z-index: 10;
+  top: 15px;
+  right: 10px;
+  width: rem.rem(50px);
+  height: rem.rem(50px);
+  border-radius: 50%;
+  background: transparentize(color.$main-colour, 0.2);
+  transition: background .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  @include responsive.responsive(md) {
+    display: none;
+  }
+  &::before, &::after {
+    content: "";
+  }
+  span,
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 30%;
+    width: 40%;
+    border-bottom: 2px solid color.$white;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &::before {
+    transform: translateY(-8px);
+  }
+
+  &::after {
+    transform: translateY(8px);
+  }
+}
+
+.drawer-close {
+  z-index: 5;
+  inset: 0;
+  pointer-events: none;
+  transition: background-color .6s;
+}
+
+.drawer {
+  display: none;
+  &:checked {
+    & ~ .drawer-close {
+      pointer-events: auto;
+      background-color: rgba(0,0,0,.8);
+    }
+    & + .drawer-open {
+      background: color.$sub-colour;
+      transform: translateX(-280px);
+      span,
+      &::before,
+      &::after {
+        border-color: color.$main-colour;
+      }
+      span {
+        transform: scaleX(0);
+      }
+      &::before {
+        transform: rotate(135deg) scaleX(1.2);
+      }
+      &::after {
+        transform: rotate(-135deg) scaleX(1.2);
+      }
+    }
+    & ~ .lesson-nav-sp {
+      transform: none;
     }
   }
 }
@@ -509,7 +617,8 @@
   }
 }
 
-.footer {
+.page .footer {
   width: 100%;
   left: 0;
+  z-index: 2;
 }

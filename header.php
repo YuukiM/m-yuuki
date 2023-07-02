@@ -59,11 +59,25 @@
 		</p>
 		<p class="lesson__sub-heading">宮崎祐樹のWeb制作レッスン</p>
 	</div>
-	<?php
-		wp_nav_menu( array(
-			'theme_location' => 'lesson-page-menu'
-		) );
-	?>
+	<div class="lesson-gnav">
+		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'lesson-page-menu'
+			) );
+		?>
+	</div>
+	<input type="checkbox" class="drawer" id="drawer">
+	<label for="drawer" class="drawer-open">
+		<span></span>
+	</label>
+	<label for="drawer" class="drawer-close"></label>
+	<div class="lesson-nav-sp">
+		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'lesson-page-sp'
+			) );
+		?>
+	</div>
 </header>
 
 <?php endif; ?>

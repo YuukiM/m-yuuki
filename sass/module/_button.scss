@@ -1,5 +1,9 @@
 @use "../variables/color";
 @use "../variables/fonts";
+@use "../functions/rem";
+@use "../functions/clamp";
+@use "../mixins/responsive";
+
 
 /*
  ボタン
@@ -40,10 +44,14 @@
   color: color.$white;
   border-radius: 5px;
   transition: all .3s;
-  padding: 5px 30px;
   text-decoration: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin-inline: auto;
+  font-size: #{clamp.sass_clamp(18px, 24px)};
+  padding: #{clamp.sass_clamp(5px, 15px)} #{clamp.sass_clamp(30px, 60px)};
+  @include responsive.responsive(lg) {
+    box-shadow: 5px 5px 1px #eee;
+  }
   &::before,
   &::after {
     content: '';
@@ -73,4 +81,5 @@
       background-color: color.$accent-colour;
     }
   }
+
 }
