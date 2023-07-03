@@ -6,20 +6,25 @@
 ?>
 
 <?php get_header(); ?>
-	<main class="private-lesson">
-		<section class="lesson-hero-section">
-			<p class="lesson-hero-section__heading">
-				Webデザインレッスンで、<br>
-				プロの技術とノウハウを学ぼう！
-			</p>
-			<div class="lesson-button">
-				<a class="button" href="#inquiry">
-					ご相談はこちら
-				</a>
+	<main class="lesson-top">
+		<section class="lesson-hero-section lesson-hero-section--top">
+			<div class="lesson-hero-section__catch">
+				<p class="lesson-hero-section__catch-text">
+					Yûki's Web Design Lessonsで、<br>
+					プロの技術とノウハウを学ぼう！
+				</p>
+				<div class="lesson-hero-section__catch-button">
+					<a class="button" href="#inquiry">
+						ご相談はこちら
+					</a>
+				</div>
+			</div>
+			<div class="lesson-hero-section__image">
+				<img src="<?php echo get_theme_file_uri('/images/portrait-lesson-top.png'); ?>" loading="lazy" alt="宮崎祐樹 写真">
 			</div>
 		</section>
-
-		<section class="lesson-section">
+		<?php
+/*		<section class="lesson-section">
 			<nav class="lesson-nav">
 				<ul class="lesson-nav-list">
 					<li class="lesson-nav-list__item"><a href="#private">プライベートレッスン</a></li>
@@ -30,26 +35,32 @@
 					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
 				</ul>
 			</nav>
-		</section>
-
+		</section>*/
+		?>
 		<section class="lesson-section" id="content">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">2種類のレッスン</h2>
+				<h2 class="lesson-section__heading">Yûki's Web Design Lessonsの特徴</h2>
 				<div class="lesson-content">
-					<div class="lesson-content__block">
-						<p>プライベートレッスンとメンタリングの2種類のレッスンがあります。</p>
-						<p>ご要望に応じて、柔軟にご対応いたします。</p>
+					<div class="lesson-introduction">
+						<p>
+							こんにちは！Webデザイン講師の宮崎祐樹です。
+						</p>
+						<p>
+							僕は、webデザインはただ技術を覚えるだけではなく、自分の感性や発想力も大切だと思っています。
+						</p>
+						<p>
+							だから、Yûki's Web Design Lessonsでは、答えを教えるだけではなく、自分で考える力を育てることにも力を入れています。
+						</p>
+						<p>レッスン形式は2種類。ご要望に応じて、柔軟にご対応いたします。</p>
 					</div>
-					<div class="lesson-content__block">
-						<ul class="lesson-choice">
-							<li class="lesson-choice__item">
-								<a href="#private">プライベートレッスン</a>
-							</li>
-							<li class="lesson-choice__item">
-								<a href="#mentoring">メンタリング</a>
-							</li>
-						</ul>
-					</div>
+					<ul class="lesson-choice">
+						<li class="lesson-choice__item">
+							<a href="#private">プライベートレッスン</a>
+						</li>
+						<li class="lesson-choice__item">
+							<a href="#mentoring">メンタリング</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -163,9 +174,7 @@
 						<img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
 					</div>
 					<div class="teacher__profile">
-						<p>
-							こんにちは！Webデザイン講師の宮崎祐樹です。
-						</p>
+
 						<p>
 							web業界で15年以上の経験を持ち、webデザイナーとしてもコーダーとしても豊富な経験を持っています。
 						</p>

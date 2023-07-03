@@ -114,8 +114,42 @@
 }
 
 .lesson-hero-section {
+  position: relative;
   padding: #{clamp.sass_clamp(40px, 80px)};
   background: linear-gradient(135deg, #bbe5ff 0%, #f0faff);
+}
+
+.lesson-hero-section--top {
+  height: 60vh;
+}
+
+.lesson-hero-section__catch {
+  position: relative;
+  z-index: 2;
+  @include responsive.responsive(xxl) {
+    margin-left: 300px;
+  }
+}
+
+.lesson-hero-section__catch-text {
+  color: color.$main-colour;
+  font-size: #{clamp.sass_clamp(24px, 48px)};
+}
+
+.lesson-hero-section__catch-button {
+  margin-top: #{clamp.sass_clamp(16px, 24px)};
+}
+
+.lesson-hero-section__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: max(40vmin,200px);
+  @include responsive.responsive(xxl) {
+    right: auto;
+    left: 50%;
+    translate: 200px 0;
+  }
 }
 
 .lesson-hero-section__heading {
@@ -214,6 +248,12 @@
   }
 }
 
+.lesson-introduction {
+  display: flex;
+  flex-direction: column;
+  gap: rem.rem(24px);
+}
+
 .lesson-nav-list {
   display: flex;
   gap: rem.rem(10px);
@@ -226,20 +266,20 @@
     display: flex;
     gap: rem.rem(10px);
     align-items: center;
-    background-color: color.$main-colour;
     border-radius: 20px;
     padding: rem.rem(5px) rem.rem(20px);
     color: color.$white;
     text-align: center;
-    border: 1px solid color.$main-colour;
+    background-color: color.$light-main;
+    border: 1px solid color.$light-main;
     transition: 0.2s;
     &:hover {
       text-decoration: none;
-      color: color.$main-colour;
+      color: color.$light-main;
       background-color: color.$white;
       &::after {
-        border-right: 1px solid color.$main-colour;
-        border-bottom: 1px solid color.$main-colour;
+        border-right: 1px solid color.$light-main;
+        border-bottom: 1px solid color.$light-main;
         transition: 0.2s;
       }
     }
@@ -260,13 +300,16 @@
 }
 
 .lesson-button {
-  margin-top: 40px;
+  margin: 40px auto 0;
+  width: fit-content;
 }
 
 .lesson-choice {
   display: flex;
   flex-direction: column;
   gap: rem.rem(20px);
+  margin: #{clamp.sass_clamp(20px, 60px)} auto 0;
+  border-radius: 50px;
   @include responsive.responsive(md) {
     flex-direction: row;
   }
