@@ -120,14 +120,24 @@
 }
 
 .lesson-hero-section--top {
-  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  height: 70vh;
+  background: url(images/lesson-top.jpg) 70% top/cover no-repeat;
+  @include responsive.responsive(lg) {
+    background: url(images/lesson-top.jpg) center top/cover no-repeat;
+    align-items: center;
+  }
 }
 
 .lesson-hero-section__catch {
   position: relative;
   z-index: 2;
+  background-color: transparentize(color.$white, 0.2);
+  width: fit-content;
+  padding: rem.rem(24px);
   @include responsive.responsive(xxl) {
-    margin-left: 300px;
+    margin-left: 200px;
   }
 }
 
@@ -140,7 +150,7 @@
   margin-top: #{clamp.sass_clamp(16px, 24px)};
 }
 
-.lesson-hero-section__image {
+/*.lesson-hero-section__image {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -150,7 +160,7 @@
     left: 50%;
     translate: 200px 0;
   }
-}
+}*/
 
 .lesson-hero-section__heading {
   text-align: center;
@@ -210,11 +220,15 @@
 
 .lesson-section__lesson-lead {
   max-width: 700px;
-  margin: #{clamp.sass_clamp(40px, 80px)} auto;
+  margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
 }
 
 .lesson-section__lesson-lead--mentoring {
   color: color.$white;
+}
+
+.lesson-price-box {
+  margin: #{clamp.sass_clamp(24px, 40px)} auto 0;
 }
 
 .lesson-catch {
@@ -577,8 +591,8 @@
   justify-content: center;
   position: relative;
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
+  width: rem.rem(100px);
+  height: rem.rem(100px);
   border-radius: 50%;
   background-color: color.$accent-colour;
   i {
@@ -587,8 +601,31 @@
   }
 }
 
-.feature-list__icon--voice {
-  background-color: color.$main-colour;
+.feature-list__user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: none;
+  margin: 30px auto 0;
+  width: rem.rem(100px);
+  height: rem.rem(100px);
+  .b {
+    fill: color.$white;
+  }
+
+  .c,
+  .g {
+    fill: color.$sub-colour;
+  }
+  
+  .d {
+    fill: #1e1210;
+  }
+
+  .e {
+    fill: #1e1210;
+  }
 }
 
 .feature-list__heading {
@@ -598,11 +635,28 @@
   margin: rem.rem(20px) auto 0;
 }
 
+.feature-list__text-wrap {
+  position: relative;
+  background-color: color.$sub-colour;
+  border-radius: 20px;
+  padding: rem.rem(20px);
+  display: flex;
+  flex-direction: column;
+  gap: rem.rem(24px);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: -50% 0;
+    border: 10px solid transparent;
+    border-top: 10px solid color.$sub-colour;
+  }
+}
+
 .feature-list__text {
   position: relative;
-  padding-top: 30px;
-  margin: 10px auto 0;
-  &::before {
+/*  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -611,7 +665,7 @@
     background-color: color.$accent-colour;
     width: 2px;
     height: 20px;
-  }
+  }*/
 }
 
 .lesson-flow {
