@@ -6,7 +6,7 @@
 ?>
 
 <?php get_header(); ?>
-	<main class="private-lesson">
+	<main class="mentoring">
 		<section class="lesson-hero-section">
 			<p class="lesson-sub-heading">継続受講でモチベーションもスキルもアップ！</p>
 			<h1 class="lesson-hero-section__heading">
@@ -33,7 +33,7 @@
 		<section class="lesson-section">
 			<nav class="lesson-nav">
 				<ul class="lesson-nav-list">
-					<li class="lesson-nav-list__item"><a href="#content">内容</a></li>
+					<li class="lesson-nav-list__item"><a href="#worries">内容</a></li>
 					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
 					<li class="lesson-nav-list__item"><a href="#comparison">プラン比較</a></li>
 					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
@@ -43,20 +43,54 @@
 				</ul>
 			</nav>
 		</section>
-		<section class="lesson-section" id="content">
+		<section class="lesson-section" id="worries">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">どんな内容？</h2>
+				<h2 class="lesson-section__heading">こんなお悩みありませんか？</h2>
 				<div class="lesson-content">
-					<div class="lesson-content__block">
-						<p>レッスンの内容は自由です。</p>
-						<p>案件が入ったけど、一人で納品できる自信がない！</p>
-						<p>一人だと勉強しないから定期的に見てもらいたい！</p>
-						<p>など、ご相談ください。</p>
+					<div class="mentoring-worries">
+						<p class="mentoring-worries__item">なんとか案件獲得まではできたけど、一人で納品までできる自信がないなぁ・・・。</p>
+						<p class="mentoring-worries__item mentoring-worries__item--right">一人だとどうしても勉強をサボっちゃう。モチベーションが上がらない。</p>
 					</div>
-					<div class="lesson-content__block">
+					<div class="mentoring-content-images">
+						<div class="mentoring-content-image">
+							<img src="<?php echo get_theme_file_uri('/images/mantoring-contant-image.svg'); ?>" loading="lazy" alt="">
+						</div>
+						<div class="mentoring-content-image mentoring-content-image--small">
+							<img src="<?php echo get_theme_file_uri('/images/mantoring-contant-image-2.svg'); ?>" loading="lazy" alt="">
+						</div>
+					</div>
+<!--					<div>
+						ほかにも・・・
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>-->
+				</div>
+			</div>
+		</section>
+		<section class="lesson-section lesson-section--solved" id="solved">
+			<div class="lesson-section__inner">
+				<h2 class="lesson-section__heading">メンタリングで解決！！</h2>
+				<div class="lesson-content">
+					<div class="mentoring-worries">
+						<p class="mentoring-worries__item">製作段階のアドバイスのほかに、クライアントとのやり取りの方法、納品の流れまで教えてくれた！</p>
+						<p class="mentoring-worries__item mentoring-worries__item--right">定期的に進捗の確認、勉強の方向性までチェックしてくれるから、モチベーションが上がった！</p>
+					</div>
+					<div class="mentoring-content-images">
+						<div class="mentoring-content-image">
+							<img src="<?php echo get_theme_file_uri('/images/mantoring-contant-image-3.svg'); ?>" loading="lazy" alt="">
+						</div>
+						<div class="mentoring-content-image mentoring-content-image--small">
+							<img src="<?php echo get_theme_file_uri('/images/mantoring-contant-image-4.svg'); ?>" loading="lazy" alt="">
+						</div>
+					</div>
+<!--					<div class="lesson-content__block">
 						<p>単発でご受講を希望の方は<a href="https://m-yuuki.com/private-lesson/" title="Web制作プライベートレッスン">プライベートレッスン</a>をお勧めしています。
 						</p>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</section>
