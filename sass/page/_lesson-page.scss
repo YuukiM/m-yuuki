@@ -135,9 +135,12 @@
 .lesson-home-catch {
   position: relative;
   z-index: 2;
-  background-color: transparentize(color.$white, 0.2);
+  background-color: transparentize(color.$white, 0.5);
   width: fit-content;
   padding: rem.rem(24px);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 2rem 1.5rem -2rem rgba(26,60,77,.4);
   @include responsive.responsive(xxl) {
     margin-left: 200px;
   }
