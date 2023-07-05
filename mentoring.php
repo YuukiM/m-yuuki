@@ -87,17 +87,21 @@
 							<img src="<?php echo get_theme_file_uri('/images/mantoring-contant-image-4.svg'); ?>" loading="lazy" alt="">
 						</div>
 					</div>
-<!--					<div class="lesson-content__block">
-						<p>単発でご受講を希望の方は<a href="https://m-yuuki.com/private-lesson/" title="Web制作プライベートレッスン">プライベートレッスン</a>をお勧めしています。
-						</p>
-					</div>-->
 				</div>
+			</div>
+		</section>
+
+		<section class="lesson-section" id="private-lesson">
+			<div class="lesson-section__inner">
+				<a class="button" href="#inquiry">
+					ご相談はこちらから
+				</a>
 			</div>
 		</section>
 
 		<section class="lesson-section lesson-section--price" id="price">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">料金</h2>
+				<h2 class="lesson-section__heading">メンタリング料金</h2>
 				<div class="lesson-content lesson-content--mentoring">
 					<div class="lesson-box">
 						<p class="lesson-price-title">ライトプラン</p>
@@ -254,6 +258,20 @@
 								ストアカサイトにて、ご契約いただきます。ご契約次第、チャットにご招待します（場合によってはチャット用のメールアドレスを伺います）。初回ZOOMの日程を決め、サービス開始です。
 							</dd>
 						</dl>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="lesson-section" id="private-lesson">
+			<div class="lesson-section__inner">
+				<h2 class="lesson-section__heading">単発レッスンをご希望の方</h2>
+				<div class="lesson-content">
+					<p class="lesson-section__center-text">単発でご受講を希望の方はプライベートレッスンをお勧めしています。
+					<div class="lesson-button">
+						<a class="button" href="/private-lesson">
+							プライベートレッスンを見る
+						</a>
 					</div>
 				</div>
 			</div>

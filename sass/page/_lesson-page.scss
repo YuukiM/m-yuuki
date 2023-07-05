@@ -227,6 +227,10 @@
   }
 }
 
+.lesson-section__center-text {
+  text-align: center;
+}
+
 .lesson-image {
   margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
   max-width: 700px;

@@ -48,9 +48,7 @@
   text-decoration: none;
   font-size: #{clamp.sass_clamp(18px, 24px)};
   padding: #{clamp.sass_clamp(5px, 15px)} #{clamp.sass_clamp(30px, 60px)};
-  @include responsive.responsive(lg) {
-    /*box-shadow: 5px 5px 1px #eee;*/
-  }
+  margin-inline: auto;
   &::before,
   &::after {
     content: '';
