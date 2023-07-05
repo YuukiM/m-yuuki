@@ -70,7 +70,7 @@
 					プライベートレッスンは、ご自身の目的や必要に応じて行う単発のレッスンです。受注中の案件でどうしてもひとりでは解決できない問題が起きたときなどにぜひご活用ください。
 				</p>
 				<div class="lesson-price-box">
-					<div class="lesson-box-transparent">
+					<div class="price-box">
 						<p class="lesson-price-title">1時間</p>
 						<p class="lesson-price"><strong>5,500</strong>円</p>
 					</div>
@@ -89,7 +89,7 @@
 					メンタリングサービスは、月々定額をお支払いいただくことで、いつでも質問できるチャットと定期ZOOMレッスンが受けられるサービスです。 プライベートレッスンよりもお得に、継続して勉強できます。
 				</p>
 				<div class="lesson-price-box">
-					<div class="lesson-box-transparent">
+					<div class="price-box">
 						<p class="lesson-price-title">1か月</p>
 						<p class="lesson-price"><strong>5,000</strong>円～</p>
 					</div>

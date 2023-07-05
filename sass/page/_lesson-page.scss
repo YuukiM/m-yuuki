@@ -444,14 +444,18 @@
   }
 }
 
-.lesson-box-transparent {
+.price-box {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: color.$white;
   border-radius: 10px;
   box-shadow: 0 2rem 1.5rem -2rem hsl(200 50% 20% / 40%);
   width: 100%;
   max-width: 650px;
   margin-inline: auto;
+}
+
+.price-box--transparent {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .lesson-price-title {
@@ -688,8 +692,8 @@
 
 .lesson-flow__item {
   border-radius: 10px;
-  border: 1px solid #eee;
-  background-color: color.$white;
+  border: 1px solid color.$sub-colour;
+  background-color: color.$light-sub;
   box-shadow: 0 2rem 1.5rem -2rem rgba(26,60,77,.4);
   padding: rem.rem(20px) rem.rem(24px);
 }

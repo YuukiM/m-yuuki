@@ -65,11 +65,11 @@
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">料金</h2>
 				<div class="lesson-content">
-					<div class="lesson-box-transparent">
+					<div class="price-box">
 						<p class="lesson-price-title">1時間</p>
 						<p class="lesson-price"><strong>5,500</strong>円</p>
 					</div>
-					<div class="lesson-box-transparent">
+					<div class="price-box">
 						<p class="lesson-price-title">初回の最初の1時間は特別価格！</p>
 						<p class="lesson-price"><strong>4,500</strong>円</p>
 						<p class="lesson-notes">※2時間目以降は通常の5,500円です</p>
