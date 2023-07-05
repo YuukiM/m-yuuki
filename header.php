@@ -51,19 +51,19 @@
 	</header>
 <?php elseif(is_page('private-lesson-famm') || is_page('profile')): ?>
 	<!--nothing-->
-<?php elseif(is_page('lessons')): ?>
+<?php elseif(is_page('lessons') || is_page('private-lesson') || is_page('mentoring') ): ?>
 <header class="lesson-header">
 	<h1 class="lesson-header__inner">
-		<span class="lesson__heading">
+		<a href="/lessons" class="lesson-header__heading">
 			Yûki's Web Design Lessons
-		</span>
-		<span class="lesson__sub-heading">宮崎祐樹のWeb制作レッスン</span>
+		</a>
+		<span class="lesson-header__sub-heading">宮崎祐樹のWeb制作レッスン</span>
 	</h1>
 	<div class="lesson-gnav">
 		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'lesson-page-menu'
-			) );
+		wp_nav_menu( array(
+			'theme_location' => 'lesson-page-menu'
+		) );
 		?>
 	</div>
 	<input type="checkbox" class="drawer" id="drawer">
@@ -73,37 +73,9 @@
 	<label for="drawer" class="drawer-close"></label>
 	<div class="lesson-nav-sp">
 		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'lesson-page-sp'
-			) );
-		?>
-	</div>
-</header>
-<?php elseif(is_page('private-lesson') || is_page('mentoring') ): ?>
-<header class="lesson-header">
-	<div class="lesson-header__inner">
-		<p class="lesson__heading">
-			Yûki's Web Design Lessons
-		</p>
-		<p class="lesson__sub-heading">宮崎祐樹のWeb制作レッスン</p>
-	</div>
-	<div class="lesson-gnav">
-		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'lesson-page-menu'
-			) );
-		?>
-	</div>
-	<input type="checkbox" class="drawer" id="drawer">
-	<label for="drawer" class="drawer-open">
-		<span></span>
-	</label>
-	<label for="drawer" class="drawer-close"></label>
-	<div class="lesson-nav-sp">
-		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'lesson-page-sp'
-			) );
+		wp_nav_menu( array(
+			'theme_location' => 'lesson-page-sp'
+		) );
 		?>
 	</div>
 </header>

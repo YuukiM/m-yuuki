@@ -8,6 +8,7 @@
 <?php get_header(); ?>
 	<main class="private-lesson">
 		<section class="lesson-hero-section">
+			<p class="lesson-sub-heading">継続受講でモチベーションもスキルもアップ！</p>
 			<h1 class="lesson-hero-section__heading">
 				<?php the_title(); ?>
 			</h1>
@@ -155,7 +156,7 @@
 				<ul class="feature-list">
 					<li class="feature-list__item">
 						<div class="feature-list__text-wrap">
-							<p class="feature-list__text">
+							<p class="feature-list__voice">
 								コーディングのご指導はもちろん、クライアントとのやりとりで不安なことやイレギュラーへの対応など、ご経験からアドバイスをいただけて大変有難いです。
 							</p>
 						</div>
@@ -165,7 +166,7 @@
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__text-wrap">
-							<p class="feature-list__text">
+							<p class="feature-list__voice">
 								Webサイト制作の相談をさせてもらっております。いつも丁寧に対応してくださり、コミュニケーションを取りやすいです。<br>&ensp;
 							</p>
 						</div>
@@ -175,7 +176,7 @@
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__text-wrap">
-							<p class="feature-list__text">
+							<p class="feature-list__voice">
 								納品までフォローアップありがとうございました！自分だけでは解決できなかった箇所たくさんありました。とても心強かったです！<br>&ensp;
 							</p>
 						</div>

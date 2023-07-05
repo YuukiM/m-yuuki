@@ -59,7 +59,6 @@
     }
   }
 
-
   .lesson-gnav {
     display: none;
     @include responsive.responsive(lg) {
@@ -101,14 +100,17 @@
   }
 }
 
-.lesson__heading {
+.lesson-header__heading {
   font-family: 'Sofia', cursive;
   font-weight: 700;
   font-size: rem.rem(24px);
   color: color.$main-colour;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-.lesson__sub-heading {
+.lesson-header__sub-heading {
   color: color.$main-colour;
   font-size: rem.rem(14px);
 }
@@ -130,7 +132,7 @@
   }
 }
 
-.lesson-hero-section__catch {
+.lesson-home-catch {
   position: relative;
   z-index: 2;
   background-color: transparentize(color.$white, 0.2);
@@ -141,26 +143,14 @@
   }
 }
 
-.lesson-hero-section__catch-text {
+.lesson-home-catch__text {
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(24px, 48px)};
 }
 
-.lesson-hero-section__catch-button {
+.lesson-home-catch__button {
   margin-top: #{clamp.sass_clamp(16px, 24px)};
 }
-
-/*.lesson-hero-section__image {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: max(40vmin,200px);
-  @include responsive.responsive(xxl) {
-    right: auto;
-    left: 50%;
-    translate: 200px 0;
-  }
-}*/
 
 .lesson-hero-section__heading {
   text-align: center;
@@ -199,13 +189,13 @@
   color: color.$white;
 }
 
-.lesson-section__sub-heading {
+.lesson-sub-heading {
   text-align: center;
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(16px, 20px)};
 }
 
-.lesson-section__sub-heading--mentoring {
+.lesson-sub-heading--mentoring {
   color: color.$white;
 }
 
@@ -218,12 +208,12 @@
   }
 }
 
-.lesson-section__lesson-lead {
+.lesson-definition {
   max-width: 700px;
   margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
 }
 
-.lesson-section__lesson-lead--mentoring {
+.lesson-definition--mentoring {
   color: color.$white;
 }
 
@@ -610,29 +600,13 @@
   margin: 30px auto 0;
   width: rem.rem(100px);
   height: rem.rem(100px);
-  .b {
-    fill: color.$white;
-  }
-
-  .c,
-  .g {
-    fill: color.$sub-colour;
-  }
-  
-  .d {
-    fill: #1e1210;
-  }
-
-  .e {
-    fill: #1e1210;
-  }
 }
 
 .feature-list__heading {
-  font-size: 20px;
+  font-size: rem.rem(20px);
   color: color.$main-colour;
   text-align: center;
-  margin: rem.rem(20px) auto 0;
+  margin: rem.rem(24px) auto 0;
 }
 
 .feature-list__text-wrap {
@@ -656,16 +630,7 @@
 
 .feature-list__text {
   position: relative;
-/*  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    translate: -50% 0;
-    background-color: color.$accent-colour;
-    width: 2px;
-    height: 20px;
-  }*/
+  margin-top: rem.rem(16px);
 }
 
 .lesson-flow {

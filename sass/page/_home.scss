@@ -442,10 +442,6 @@
   margin-bottom: 80px;
 }
 
-.services-prices__button {
-  margin-top: 40px;
-}
-
 .prices {
   background-color: color.$translucent;
   margin-top: 20px;
@@ -477,7 +473,7 @@
 .voices {
   border-radius: 10px;
   background-color: color.$translucent;
-  padding: 20px;
+  padding: rem.rem(40px) rem.rem(20px);
   margin-top: 40px;
 }
 
@@ -499,6 +495,9 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  svg {
+    width: max(5vw, 120px);
+  }
 }
 
 .voices-list__text {
@@ -519,14 +518,8 @@
 /* Footer */
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   padding: 20px;
   text-align: center;
-  z-index: 120;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
 }
 
 @include responsive.responsive(md) {
@@ -638,6 +631,11 @@
   }
 
   .footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    z-index: 120;
     width: 50%;
     left: 50%;
     -webkit-backdrop-filter: none;

@@ -8,15 +8,16 @@
 <?php get_header(); ?>
 	<main class="private-lesson">
 		<section class="lesson-hero-section">
-			<h2 class="lesson-hero-section__heading">
+			<p class="lesson-sub-heading">どうしてもわからないときの駆け込み寺</p>
+			<h1 class="lesson-hero-section__heading">
 				<?php the_title(); ?>
-			</h2>
+			</h1>
 		</section>
 		<section class="lesson-section">
 			<div class="lesson-section__inner">
 				<p class="lesson-catch">必要な時に必要な分だけ、<br>プライベートで！</p>
 				<p class="lesson-lead">
-						プライベートレッスンは、ご自身の目的や必要に応じて行う単発のレッスンです。受注中の案件でどうしてもひとりでは解決できない問題が起きたときなどにぜひご活用ください。
+					プライベートレッスンは、ご自身の目的や必要に応じて行う単発のレッスンです。受注中の案件でどうしてもひとりでは解決できない問題が起きたときなどにぜひご活用ください。
 				</p>
 				<div class="lesson-button">
 					<a class="button" href="#inquiry">

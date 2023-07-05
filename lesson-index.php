@@ -8,20 +8,17 @@
 <?php get_header(); ?>
 	<main class="lesson-top">
 		<section class="lesson-hero-section lesson-hero-section--top">
-			<div class="lesson-hero-section__catch">
-				<p class="lesson-hero-section__catch-text">
+			<div class="lesson-home-catch">
+				<p class="lesson-home-catch__text">
 					Yûki's Web Design Lessonsで、<br>
 					プロの技術とノウハウを学ぼう！
 				</p>
-				<div class="lesson-hero-section__catch-button">
+				<div class="lesson-home-catch__button">
 					<a class="button" href="#inquiry">
 						ご相談はこちら
 					</a>
 				</div>
 			</div>
-<!--			<div class="lesson-hero-section__image">
-				<img src="<?php /*echo get_theme_file_uri('/images/portrait-lesson-top.png'); */?>" loading="lazy" alt="宮崎祐樹 写真">
-			</div>-->
 		</section>
 		<?php
 /*		<section class="lesson-section">
@@ -67,9 +64,9 @@
 
 		<section class="lesson-section lesson-section--private" id="private">
 			<div class="lesson-section__inner">
-				<p class="lesson-section__sub-heading">どうしてもわからないときの駆け込み寺</p>
+				<p class="lesson-sub-heading">どうしてもわからないときの駆け込み寺</p>
 				<h2 class="lesson-section__heading">プライベートレッスン</h2>
-				<p class="lesson-section__lesson-lead">
+				<p class="lesson-definition">
 					プライベートレッスンは、ご自身の目的や必要に応じて行う単発のレッスンです。受注中の案件でどうしてもひとりでは解決できない問題が起きたときなどにぜひご活用ください。
 				</p>
 				<div class="lesson-price-box">
@@ -86,9 +83,9 @@
 
 		<section class="lesson-section lesson-section--mentoring" id="mentoring">
 			<div class="lesson-section__inner">
-				<p class="lesson-section__sub-heading lesson-section__sub-heading--mentoring">継続受講でモチベーションもスキルもアップ！</p>
+				<p class="lesson-sub-heading lesson-sub-heading--mentoring">継続受講でモチベーションもスキルもアップ！</p>
 				<h2 class="lesson-section__heading lesson-section__heading--mentoring">メンタリング</h2>
-				<p class="lesson-section__lesson-lead lesson-section__lesson-lead--mentoring">
+				<p class="lesson-definition lesson-definition--mentoring">
 					メンタリングサービスは、月々定額をお支払いいただくことで、いつでも質問できるチャットと定期ZOOMレッスンが受けられるサービスです。 プライベートレッスンよりもお得に、継続して勉強できます。
 				</p>
 				<div class="lesson-price-box">
@@ -109,7 +106,7 @@
 				<ul class="feature-list">
 					<li class="feature-list__item">
 						<div class="feature-list__text-wrap">
-							<p class="feature-list__text">
+							<p class="feature-list__voice">
 								WEBデザイナーとしてデビューしたてで、とにかく何をやるにも不安！！という私の質問・疑問一つ一つに丁寧に解説していただきました。<br>&ensp;
 							</p>
 							<p>
@@ -122,7 +119,7 @@
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__text-wrap">
-							<p class="feature-list__text">
+							<p class="feature-list__voice">
 								ウェブサイト製作中にコーディングで行き詰まり、自分では問題に気づけなくて困っていたのですが、宮崎先生の丁寧なご指導で問題を解決することができました！
 							</p>
 							<p>受講レッスン：プライベート</p>
@@ -133,7 +130,7 @@
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__text-wrap">
-							<p class="feature-list__text">
+							<p class="feature-list__voice">
 								納品までフォローアップありがとうございました！自分だけでは解決できなかった箇所たくさんありました。とても心強かったです！<br>&ensp;
 							</p>
 							<p>受講レッスン：メンタリング</p>
@@ -186,7 +183,6 @@
 						<img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
 					</div>
 					<div class="teacher__profile">
-
 						<p>
 							web業界で15年以上の経験を持ち、webデザイナーとしてもコーダーとしても豊富な経験を持っています。
 						</p>
