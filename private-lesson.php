@@ -19,6 +19,9 @@
 				<p class="lesson-lead">
 					プライベートレッスンは、ご自身の目的や必要に応じて行う単発のレッスンです。受注中の案件でどうしてもひとりでは解決できない問題が起きたときなどにぜひご活用ください。
 				</p>
+				<div class="lesson-image">
+					<img src="<?php echo get_theme_file_uri('/images/private-lesson.svg'); ?>" loading="lazy" alt="">
+				</div>
 				<div class="lesson-button">
 					<a class="button" href="#inquiry">
 						ご相談はこちら

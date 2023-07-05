@@ -211,6 +211,11 @@
   }
 }
 
+.lesson-image {
+  margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
+  max-width: 700px;
+}
+
 .lesson-definition {
   max-width: 700px;
   margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
@@ -233,7 +238,7 @@
 
 .lesson-lead {
   max-width: 700px;
-  margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
+  margin: #{clamp.sass_clamp(24px, 40px)} auto 0;
 }
 
 .lesson-content {
