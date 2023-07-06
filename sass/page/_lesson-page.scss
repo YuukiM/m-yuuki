@@ -706,6 +706,9 @@
 }
 
 .lesson-flow__item-title {
+  display: flex;
+  align-items: center;
+  gap: rem.rem(24px);
   color: color.$main-colour;
   border-bottom: 1px dotted #ccc;
   margin: 0 0 10px;

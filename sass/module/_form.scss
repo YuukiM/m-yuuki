@@ -5,6 +5,11 @@
   form
 */
 
+.form-wrap {
+  margin-inline: auto;
+  max-width: 700px;
+}
+
 .wpforms-submit {
   position: relative;
   display: block !important;
@@ -17,21 +22,24 @@
   width: 190px !important;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1) !important;
   transition: 0.2s;
+  &:hover {
+    background-color: color.$white !important;
+    color: color.$accent-colour !important;
+  }
 }
 
-.wpforms-submit:hover {
-  background-color: color.$white !important;
-  color: color.$accent-colour !important;
-}
-
-div.wpforms-container-full .wpforms-form .wpforms-field {
-  padding: 20px 0 !important;
+div.wpforms-container-full {
+  .wpforms-form {
+    .wpforms-field {
+      padding: 20px 0 !important;
+    }
+  }
 }
 
 .wpforms-field-label {
   font-family: fonts.$occidental, fonts.$japanese, sans-serif !important;
   font-size: 1rem !important;
-  font-weight: normal !important;
+  font-weight: 700 !important;
   border-left: 4px solid color.$accent-colour !important;
   padding-left: 10px !important;
   margin-bottom: 10px !important;
@@ -40,6 +48,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field {
 
 .wpforms-error {
   font-size: 14px !important;
+  color: color.$important-colour !important;
 }
 
 .pc-only {
