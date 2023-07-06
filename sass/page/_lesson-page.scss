@@ -149,6 +149,7 @@
 .lesson-home-catch__text {
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(24px, 48px)};
+  font-family: fonts.$heading, sans-serif;
 }
 
 .lesson-home-catch__button {
@@ -159,6 +160,7 @@
   text-align: center;
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(24px, 48px)};
+  font-family: fonts.$heading, sans-serif;
 }
 
 .lesson-section {
@@ -212,6 +214,7 @@
   text-align: center;
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(16px, 20px)};
+  font-family: fonts.$heading, sans-serif;
 }
 
 .lesson-sub-heading--mentoring {
@@ -251,6 +254,7 @@
 
 .lesson-catch {
   font-size: #{clamp.sass_clamp(24px, 40px)};
+  font-family: fonts.$heading, sans-serif;
   color: color.$main-colour;
   font-weight: bold;
   text-align: center;
@@ -462,6 +466,7 @@
   color: color.$main-colour;
   text-align: center;
   font-size: #{clamp.sass_clamp(16px, 24px)};
+  font-family: fonts.$heading, sans-serif;
 }
 
 .lesson-price {
@@ -636,6 +641,7 @@
 
 .feature-list__heading {
   font-size: rem.rem(20px);
+  font-family: fonts.$heading, sans-serif;
   color: color.$main-colour;
   text-align: center;
   margin: rem.rem(24px) auto 0;
@@ -704,8 +710,10 @@
   margin: 0 0 10px;
   padding: 0 0 5px;
   font-size: rem.rem(20px);
+  font-family: fonts.$heading, sans-serif;
   strong {
     font-size: rem.rem(28px);
+    font-family: fonts.$occidental, sans-serif;
   }
 }
 
