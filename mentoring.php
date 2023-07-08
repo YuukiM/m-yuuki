@@ -25,7 +25,7 @@
 				</div>
 				<div class="lesson-button">
 					<a class="button" href="#inquiry">
-						まずはご相談ください！
+						まずは無料カウンセリング！
 					</a>
 				</div>
 			</div>
@@ -110,8 +110,8 @@
 							<h3 class="lesson-detail__heading">プランに含まれるもの</h3>
 							<div class="lesson-detail__content">
 								<ul class="lesson-detail__list">
-									<li class="lesson-detail__list-item">ビデオ通話１時間</li>
-									<li class="lesson-detail__list-item">チャットでの質問</li>
+									<li class="lesson-detail__list-item">ビデオ通話 1時間</li>
+									<li class="lesson-detail__list-item">チャットでの無制限質問</li>
 								</ul>
 								<a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2605?conversion_name=direct_message&tracking_code=25b2398615054ed9fe3f39b4235e0d2e" target="_blank">
 									<span>ストアカでプランを見る</span>
@@ -129,8 +129,8 @@
 							<h3 class="lesson-detail__heading">プランに含まれるもの</h3>
 							<div class="lesson-detail__content">
 								<ul class="lesson-detail__list">
-									<li class="lesson-detail__list-item">ビデオ通話2時間30分</li>
-									<li class="lesson-detail__list-item">チャットでの質問</li>
+									<li class="lesson-detail__list-item">ビデオ通話 2時間30分</li>
+									<li class="lesson-detail__list-item">チャットでの無制限質問</li>
 									<li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
 								</ul>
 								<a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2607?conversion_name=direct_message&tracking_code=73d78411ab559313fcb8affbee0beb72" target="_blank">
@@ -147,7 +147,7 @@
 							<div class="lesson-detail__content">
 								<ul class="lesson-detail__list">
 									<li class="lesson-detail__list-item">ビデオ通話3時間</li>
-									<li class="lesson-detail__list-item">チャットでの質問</li>
+									<li class="lesson-detail__list-item">チャットでの無制限質問</li>
 									<li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
 									<li class="lesson-detail__list-item">チャットでの作品の添削</li>
 								</ul>
@@ -235,9 +235,9 @@
 				<div class="lesson-flow">
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP1</strong> まずはご相談ください</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP1</strong>まずはご相談ください</dt>
 							<dd class="lesson-flow__item-content">
-								下記のご相談フォーム・もしくは<a href="https://www.street-academy.com/steachers/66562#subscription_service" target="_blank">ストアカ</a>からご相談ください(ストアカの登録が必要です)。
+								下記のご相談フォーム・もしくは<a href="https://www.street-academy.com/steachers/66562#subscription_service" target="_blank">ストアカ</a>からご相談ください。
 								できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。
 								宮崎から改めてご連絡差し上げます。<br>
 							</dd>
@@ -245,17 +245,17 @@
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP2</strong> 無料ヒアリングの実施</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP2</strong>無料カウンセリングの実施</dt>
 							<dd class="lesson-flow__item-content">
-								30分ほどのZOOMミーティングで、ヒアリングを実施します。現在のご状況、ご希望の内容を伺い、プラン選択のアドバイスを行います。ご納得できましたら、次のステップに進んでいただきます。
+								30分ほどのZOOMミーティングで、無料カウンセリングを実施します。現在のお悩みやご希望などを伺いながらプラン選択のお手伝いをします。ご納得できましたら、次のステップに進んでいただきます。
 							</dd>
 						</dl>
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP3</strong> ご契約・サービス開始</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP3</strong>ご契約・サービス開始</dt>
 							<dd class="lesson-flow__item-content">
-								ストアカサイトにて、ご契約いただきます。ご契約次第、チャットにご招待します（場合によってはチャット用のメールアドレスを伺います）。初回ZOOMの日程を決め、サービス開始です。
+								ストアカのサイト上でご契約いただきます。ご契約されましたらチャットにご招待します（場合によってはチャット用のメールアドレスを伺います）。初回ZOOMの日程を決め、いよいよサービス開始です。
 							</dd>
 						</dl>
 					</div>
@@ -370,6 +370,14 @@
 						<p class="lesson-faq__answer">
 							講師の稼働状況に寄りますが、遅くても24時間以内にはご返信するようにしています。
 						</p>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							スタンダードプランとアドバンスドプランの違いの「添削」って何ですか？
+						</summary>
+						<p class="lesson-faq__answer">
+							「添削」とは、質問を伴わないデザインやコードのチェックのことです。例えば「デザインを作ったので見て欲しい」「コーディングのおかしな点を指摘して欲しい」
+							などです。スタンダードプランではビデオ通話でのみ添削可能です。アドバンスドプランはチャット上でも添削可能です。
+						</p>
 					</details>
 					<details class="lesson-faq__group">
 						<summary class="lesson-faq__question">
@@ -393,7 +401,7 @@
 
 		<section class="lesson-section" id="inquiry">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading" id="inquiry">ご相談はこちら</h2>
+				<h2 class="lesson-section__heading" id="inquiry">無料カウンセリング</h2>
 
 				<div class="form-notes">
 					<p>下記フォームにご記入の上「送信する」ボタンを押してください。</p>

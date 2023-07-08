@@ -219,7 +219,7 @@
   position: relative;
   width: fit-content;
   font-size: 34px;
-  font-weight: normal;
+  font-weight: 700;
   margin-inline: auto;
   padding: 0 0 10px 0;
 
@@ -241,10 +241,13 @@
 
 .item-heading {
   font-size: 28px;
-  font-weight: 500;
+  font-family: fonts.$heading, sans-serif;
+  font-weight: 700;
   position: relative;
   margin: 0 auto 24px;
   padding: 0 0 10px 0;
+  color: color.$main-colour;
+
 
   &::after {
     content: "";
@@ -285,7 +288,8 @@
   align-items: center;
   color: color.$main-colour;
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: fonts.$heading;
 }
 
 .title__top,
@@ -453,7 +457,8 @@
   text-align: center;
   margin: 0 0 16px 0;
   color: color.$main-colour;
-  font-weight: normal;
+  font-weight: 600;
+  font-family: fonts.$heading;
 }
 
 .prices__item {
@@ -462,6 +467,7 @@
   margin: 0;
   em {
     font-size: 32px;
+    font-weight: 700;
   }
 }
 
@@ -480,8 +486,9 @@
 .voices__heading {
   margin-bottom: 24px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   color: color.$main-colour;
+  font-family: fonts.$heading;
 }
 
 .voices-list {
@@ -505,6 +512,11 @@
 }
 
 @container (min-width: 500px) {
+  .voices {
+    background-color: color.$light-sub;
+    mix-blend-mode: multiply;
+  }
+
   .voices-list {
     display: flex;
     flex-direction: row;
@@ -623,11 +635,12 @@
   }
 
   .skills__primary {
-    background-color: color.$translucent;
+    background-color: color.$light-sub;
   }
 
   .prices {
     background-color: color.$light-sub;
+    mix-blend-mode: multiply;
   }
 
   .footer {

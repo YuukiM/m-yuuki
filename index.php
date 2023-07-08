@@ -283,7 +283,7 @@
 								料金
 							</h4>
 							<p class="prices__item">
-								1時間 <em>5,000</em>円（税込）
+								1時間 <em>5,500</em>円（税込）
 							</p>
 						</div>
 						<div class="notes">

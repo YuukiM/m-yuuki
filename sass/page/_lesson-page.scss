@@ -150,6 +150,7 @@
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(24px, 48px)};
   font-family: fonts.$heading, sans-serif;
+  font-weight: 600;
 }
 
 .lesson-home-catch__button {
@@ -522,6 +523,7 @@
   }
   &:hover {
     background-color: #fafafa;
+    mix-blend-mode: multiply;
   }
 }
 
@@ -703,6 +705,7 @@
   background-color: color.$light-sub;
   box-shadow: 0 2rem 1.5rem -2rem rgba(26,60,77,.4);
   padding: rem.rem(20px) rem.rem(24px);
+  mix-blend-mode: multiply;
 }
 
 .lesson-flow__item-title {

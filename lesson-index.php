@@ -36,17 +36,17 @@
 		?>
 		<section class="lesson-section" id="content">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">Yûki's Web Design Lessonsの特徴</h2>
+				<h2 class="lesson-section__heading">「わかった！」につながる<br>Yûki's Web Design Lessons</h2>
 				<div class="lesson-content">
 					<div class="lesson-introduction">
 						<p>
-							こんにちは！Webデザイン講師の宮崎祐樹です。
+							webデザインはただ技術を覚えるだけではなく、自分の感性や柔軟な発想力も大切です。
 						</p>
 						<p>
-							僕は、webデザインはただ技術を覚えるだけではなく、自分の感性や発想力も大切だと思っています。
+							だから、Yûki's Web Design Lessonsでは、ただ答えを教えるのではなく、自分で考える力を育てることにも力を入れています。
 						</p>
 						<p>
-							だから、Yûki's Web Design Lessonsでは、答えを教えるだけではなく、自分で考える力を育てることにも力を入れています。
+							周辺知識から丁寧に教えることで「わかった！」への道筋をつなげていきます。
 						</p>
 						<p>レッスン形式は2種類。ご要望に応じて、柔軟にご対応いたします。</p>
 					</div>
@@ -91,7 +91,7 @@
 				<div class="lesson-price-box">
 					<div class="price-box">
 						<p class="lesson-price-title">1か月</p>
-						<p class="lesson-price"><strong>5,000</strong>円～</p>
+						<p class="lesson-price"><strong>5,00</strong>円～</p>
 					</div>
 				</div>
 				<div class="lesson-button">
@@ -149,7 +149,7 @@
 				<div class="lesson-flow">
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP1</strong> まずはご相談ください</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP1</strong>まずはご相談ください</dt>
 							<dd class="lesson-flow__item-content">
 								下記のご相談フォームからご相談ください。<br>できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。<br>宮崎から改めてご連絡差し上げます。
 							</dd>
@@ -157,7 +157,7 @@
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP2</strong> 日程決め・決済</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP2</strong>日程決め・決済</dt>
 							<dd class="lesson-flow__item-content">
 								メールでご都合の良い受講の日時を決めます。<br>ストアカというサイトで決済をしていただきます。日程が決定次第、決済用のリンクをお送りします。
 							</dd>
@@ -165,7 +165,7 @@
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP3</strong> レッスン当日</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP3</strong>レッスン当日</dt>
 							<dd class="lesson-flow__item-content">
 								決済後に届く完了メールにZOOMのリンクが記載されています。<br>当日の時間になりましたらリンクからZOOMにお入りください。
 							</dd>

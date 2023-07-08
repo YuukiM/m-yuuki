@@ -149,7 +149,7 @@
 				<div class="lesson-flow">
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP1</strong> まずはご相談ください</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP1</strong>まずはご相談ください</dt>
 							<dd class="lesson-flow__item-content">
 								下記のご相談フォームからご相談ください。<br>できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。<br>宮崎から改めてご連絡差し上げます。
 							</dd>
@@ -157,17 +157,17 @@
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP2</strong> 日程決め・決済</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP2</strong>日程決め・決済</dt>
 							<dd class="lesson-flow__item-content">
-								メールでご都合の良い受講の日時を決めます。<br>ストアカというサイトで決済をしていただきます。日程が決定次第、決済用のリンクをお送りします。
+								メールでご都合の良い受講の日時を決めます。<br>日程が決定次第、決済用のリンクをお送りします。決済はストアカというサイトで行っていただきます。
 							</dd>
 						</dl>
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP3</strong> レッスン当日</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP3</strong>レッスン当日</dt>
 							<dd class="lesson-flow__item-content">
-								決済後に届く完了メールにZOOMのリンクが記載されています。<br>当日の時間になりましたらリンクからZOOMにお入りください。
+								決済後に届く完了メールにZOOMのリンクが記載されています。<br>当日、時間になりましたらリンクからZOOMにお入りください。
 							</dd>
 						</dl>
 					</div>
