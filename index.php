@@ -269,7 +269,7 @@
 					<p class="services-prices__lead">
 						レッスン内容はご希望に応じます。
 						デザイン添削、コーディング添削、質問対応、Wordpress導入のお手伝いなど。<br>
-						※お申し込み方法は近日公開予定です。
+						詳しくはそれぞれのレッスンの詳細をご確認ください。
 					</p>
 					<div class="services-prices__item">
 						<h3 class="services-prices__item-heading item-heading">

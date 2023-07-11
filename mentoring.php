@@ -164,7 +164,7 @@
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">プライベートレッスンと各プランの比較</h2>
 				<div class="lesson-section__comparison-table">
-					<img src="<?php echo get_theme_file_uri('/images/comparison.png'); ?>" loading="lazy" alt="プライベートレッスンと各プランの比較表">
+					<img src="<?php echo get_theme_file_uri('/images/comparison-table.png'); ?>" loading="lazy" alt="プライベートレッスンと各プランの比較表">
 				</div>
 			</div>
 		</section>
