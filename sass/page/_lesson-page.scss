@@ -356,11 +356,21 @@
   width: fit-content;
 }
 
-.lesson-choice {
+.lesson-choice-wrap {
+  margin: #{clamp.sass_clamp(20px, 60px)} auto 0;
+}
+
+.lesson-choice__heading {
+  color: color.$main-colour;
+  text-align: center;
+  font-family: fonts.$heading, sans-serif;
+}
+
+.lesson-choice__buttons {
   display: flex;
   flex-direction: column;
   gap: rem.rem(20px);
-  margin: #{clamp.sass_clamp(20px, 60px)} auto 0;
+  margin: #{clamp.sass_clamp(20px, 40px)} auto 0;
   border-radius: 50px;
   @include responsive.responsive(md) {
     flex-direction: row;

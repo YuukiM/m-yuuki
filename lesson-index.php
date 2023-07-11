@@ -63,14 +63,17 @@
 							</p>
 						</div>
 					</div>
-					<ul class="lesson-choice">
-						<li class="lesson-choice__item">
-							<a href="#private">プライベートレッスン</a>
-						</li>
-						<li class="lesson-choice__item">
-							<a href="#mentoring">メンタリング</a>
-						</li>
-					</ul>
+					<div class="lesson-choice-wrap">
+						<h3 class="lesson-choice__heading">選べる2つのレッスン形式</h3>
+						<ul class="lesson-choice__buttons">
+							<li class="lesson-choice__item">
+								<a href="#private">プライベートレッスン</a>
+							</li>
+							<li class="lesson-choice__item">
+								<a href="#mentoring">メンタリング</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
