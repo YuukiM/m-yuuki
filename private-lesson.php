@@ -70,7 +70,7 @@
 						<p class="lesson-price"><strong>5,500</strong>円</p>
 					</div>
 					<div class="price-box">
-						<p class="lesson-price-title">初回の最初の1時間は特別価格！</p>
+						<p class="lesson-price-title">当サイトからお問合せの方限定！<br>初回の最初の1時間は特別価格！</p>
 						<p class="lesson-price"><strong>4,500</strong>円</p>
 						<p class="lesson-notes">※2時間目以降は通常の5,500円です</p>
 					</div>
