@@ -288,7 +288,22 @@
 .lesson-introduction {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap:  rem.rem(48px);
+  @include responsive.responsive(md) {
+    flex-direction: row-reverse;
+  }
+}
+
+.lesson-introduction__text {
+  display: flex;
+  flex-direction: column;
   gap: rem.rem(24px);
+  flex: 1;
+}
+
+.lesson-introduction__image {
+  max-width: rem.rem(200px);
 }
 
 .lesson-nav-list {
@@ -355,7 +370,10 @@
 .lesson-choice__item {
   width: 50%;
   a {
-    display: block;
+    display: flex;
+    gap: rem.rem(16px);
+    align-items: center;
+    justify-content: center;
     padding: rem.rem(20px);
     background-color: color.$main-colour;
     color: color.$white;
@@ -368,6 +386,21 @@
       text-decoration: none;
       color: color.$main-colour;
       background-color: color.$white;
+      &::after {
+        border-right: 1px solid color.$light-main;
+        border-bottom: 1px solid color.$light-main;
+        transition: 0.2s;
+      }
+    }
+    &::after {
+      display: block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-right: 1px solid color.$white;
+      border-bottom: 1px solid color.$white;
+      rotate: 45deg;
+      margin-top: rem.rem(-8px);
     }
   }
 }

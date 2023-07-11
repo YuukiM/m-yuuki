@@ -39,16 +39,29 @@
 				<h2 class="lesson-section__heading">「わかった！」につながる<br>Yûki's Web Design Lessons</h2>
 				<div class="lesson-content">
 					<div class="lesson-introduction">
-						<p>
-							webデザインはただ技術を覚えるだけではなく、自分の感性や柔軟な発想力も大切です。
-						</p>
-						<p>
-							だから、Yûki's Web Design Lessonsでは、ただ答えを教えるのではなく、自分で考える力を育てることにも力を入れています。
-						</p>
-						<p>
-							周辺知識から丁寧に教えることで「わかった！」への道筋をつなげていきます。
-						</p>
-						<p>レッスン形式は2種類。ご要望に応じて、柔軟にご対応いたします。</p>
+						<div class="lesson-introduction__image">
+							<img src="<?php echo get_theme_file_uri('/images/lessons-top-illust.svg'); ?>" loading="lazy" alt="">
+						</div>
+						<div class="lesson-introduction__text">
+							<p>
+								ブログや動画などで気軽にWebデザインを学べる時代。
+							</p>
+							<p>
+								でも、答えだけ見て作業して「よくわからないけど、なんかできた！」になっていませんか？
+							</p>
+							<p>
+								その時にはそれでよいのかもしれませんが、残念ながらただの付け焼刃となってしまい、本当に実力がついたとは言えません。
+							</p>
+							<p>
+								Yûki's Web Design Lessonsは、すぐに答えを教えるのではなく、自分で考える力を育てることにも力を入れています。
+							</p>
+							<p>
+								周辺知識から丁寧に解説することで「わかった！」への道筋をつなげていきます。
+							</p>
+							<p>
+								また、「納品できるか心配・・・」といったお悩みに真摯に向き合い、寄り添う力になることを心がけています。
+							</p>
+						</div>
 					</div>
 					<ul class="lesson-choice">
 						<li class="lesson-choice__item">
@@ -91,7 +104,7 @@
 				<div class="lesson-price-box">
 					<div class="price-box">
 						<p class="lesson-price-title">1か月</p>
-						<p class="lesson-price"><strong>5,00</strong>円～</p>
+						<p class="lesson-price"><strong>5,000</strong>円～</p>
 					</div>
 				</div>
 				<div class="lesson-button">
@@ -184,13 +197,17 @@
 					</div>
 					<div class="teacher__profile">
 						<p>
-							web業界で15年以上の経験を持ち、webデザイナーとしてもコーダーとしても豊富な経験を持っています。
+							こんにちは！Webデザイン講師の宮崎祐樹です。
+						</p>
+						<p>
+							僕がWeb業界に足を踏み入れてかれこれ15年以上。webデザイナーとしてもコーダーとしても豊富な経験があります。
+							数々の企業に携わり、大規模なプロジェクトに参画したこともありました。
 						</p>
 						<p>
 							2020年からwebデザイン講師として活動しており、ママさんたちを中心に600名以上の方々にwebデザインの楽しさを伝えてきました。受講生からは「わかりやすい」「楽しい」「丁寧」という声をたくさんいただいています。
 						</p>
 						<p>
-							webデザインは無限の可能性があります。私と一緒にwebの世界を探検しましょう！
+							webデザインは無限の可能性があります。僕と一緒にwebの世界を探検しましょう！
 						</p>
 					</div>
 				</div>
