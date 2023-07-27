@@ -4,6 +4,8 @@ function enqueue_scripts(){
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 
+// アイキャッチ画像を有効にする。
+add_theme_support('post-thumbnails');
 
 add_filter( 'body_class', 'add_page_slug_class_name' );
 function add_page_slug_class_name( $classes ) {
