@@ -12,7 +12,15 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
-
+		<?php if(is_home()) {	?>
+			<meta name="description" content="Webデザイン講師の宮崎祐樹です。Webデザインのさまざまなお悩み解決に向けて、全力でサポートします。">
+			<meta property="og:url" content="https://m-yuuki.com/">
+			<meta property="og:type" content="website">
+			<meta property="og:description" content="Webデザイン講師の宮崎祐樹です。Webデザインのさまざまなお悩み解決に向けて、全力でサポートします。">
+			<meta property="og:site_name" content="宮崎祐樹・Webデザイン講師｜「わかった！」につなげるWebデザイン講師">
+			<meta property="og:image" content="<?php echo get_theme_file_uri('/ogp.png'); ?>">
+			<meta name="twitter:card" content="summary">
+		<?php } ?>
     <script>
         (function(d) {
             var config = {
