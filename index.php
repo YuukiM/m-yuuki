@@ -1,3 +1,9 @@
+<?php
+/*
+ * Template Name: トップ
+ *
+ * */
+?>
 <?php get_header(); ?>
 	<main>
 		<section class="section introduction">
