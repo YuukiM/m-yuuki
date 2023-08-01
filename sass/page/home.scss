@@ -527,13 +527,6 @@
   }
 }
 
-/* Footer */
-
-.footer {
-  padding: 20px;
-  text-align: center;
-}
-
 @include responsive.responsive(md) {
 
   .sp-only {
@@ -643,7 +636,7 @@
     mix-blend-mode: multiply;
   }
 
-  .home.page .footer {
+  .footer {
     position: absolute;
     bottom: 0;
     padding: 20px;

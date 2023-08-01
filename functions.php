@@ -1,8 +1,20 @@
 <?php
-function enqueue_scripts(){
-	wp_enqueue_style("style",get_stylesheet_uri());
-}
-add_action('wp_enqueue_scripts', 'enqueue_scripts');
+function enqueue_styles(){
+	wp_enqueue_style('style', get_stylesheet_uri(), array(), filemtime( get_theme_file_path( 'style.css' ) ));
+		if (is_page("home")) {
+			wp_enqueue_style('home-style', get_theme_file_uri('/home.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
+		}
+		if (is_page('profile')) {
+			wp_enqueue_style('page-style', get_theme_file_uri('/page.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
+		}
+		if (is_page('private-lesson-famm')) {
+			wp_enqueue_style('page-style', get_theme_file_uri('/lp.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
+		}
+		if (is_page('lessons') || is_page('private-lesson') || is_page('mentoring') ) {
+			wp_enqueue_style('lesson-style', get_theme_file_uri('/lesson-page.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
+		}
+	}
+add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 // アイキャッチ画像を有効にする。
 add_theme_support('post-thumbnails');
