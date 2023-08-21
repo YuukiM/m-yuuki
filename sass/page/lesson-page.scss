@@ -278,6 +278,16 @@
   }
 }
 
+.lesson-content--chat {
+  max-width: 1024px;
+  margin-top: rem.rem(40px);
+}
+
+.lesson-view-notes {
+  margin-top: rem.rem(16px);
+  font-size: rem.rem(14px);
+}
+
 .lesson-content--mentoring {
   max-width: 1024px;
   @include responsive.responsive(md) {
@@ -354,6 +364,54 @@
 .lesson-button {
   margin: 40px auto 0;
   width: fit-content;
+}
+
+.lesson-video {
+  width: 100%;
+}
+
+.lesson-video__item {
+  width: 100%;
+  height: auto;
+  max-width: rem.rem(768px);
+  margin-inline: auto;
+  aspect-ratio: 16/9;
+}
+
+.lesson-chat-images {
+  display: flex;
+  flex-direction: column;
+  gap: rem.rem(24px);
+  @include responsive.responsive(md) {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+  }
+}
+
+.lesson-chat-image {
+  display: block;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.lesson-chat-image-1 {
+  @include responsive.responsive(md) {
+    grid-row: 1 / 3;
+  }
+}
+
+.lesson-chat-image-2 {
+  @include responsive.responsive(md) {
+    grid-row: 1 / 2;
+  }
+}
+
+.lesson-chat-image-3 {
+  @include responsive.responsive(md) {
+    grid-column: 2 / 3;
+  }
 }
 
 .lesson-choice-wrap {

@@ -99,6 +99,35 @@
 			</div>
 		</section>
 
+		<section class="lesson-section" id="lesson-video">
+			<div class="lesson-section__inner">
+				<h2 class="lesson-section__heading">レッスンの様子</h2>
+				<div class="lesson-content">
+					<p>
+						ビデオ通話でも、チャットでも、お悩みに対して真剣に考え「わかった！できた！」へと導きます。
+					</p>
+					<div class="lesson-video">
+						<iframe class="lesson-video__item" width="560" height="315" src="https://www.youtube.com/embed/LV_w5xx6kQg?modestbranding=1&rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					<div class="lesson-chat-images">
+						<a class="lesson-chat-image lesson-chat-image-1" href="<?php echo get_theme_file_uri('/images/chat1.png'); ?>" target="_blank">
+							<img src="<?php echo get_theme_file_uri('/images/chat1.png'); ?>" loading="lazy" alt="">
+						</a>
+						<a class="lesson-chat-image lesson-chat-image-2" href="<?php echo get_theme_file_uri('/images/chat2.png'); ?>" target="_blank">
+							<img src="<?php echo get_theme_file_uri('/images/chat2.png'); ?>" loading="lazy" alt="">
+						</a>
+						<a class="lesson-chat-image lesson-chat-image-3" href="<?php echo get_theme_file_uri('/images/chat3.png'); ?>" target="_blank">
+							<img src="<?php echo get_theme_file_uri('/images/chat3.png'); ?>" loading="lazy" alt="">
+						</a>
+					</div>
+					<p class="lesson-view-notes">
+						※画像はクリックで拡大できます。<br>
+						動画・チャットご協力：岩野真由美さん（<a href="https://ku-fu-u.com/" target="_blank">https://ku-fu-u.com</a>/）
+					</p>
+				</div>
+			</div>
+		</section>
+
 		<section class="lesson-section lesson-section--price" id="price">
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">メンタリング料金</h2>
