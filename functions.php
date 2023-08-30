@@ -5,13 +5,16 @@ function enqueue_styles(){
 			wp_enqueue_style('home-style', get_theme_file_uri('/home.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
 		}
 		if (is_page('profile')) {
-			wp_enqueue_style('page-style', get_theme_file_uri('/page.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
+			wp_enqueue_style('profile-style', get_theme_file_uri('/page.css'), array(), filemtime( get_theme_file_path( '/sass/page/page.css' ) ));
 		}
 		if (is_page('private-lesson-famm')) {
-			wp_enqueue_style('page-style', get_theme_file_uri('/lp.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
+			wp_enqueue_style('famm-style', get_theme_file_uri('/lp.css'), array(), filemtime( get_theme_file_path( '/sass/page/lp.css' ) ));
+		}
+		if (is_page('reservation')) {
+			wp_enqueue_style('reservation-style', get_theme_file_uri('/reservation.css'), array(), filemtime( get_theme_file_path( '/sass/page/reservation.css' ) ));
 		}
 		if (is_page('lessons') || is_page('private-lesson') || is_page('mentoring') ) {
-			wp_enqueue_style('lesson-style', get_theme_file_uri('/lesson-page.css'), array(), filemtime( get_theme_file_path( '/sass/page/home.css' ) ));
+			wp_enqueue_style('lesson-style', get_theme_file_uri('/lesson-page.css'), array(), filemtime( get_theme_file_path( '/sass/page/lesson-page.css' ) ));
 		}
 	}
 add_action('wp_enqueue_scripts', 'enqueue_styles');

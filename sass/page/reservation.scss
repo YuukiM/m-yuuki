@@ -1,0 +1,152 @@
+@use "../variables/color";
+@use "../variables/fonts";
+@use "../functions/rem";
+@use "../functions/clamp";
+@use "../mixins/responsive";
+
+/* 予約ページ */
+
+.reservation {
+  padding-top: rem.rem(20px);
+}
+
+.reservation__heading {
+  text-align: center;
+  font-family: fonts.$heading, sans-serif;
+  color: color.$main-colour;
+}
+
+/* カレンダーページ */
+#booking-package_calendarPage {
+  .selectPanel, .selectPanel {
+    font-weight: bold !important;
+  }
+  .pointer {
+    &:hover {
+      background-color: color.$light-main !important;
+      color: color.$white !important;
+    }
+  }
+}
+
+/* 時間選択ページ */
+#booking-package_schedulePage {
+  .selectPanelError {
+    background-color: #efefef !important;
+  }
+  .selectPanelActive {
+    background-color: color.$light-main !important;
+    color: color.$white !important;
+  }
+
+  .selectPanel {
+    &:hover {
+      background-color: color.$light-main !important;
+      color: color.$white !important;
+    }
+  }
+  #returnToCalendarButton {
+    padding: rem.rem(10px) !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &::before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-top: 1px solid color.$font-colour;
+      border-left: 1px solid color.$font-colour;
+      rotate: -45deg;
+      margin-top: -2px;
+    }
+  }
+}
+
+/* フォーム */
+#booking-package_inputFormPanel {
+  input[type=text] {
+    padding: 10px !important;
+  }
+
+  label {
+    margin-top: rem.rem(10px) !important;
+  }
+
+  .description {
+    margin-top: rem.rem(10px) !important;
+    margin-left: rem.rem(24px) !important;
+    font-size: rem.rem(14px) !important;
+  }
+
+  #returnToSchedules {
+    padding: rem.rem(10px) !important;
+    width: rem.rem(100px) !important;
+    margin-inline: auto !important;
+    border-radius: 5px !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &::before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-top: 1px solid color.$font-colour;
+      border-left: 1px solid color.$font-colour;
+      rotate: -45deg;
+      margin-top: -2px;
+    }
+  }
+
+  .bottomBarPanel {
+    text-align: center !important;
+  }
+
+  textarea {
+    height: rem.rem(100px);
+  }
+
+  .bookingDate,
+  .bookingTime,
+  .bookingSubtitle {
+    font-size: rem.rem(24px);
+    font-weight: 700;
+  }
+}
+
+.start_booking_package {
+  padding: 1rem !important;
+  max-width: 780px !important;
+  margin-inline: auto !important;
+}
+
+#booking-package {
+  .bookingButton {
+    border: none !important;
+    background-color: color.$accent-colour !important;
+    color: #fff !important;
+    padding: rem.rem(10px) !important;
+    width: rem.rem(200px) !important;
+    margin-inline: auto !important;
+    font-size: rem.rem(24px);
+    border-radius: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    &::before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 12px;
+      border-bottom: 3px solid color.$white;
+      border-left: 3px solid color.$white;
+      rotate: -45deg;
+      margin-top: -5px;
+    }
+  }
+
+}
+
