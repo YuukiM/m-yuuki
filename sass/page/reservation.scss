@@ -7,13 +7,28 @@
 /* 予約ページ */
 
 .reservation {
-  padding-top: rem.rem(20px);
+  padding: 1rem !important;
+  max-width: 780px !important;
+  margin-inline: auto !important;
 }
 
 .reservation__heading {
   text-align: center;
   font-family: fonts.$heading, sans-serif;
   color: color.$main-colour;
+}
+
+.how-to-reserve {
+  ul {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  li {
+    list-style-type: disc !important;
+
+  }
 }
 
 /* カレンダーページ */
@@ -117,9 +132,7 @@
 }
 
 .start_booking_package {
-  padding: 1rem !important;
-  max-width: 780px !important;
-  margin-inline: auto !important;
+
 }
 
 #booking-package {
