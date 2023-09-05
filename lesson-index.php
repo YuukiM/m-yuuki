@@ -15,7 +15,7 @@
 				</p>
 				<div class="lesson-home-catch__button">
 					<a class="button" href="#inquiry">
-						ご相談はこちら
+						まずは無料カウンセリング！
 					</a>
 				</div>
 			</div>
@@ -161,29 +161,29 @@
 
 		<section class="lesson-section" id="flow">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">受講までの流れ</h2>
+				<h2 class="lesson-section__heading">無料カウンセリングまでの流れ</h2>
 				<div class="lesson-flow">
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP1</strong>まずはご相談ください</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP1</strong>まずはご連絡ください</dt>
 							<dd class="lesson-flow__item-content">
-								下記のご相談フォームからご相談ください。<br>できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。<br>宮崎から改めてご連絡差し上げます。
+								下記のご相談フォームからお申し込みください。
 							</dd>
 						</dl>
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP2</strong>日程決め・決済</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP2</strong>日程調整</dt>
 							<dd class="lesson-flow__item-content">
-								メールでご都合の良い受講の日時を決めます。<br>ストアカというサイトで決済をしていただきます。日程が決定次第、決済用のリンクをお送りします。
+								24時間以内に宮崎よりご連絡差し上げます。<br>カウンセリングの日程を決めましょう。
 							</dd>
 						</dl>
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP3</strong>レッスン当日</dt>
+							<dt class="lesson-flow__item-title"><strong>STEP3</strong>無料カウンセリング当日</dt>
 							<dd class="lesson-flow__item-content">
-								決済後に届く完了メールにZOOMのリンクが記載されています。<br>当日の時間になりましたらリンクからZOOMにお入りください。
+								オンライン会議ツールZOOMを使用します。所要時間は30分ほどです。
 							</dd>
 						</dl>
 					</div>
@@ -222,7 +222,7 @@
 
 		<section class="lesson-section" id="inquiry">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading" id="inquiry">ご相談はこちら</h2>
+				<h2 class="lesson-section__heading" id="inquiry">無料カウンセリングお申し込み</h2>
 
 				<div class="form-notes">
 					<p>下記フォームにご記入の上「送信する」ボタンを押してください。</p>
