@@ -13,6 +13,20 @@
 				<?php the_title(); ?>
 			</h1>
 		</section>
+
+		<section class="lesson-section lesson-section--nav">
+			<nav class="lesson-nav">
+				<ul class="lesson-nav-list">
+					<li class="lesson-nav-list__item"><a href="#content">内容</a></li>
+					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
+					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
+					<li class="lesson-nav-list__item"><a href="#voices">受講生の声</a></li>
+					<li class="lesson-nav-list__item"><a href="#flow">受講までの流れ</a></li>
+					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
+				</ul>
+			</nav>
+		</section>
+
 		<section class="lesson-section">
 			<div class="lesson-section__inner">
 				<p class="lesson-catch">必要な時に必要な分だけ、<br>プライベートで！</p>
@@ -28,19 +42,6 @@
 					</a>
 				</div>
 			</div>
-		</section>
-
-		<section class="lesson-section">
-			<nav class="lesson-nav">
-				<ul class="lesson-nav-list">
-					<li class="lesson-nav-list__item"><a href="#content">内容</a></li>
-					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
-					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
-					<li class="lesson-nav-list__item"><a href="#voices">受講生の声</a></li>
-					<li class="lesson-nav-list__item"><a href="#flow">受講までの流れ</a></li>
-					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
-				</ul>
-			</nav>
 		</section>
 
 		<section class="lesson-section" id="content">

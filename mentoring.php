@@ -13,6 +13,19 @@
 				<?php the_title(); ?>
 			</h1>
 		</section>
+		<section class="lesson-section lesson-section--nav">
+			<nav class="lesson-nav">
+				<ul class="lesson-nav-list">
+					<li class="lesson-nav-list__item"><a href="#worries">内容</a></li>
+					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
+					<li class="lesson-nav-list__item"><a href="#comparison">プラン比較</a></li>
+					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
+					<li class="lesson-nav-list__item"><a href="#voices">契約者の声</a></li>
+					<li class="lesson-nav-list__item"><a href="#flow">受講までの流れ</a></li>
+					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
+				</ul>
+			</nav>
+		</section>
 		<section class="lesson-section">
 			<div class="lesson-section__inner">
 				<p class="lesson-catch">いつでも<br class="sp-only">教えてくれる人がいる<br>絶対的な安心感</p>
@@ -30,19 +43,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="lesson-section">
-			<nav class="lesson-nav">
-				<ul class="lesson-nav-list">
-					<li class="lesson-nav-list__item"><a href="#worries">内容</a></li>
-					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
-					<li class="lesson-nav-list__item"><a href="#comparison">プラン比較</a></li>
-					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
-					<li class="lesson-nav-list__item"><a href="#voices">契約者の声</a></li>
-					<li class="lesson-nav-list__item"><a href="#flow">受講までの流れ</a></li>
-					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
-				</ul>
-			</nav>
-		</section>
+
 		<section class="lesson-section" id="worries">
 			<div class="lesson-section__inner">
 				<h2 class="lesson-section__heading">こんなお悩みありませんか？</h2>

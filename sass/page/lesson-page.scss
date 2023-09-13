@@ -184,6 +184,10 @@
   }
 }
 
+.lesson-section--nav {
+  padding: #{clamp.sass_clamp(10px, 20px)} rem.rem(10px);
+}
+
 .lesson-section--solved {
   position: relative;
   padding-top:  100px;
