@@ -658,6 +658,10 @@
     content: '';
     transition: transform .5s;
   }
+  //Safari用
+  &::-webkit-details-marker {
+    display: none;
+  }
 }
 
 .lesson-faq__answer {
