@@ -13,7 +13,7 @@ function enqueue_styles(){
 		if (is_page('reservation')) {
 			wp_enqueue_style('reservation-style', get_theme_file_uri('/reservation.css'), array(), filemtime( get_theme_file_path( '/sass/page/reservation.css' ) ));
 		}
-		if (is_page('lessons') || is_page('private-lesson') || is_page('mentoring') ) {
+		if (is_page('lessons') || is_page('private-lesson') || is_page('mentoring') || is_page('brush-up') ) {
 			wp_enqueue_style('lesson-style', get_theme_file_uri('/lesson-page.css'), array(), filemtime( get_theme_file_path( '/sass/page/lesson-page.css' ) ));
 		}
 	}

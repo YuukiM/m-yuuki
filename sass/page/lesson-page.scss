@@ -555,6 +555,16 @@
   }
 }
 
+.lesson-box--unavailable {
+  color: color.$gray;
+  .lesson-price-title {
+    color: color.$gray;
+  }
+  .lesson-price {
+    color: color.$gray;
+  }
+}
+
 .price-box {
   padding: 20px;
   background-color: color.$white;
