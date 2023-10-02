@@ -29,9 +29,9 @@
 
 		<section class="lesson-section">
 			<div class="lesson-section__inner">
-				<p class="lesson-catch">みなさんのデザインが<br>コーディング課題になる！</p>
+				<p class="lesson-catch">みなさんのデザインが<br>コーディング課題に！</p>
 				<p class="lesson-lead">
-					コーディング課題用のデザインを募集します。ハイクオリティまで近づけます。
+					コーディング課題用のデザインカンプを募集します。
 				</p>
 				<div class="lesson-button">
 					<a class="button" href="#inquiry">
@@ -43,7 +43,7 @@
 
 		<section class="lesson-section" id="content">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">どんな内容？</h2>
+				<h2 class="lesson-section__heading">サービスの概要</h2>
 				<div class="lesson-content">
 					<div class="lesson-content__block">
 						<p>皆さんが作ったWebサイトのデザインカンプを、宮崎が徹底的に添削・ブラッシュアップしハイクオリティに仕上げるお手伝いをします。</p>
@@ -64,12 +64,12 @@
 					<li class="feature-list__item">
 						<div class="feature-list__icon"><i class="fas fa-question-circle"></i></div>
 						<h3 class="feature-list__heading">実務さながらに進行！</h3>
-						<p class="feature-list__text">発注から納品まで、実務同様のZOOMでの打ち合わせと添削をしながら進めていきます。</p>
+						<p class="feature-list__text">発注から納品まで、実際のWeb制作同様のプロセスを取ります。ZOOMでの打ち合わせと添削をしながら進めていきます。</p>
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__icon"><i class="fa-solid fa-face-smile"></i></div>
 						<h3 class="feature-list__heading">ココナラの実績がつく！</h3>
-						<p class="feature-list__text">実案件と同じようにココナラで発注をいたします。納品完了後にはしっかりと評価をつけます。</p>
+						<p class="feature-list__text">実案件と同じようにココナラで発注をいたします。納品完了後にはしっかりと評価をいたします。</p>
 					</li>
 					<li class="feature-list__item">
 						<div class="feature-list__icon"><i class="fas fa-info-circle"></i></div>
@@ -91,8 +91,8 @@
 							<h3 class="lesson-detail__heading">プランの詳細</h3>
 							<div class="lesson-detail__content">
 								<ul class="lesson-detail__list">
-									<li class="lesson-detail__list-item">ビデオ通話 1時間</li>
-									<li class="lesson-detail__list-item">チャットでの無制限質問</li>
+									<li class="lesson-detail__list-item">基本期間：<strong>1カ月間</strong></li>
+									<li class="lesson-detail__list-item">デザインカンプのみを制作するプランです。</li>
 								</ul>
 							</div>
 						</div>
@@ -101,12 +101,11 @@
 						<p class="lesson-price-title">コンプリートプラン</p>
 						<p class="lesson-price"><strong>7,000</strong>円</p>
 						<div class="lesson-detail">
-							<h3 class="lesson-detail__heading">プランに含まれるもの</h3>
+							<h3 class="lesson-detail__heading">プランの詳細</h3>
 							<div class="lesson-detail__content">
 								<ul class="lesson-detail__list">
-									<li class="lesson-detail__list-item">ビデオ通話 2時間30分</li>
-									<li class="lesson-detail__list-item">チャットでの無制限質問</li>
-									<li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
+									<li class="lesson-detail__list-item">基本期間：<strong>2カ月間</strong></li>
+									<li class="lesson-detail__list-item">デザインからコーディングまで行っていただきます。</li>
 								</ul>
 							</div>
 						</div>
@@ -115,13 +114,11 @@
 						<p class="lesson-price-title">コーディングプラン</p>
 						<p class="lesson-price"><strong>4,000</strong>円</p>
 						<div class="lesson-detail">
-							<h3 class="lesson-detail__heading">プランに含まれるもの</h3>
+							<h3 class="lesson-detail__heading">プランの詳細</h3>
 							<div class="lesson-detail__content">
 								<ul class="lesson-detail__list">
-									<li class="lesson-detail__list-item">ビデオ通話3時間</li>
-									<li class="lesson-detail__list-item">チャットでの無制限質問</li>
-									<li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
-									<li class="lesson-detail__list-item">チャットでの作品の添削</li>
+									<li class="lesson-detail__list-item">基本期間：<strong>1カ月間</strong></li>
+									<li class="lesson-detail__list-item">デザインをもとにコーディングするプランです。現在は受付停止中です</li>
 								</ul>
 							</div>
 						</div>
@@ -132,32 +129,56 @@
 
 		<section class="lesson-section" id="flow">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">受講までの流れ</h2>
+				<h2 class="lesson-section__heading">受講から納品の流れ</h2>
 				<div class="lesson-flow">
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP1</strong>まずはお申し込み</dt>
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>1</strong></span>まずはお申し込み</dt>
 							<dd class="lesson-flow__item-content">
-								下記のご相談フォームかFacebookメッセンジャーなどでご相談ください。
-								ココナラのコーディングプランページと料金を教えていただきます。
+								下記のお申し込みフォームからお申し込みください。お申し込みフォームにはココナラでのデザインページURLと金額をご記入ください。
+								金額は、コーディングアカウント用に設定されている額で結構です。
 							</dd>
 						</dl>
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP2</strong>ココナラを通じて宮崎より制作依頼</dt>
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>2</strong></span>ココナラで制作依頼</dt>
 							<dd class="lesson-flow__item-content">
-								メールやメッセンジャーでご都合の良い受講の日時を決めます。
-								ストアカというサイトで決済をしていただきますので、日程が決定次第、決済用のリンクをお送りします。
+								ココナラを通じて、宮崎より実際に制作のご依頼をいたします。
 							</dd>
 						</dl>
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP3</strong>ストアカでレッスン受講</dt>
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>3</strong></span>ストアカでレッスン受講</dt>
 							<dd class="lesson-flow__item-content">
-								決済後に届く完了メールにZOOMのリンクが記載されています。
-								当日の時間になりましたらリンクからZOOMにお入りください。
+								ストアカでレッスンの受講をお申し込みください。ご案内はメールにていたします。<br>
+								レッスンの受講額はみなさんのココナラでの金額＋プランの額になります。<br>
+								例：ココナラでデザインを10,000円で受けられていて、デザインプラン4,000円をお申し込みの場合 → 14,000円のお支払い。
+							</dd>
+						</dl>
+					</div>
+					<div class="lesson-flow__item-wrap">
+						<dl class="lesson-flow__item">
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>4</strong></span>キックオフミーティング</dt>
+							<dd class="lesson-flow__item-content">
+								最初のZOOMミーティングを行います。依頼内容の確認、方向性のすり合わせなどを行います。以降、1週間につき1時間の添削ミーティングを行っていきます。
+							</dd>
+						</dl>
+					</div>
+					<div class="lesson-flow__item-wrap">
+						<dl class="lesson-flow__item">
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>6</strong></span>作品の提出</dt>
+							<dd class="lesson-flow__item-content">
+								作品が仕上がりましたらご提出いただき、問題なければ納品完了となります。
+							</dd>
+						</dl>
+					</div>
+					<div class="lesson-flow__item-wrap">
+						<dl class="lesson-flow__item">
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>7</strong></span>ココナラでのお支払い</dt>
+							<dd class="lesson-flow__item-content">
+								宮崎より、ココナラでお支払いをします。
 							</dd>
 						</dl>
 					</div>
@@ -165,46 +186,131 @@
 			</div>
 		</section>
 
-
-
-		<section class="lesson-section" id="flow">
+		<section class="lesson-section">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading">完成までのステップ</h2>
-				<div class="lesson-flow">
-					<div class="lesson-flow__item-wrap">
-						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP1</strong>キックオフZOOMミーティング</dt>
-							<dd class="lesson-flow__item-content">
-								下記のご相談フォームかFacebookメッセンジャーなどでご相談ください。
-								ココナラのコーディングプランページと料金を教えていただきます。
-							</dd>
-						</dl>
-					</div>
-					<div class="lesson-flow__item-wrap">
-						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP2</strong>ワイヤーと計画書提出</dt>
-							<dd class="lesson-flow__item-content">
-								メールやメッセンジャーでご都合の良い受講の日時を決めます。
-								ストアカというサイトで決済をしていただきますので、日程が決定次第、決済用のリンクをお送りします。
-							</dd>
-						</dl>
-					</div>
-					<div class="lesson-flow__item-wrap">
-						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP3</strong>デザイン提出</dt>
-							<dd class="lesson-flow__item-content">
-								決済後に届く完了メールにZOOMのリンクが記載されています。
-								当日の時間になりましたらリンクからZOOMにお入りください。
-							</dd>
-						</dl>
-					</div>
+				<h2 class="lesson-section__heading">よくある質問</h2>
+				<div class="lesson-faq">
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							途中までしかできなかったらどうなりますか
+						</summary>
+						<p class="lesson-faq__answer">
+							メンターは簡単に言えば「学習の相談に乗ってくれる人」です。メンタリングとはそのメンターと学習者のやり取りを通じて、学習者を育成する制度のことをいいます。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							メンタリングに使用するツールは何ですか？
+						</summary>
+						<p class="lesson-faq__answer">
+							チャットはSlack、オンライン通話はZOOMを使います。それぞれアプリをご用意ください。使い方がわからなければご相談に乗ります。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							マンツーマンですか？
+						</summary>
+						<p class="lesson-faq__answer">
+							はい、もちろんマンツーマンです！
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							各プランのビデオ通話は規定時間を通しで行いますか？
+						</summary>
+						<p class="lesson-faq__answer">
+							ビデオ通話の時間は分割できます。
+							例えばスタンダードプランの2時間30分のビデオ通話は、1時間＋1時間＋30分のように複数に分けられます。現在ご契約の方は皆さん分割を選択していますが、もちろん月に一回のみ、通しで行ってもかまいません。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							ビデオ通話の時間を使いきれなかったときは次月に繰り越しできますか？
+						</summary>
+						<p class="lesson-faq__answer">
+							欠席などの受講生理由によってビデオ通話の時間が余ってしまった際には、次月に繰り越しはできません。できるだけ使いきるようにしましょう。講師理由の際には繰り越しいたします。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							ビデオ通話の開催日時はどのように決めますか？
+						</summary>
+						<p class="lesson-faq__answer">
+							ビデオ通話の開催日時は適宜チャット上で講師と受講生の予定をすり合わせて行います。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							契約はどのように行いますか？
+						</summary>
+						<p class="lesson-faq__answer">
+							メンタリングサービスは「ストリートアカデミー（以下、ストアカ）」というサービスを使用してしていますので、ご契約はストアカのウェブサイト上で行っていただきます。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							契約期間の1カ月とは、月初から月末までですか？
+						</summary>
+						<p class="lesson-faq__answer">
+							いいえ。契約期間の1カ月はご契約日から翌月の前日までです。例えば、7月10日にご契約の場合、期間は7月10日から8月9日までです。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							契約は自動更新ですか？
+						</summary>
+						<p class="lesson-faq__answer">
+							はい。特にお申し出や解約操作がない限り、契約は自動更新となります。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							いつでも解約できますか？
+						</summary>
+						<p class="lesson-faq__answer">
+							はい。いつでも解約が可能です。
+							ただし、契約期間の途中で解約される場合にはその期間の最終日までは契約有効となります。日割り返金などは行いません。
+						</p>
+					</details>
+					<details class="lesson-faq__group">
+						<summary class="lesson-faq__question">
+							チャットでの質問の回答はどれくらいで返ってきますか？
+						</summary>
+						<p class="lesson-faq__answer">
+							講師の稼働状況に寄りますが、遅くても24時間以内にはご返信するようにしています。
+						</p>
+						<details class="lesson-faq__group">
+							<summary class="lesson-faq__question">
+								スタンダードプランとアドバンスドプランの違いの「添削」って何ですか？
+							</summary>
+							<p class="lesson-faq__answer">
+								「添削」とは、質問を伴わないデザインやコードのチェックのことです。例えば「デザインを作ったので見て欲しい」「コーディングのおかしな点を指摘して欲しい」
+								などです。スタンダードプランではビデオ通話でのみ添削可能です。アドバンスドプランはチャット上でも添削可能です。
+							</p>
+						</details>
+						<details class="lesson-faq__group">
+							<summary class="lesson-faq__question">
+								1から学習できるカリキュラムはありますか？
+							</summary>
+							<p class="lesson-faq__answer">
+								現在、1から学習できるオリジナルのカリキュラムはご用意がありませんが、ご相談いただければ、最適な学習方法などを一緒に考えて、サポートいたします。
+							</p>
+						</details>
+						<details class="lesson-faq__group">
+							<summary class="lesson-faq__question">
+								必要な時に1カ月間だけ契約・・・のような使い方もできますか？
+							</summary>
+							<p class="lesson-faq__answer">
+								もちろん可能です！ご相談ください。
+							</p>
+						</details>
 				</div>
 			</div>
 		</section>
 
 		<section class="lesson-section" id="inquiry">
 			<div class="lesson-section__inner">
-				<h2 class="lesson-section__heading" id="inquiry">ご相談はこちら</h2>
+				<h2 class="lesson-section__heading" id="inquiry">お申し込み</h2>
 
 				<div class="form-notes">
 					<p>下記フォームにご記入の上「送信する」ボタンを押してください。</p>

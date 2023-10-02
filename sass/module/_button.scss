@@ -78,5 +78,52 @@
       background-color: color.$accent-colour;
     }
   }
+}
 
+.header-button {
+  display: none;
+  @include responsive.responsive(lg) {
+    position: relative;
+    display: block;
+    width: fit-content;
+    z-index: 2;
+    background-color: color.$accent-colour;
+    border: 1px solid color.$accent-colour;
+    color: color.$white;
+    border-radius: 5px;
+    transition: all .3s;
+    text-decoration: none;
+    font-size: rem.rem(16px);
+    padding: rem.rem(10px);
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background-color: color.$accent-colour;
+      transition: all .3s;
+    }
+    &::before {
+      right: 0;
+    }
+    &::after {
+      left: 0;
+    }
+    &:hover {
+      background-color: #fff;
+      border: 1px solid color.$accent-colour;
+      color: color.$accent-colour;
+      text-decoration: none;
+
+      &::before,
+      &::after {
+        width: 0;
+        background-color: color.$accent-colour;
+      }
+    }
+  }
 }

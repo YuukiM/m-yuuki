@@ -10,20 +10,20 @@
   max-width: 700px;
 }
 
-.wpforms-submit {
+.wpforms-submit.submit-button {
   position: relative;
   display: block !important;
   font-family: fonts.$occidental, fonts.$japanese, sans-serif !important;
-  background-color: color.$accent-colour !important;
+  background: color.$accent-colour !important;
   color: color.$white !important;
   border: 1px solid color.$accent-colour !important;
   border-radius: 5px !important;
   margin: auto !important;
   width: 190px !important;
-  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
   transition: 0.2s;
   &:hover {
-    background-color: color.$white !important;
+    background: color.$white !important;
     color: color.$accent-colour !important;
   }
 }

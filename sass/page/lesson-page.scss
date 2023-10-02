@@ -4,11 +4,40 @@
 @use "../functions/clamp";
 @use "../mixins/responsive";
 
+main {
+  background: color.$light-sub;
+  background-image:
+          radial-gradient(290px 300px , transparentize(color.$light-main, 0.7) 20%, transparent 20%),
+          radial-gradient(800px 780px , transparentize(color.$light-main, 0.6) 20%, transparent 20%),
+          radial-gradient(1000px 990px , transparentize(color.$light-main, 0.5) 20%, transparent 20%),
+          radial-gradient(400px 380px , transparentize(color.$light-main, 0.9) 20%, transparent 20%),
+          radial-gradient(750px 750px , transparentize(color.$light-main, 0.6) 20%, transparent 20%),
+          radial-gradient(100px 100px , transparentize(color.$light-main, 0.8) 20%, transparent 20%);
+  background-size:
+          1230px 1280px,
+          810px 910px,
+          1470px 990px,
+          1200px 1700px,
+          1520px 1200px,
+          1100px 1300px;
+  background-position:
+          calc(50% + 160px) -550px,
+          calc(50% + 120px) 100px,
+          calc(50% - 160px) 510px,
+          calc(50% + 560px) -550px,
+          calc(50% + 4960px) -250px,
+          calc(50% - 150px) -150px;
+  @include responsive.responsive(md) {
+    background-attachment: fixed;
+  }
+}
+
 .lesson-header {
   @include responsive.responsive(md) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: rem.rem(5px);
   }
 
   .menu-item {
@@ -19,7 +48,7 @@
       color: color.$main-colour;
       @include responsive.responsive(lg) {
         background-color: transparent;
-        padding: rem.rem(10px);
+        padding: rem.rem(10px) rem.rem(10px);
       }
       &:hover {
         text-decoration: none;
@@ -63,10 +92,12 @@
     display: none;
     @include responsive.responsive(lg) {
       display: initial;
+      margin-left: auto;
     }
     .menu {
       display: flex;
       flex-direction: column;
+      font-size: #{clamp.sass_clamp(14px, 16px)};
       @include responsive.responsive(lg) {
         flex-direction: row;
       }
@@ -91,9 +122,10 @@
 
 .lesson-header__inner {
   display: flex;
+  flex: 1;
   flex-direction: column;
   padding: rem.rem(10px);
-  @include responsive.responsive(xl) {
+  @include responsive.responsive(xxl) {
     flex-direction: row;
     align-items: center;
     gap: rem.rem(20px);
@@ -118,7 +150,7 @@
 .lesson-hero-section {
   position: relative;
   padding: #{clamp.sass_clamp(40px, 80px)};
-  background: linear-gradient(135deg, #bbe5ff 0%, #f0faff);
+  background: transparent;
 }
 
 .lesson-hero-section--top {
@@ -138,6 +170,7 @@
   background-color: transparentize(color.$white, 0.5);
   width: fit-content;
   padding: rem.rem(24px);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 10px;
   box-shadow: 0 2rem 1.5rem -2rem rgba(26,60,77,.4);
@@ -172,7 +205,9 @@
   }
 
   &.lesson-section--price {
-    background: linear-gradient(135deg, #bbe5ff 0%, #f0faff);
+    background: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
   &.lesson-section--private {
@@ -511,6 +546,7 @@
   background-color: color.$white;
   max-width: 650px;
   margin-inline: auto;
+  border: 1px solid color.$gray;
   @include responsive.responsive(md) {
     min-height: 370px;
   }
@@ -837,9 +873,13 @@
   padding: 0 0 5px;
   font-size: rem.rem(20px);
   font-family: fonts.$heading, sans-serif;
+}
+
+.lesson-flow__item-step {
+  font-family: fonts.$occidental, sans-serif;
   strong {
     font-size: rem.rem(28px);
-    font-family: fonts.$occidental, sans-serif;
+    color: color.$important-colour;
   }
 }
 
