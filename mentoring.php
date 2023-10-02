@@ -20,7 +20,6 @@
 					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
 					<li class="lesson-nav-list__item"><a href="#comparison">プラン比較</a></li>
 					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
-					<li class="lesson-nav-list__item"><a href="#voices">契約者の声</a></li>
 					<li class="lesson-nav-list__item"><a href="#flow">受講までの流れ</a></li>
 					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
 				</ul>
@@ -265,7 +264,7 @@
 				<div class="lesson-flow">
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP1</strong>まずはご相談ください</dt>
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>1</strong></span>まずはご相談ください</dt>
 							<dd class="lesson-flow__item-content">
 								下記のご相談フォーム・もしくは<a href="https://www.street-academy.com/steachers/66562#subscription_service" target="_blank">ストアカ</a>からご相談ください。
 								できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。
@@ -275,7 +274,7 @@
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP2</strong>無料カウンセリングの実施</dt>
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>2</strong></span>無料カウンセリングの実施</dt>
 							<dd class="lesson-flow__item-content">
 								30分ほどのZOOMミーティングで、無料カウンセリングを実施します。現在のお悩みやご希望などを伺いながらプラン選択のお手伝いをします。ご納得できましたら、次のステップに進んでいただきます。
 							</dd>
@@ -283,7 +282,7 @@
 					</div>
 					<div class="lesson-flow__item-wrap">
 						<dl class="lesson-flow__item">
-							<dt class="lesson-flow__item-title"><strong>STEP3</strong>ご契約・サービス開始</dt>
+							<dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>3</strong></span>ご契約・サービス開始</dt>
 							<dd class="lesson-flow__item-content">
 								ストアカのサイト上でご契約いただきます。ご契約されましたらチャットにご招待します（場合によってはチャット用のメールアドレスを伺います）。初回ZOOMの日程を決め、いよいよサービス開始です。
 							</dd>
@@ -357,7 +356,7 @@
 							ビデオ通話の開催日時はどのように決めますか？
 						</summary>
 						<p class="lesson-faq__answer">
-							ビデオ通話の開催日時は適宜チャット上で講師と受講生の予定をすり合わせて行います。
+							ビデオ通話の開催日時は専用の予約サイトから行えます。
 						</p>
 					</details>
 					<details class="lesson-faq__group">
