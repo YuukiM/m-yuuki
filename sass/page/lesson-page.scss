@@ -199,7 +199,7 @@ main {
 
 .lesson-section {
   padding: #{clamp.sass_clamp(40px, 80px)} rem.rem(20px);
-  background-color: #fafafa;
+  background-color: color.$stripe-bg;
   &:nth-child(2n) {
     background-color: color.$white;
   }
@@ -857,10 +857,9 @@ main {
 .lesson-flow__item {
   border-radius: 10px;
   border: 1px solid color.$sub-colour;
-  background-color: color.$light-sub;
+  background-color: color.$white;
   box-shadow: 0 2rem 1.5rem -2rem rgba(26,60,77,.4);
   padding: rem.rem(20px) rem.rem(24px);
-  mix-blend-mode: multiply;
 }
 
 .lesson-flow__item-title {
