@@ -60,6 +60,9 @@
 		) );
 		?>
 	</div>
+	<a class="header-button" href="#inquiry">
+		無料カウンセリング！
+	</a>
 	<input type="checkbox" class="drawer" id="drawer">
 	<label for="drawer" class="drawer-open">
 		<span></span>
