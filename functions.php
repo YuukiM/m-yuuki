@@ -39,6 +39,21 @@ add_filter( 'auto_plugin_update_send_email', '__return_false' );
 // 「テーマ」の自動更新メール通知を停止する
 add_filter( 'auto_theme_update_send_email', '__return_false' );
 
+// 「保護中」表示を消す
+add_filter('protected_title_format', 'remove_protected');
+function remove_protected($title) {
+	return '%s';
+}
+
+
+function my_password_form() {
+	return '<p>このページをご覧になるには、パスワードを入力して「送信する」を押してください。</p>
+<form class="post_password" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
+パスワード <input name="post_password" type="password" size="24" /> <input type="submit" name="Submit" value="' . esc_attr__("送信する") . '" />
+</form>';
+}
+add_filter('the_password_form', 'my_password_form');
+
 function register_my_menus() {
 	register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
 		//'「メニューの位置」の識別子' => 'メニューの説明の文字列',

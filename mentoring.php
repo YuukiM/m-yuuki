@@ -20,6 +20,7 @@
 					<li class="lesson-nav-list__item"><a href="#price">料金</a></li>
 					<li class="lesson-nav-list__item"><a href="#comparison">プラン比較</a></li>
 					<li class="lesson-nav-list__item"><a href="#features">特徴</a></li>
+					<li class="lesson-nav-list__item"><a href="#voices">受講生の声</a></li>
 					<li class="lesson-nav-list__item"><a href="#flow">受講までの流れ</a></li>
 					<li class="lesson-nav-list__item"><a href="#inquiry">お問合せ</a></li>
 				</ul>
@@ -399,6 +400,7 @@
 						<p class="lesson-faq__answer">
 							講師の稼働状況に寄りますが、遅くても24時間以内にはご返信するようにしています。
 						</p>
+					</details>
 					<details class="lesson-faq__group">
 						<summary class="lesson-faq__question">
 							スタンダードプランとアドバンスドプランの違いの「添削」って何ですか？

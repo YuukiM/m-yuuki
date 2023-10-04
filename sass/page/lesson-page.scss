@@ -939,6 +939,30 @@ main {
   height: rem.rem(180px);
 }
 
+/* Brush up */
+
+.brush-up-sub-heading {
+  align-self: flex-start;
+  color: color.$main-colour;
+  padding-top: rem.rem(24px);
+  font-size: #{clamp.sass_clamp(18px, 24px)};
+  font-family: fonts.$heading, sans-serif;
+}
+
+.brush-up-icon {
+  color: color.$accent-colour;
+}
+
+.brush-up-notices {
+  display: flex;
+  flex-direction: column;
+  gap: rem.rem(24px);
+  li {
+    list-style-type: disc;
+    margin-left: rem.rem(24px);
+  }
+}
+
 .page .footer {
   width: 100%;
   left: 0;
