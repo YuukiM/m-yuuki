@@ -146,3 +146,6 @@
   z-index: 100;
   background-color: color.$white;
 }
+.wp-block-embed iframe {
+  aspect-ratio: 16/9;
+}

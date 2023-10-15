@@ -6,7 +6,7 @@
         <?php the_title(); ?>
     </h1>
     <p class="date">
-        <?php the_date();?>
+        <?php echo date("Y年m月d日")."現在"; ?>
     </p>
 
     <?php the_content(); ?>
