@@ -219,7 +219,7 @@
   position: relative;
   width: fit-content;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 500;
   margin-inline: auto;
   padding: 0 0 10px 0;
 
@@ -242,7 +242,7 @@
 .item-heading {
   font-size: 28px;
   font-family: fonts.$heading, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
   margin: 0 auto 24px;
   padding: 0 0 10px 0;
@@ -288,8 +288,8 @@
   align-items: center;
   color: color.$main-colour;
   margin: 0;
-  font-weight: 700;
-  font-family: fonts.$heading;
+  font-weight: 500;
+  font-family: fonts.$heading, sans-serif;
 }
 
 .title__top,
@@ -486,7 +486,7 @@
 .voices__heading {
   margin-bottom: 24px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   color: color.$main-colour;
   font-family: fonts.$heading;
 }

@@ -1,4 +1,23 @@
 /* Typesquare-font */
 $occidental: 'Montserrat', 'Arial';
 $japanese: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'hiragino-kaku-gothic-pron', 'Yu Gothic', 'Meiryo';
-$heading: 'fot-tsukuardgothic-std';
+$heading: 'MPlusR', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'hiragino-kaku-gothic-pron', 'Yu Gothic', 'Meiryo';
+
+@font-face {
+  src: url("fonts/MPLUSRounded1c-Medium.woff2") format("woff2"), url("fonts/MPLUSRounded1c-Medium.woff") format("woff"), url("fonts/MPLUSRounded1c-Medium.ttf") format("ttf");
+  font-family: "MPlusR";
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("fonts/Montserrat-VariableFont_wght.woff2") format("woff2"), url("fonts/Montserrat-VariableFont_wght.woff") format("woff"), url("fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("fonts/Sofia-Regular.woff2") format("woff2"), url("fonts/Sofia-Regular.woff") format("woff"), url("fonts/Sofia-Regular.ttf") format("ttf");
+  font-family: "Sofia";
+  font-style: normal;
+  font-display: swap;
+}

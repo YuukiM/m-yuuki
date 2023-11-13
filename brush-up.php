@@ -279,10 +279,10 @@
 					</details>
 					<details class="lesson-faq__group">
 						<summary class="lesson-faq__question">
-							ミーティング・添削のやり取りに使用するツールは何ですか？
+							添削レッスンに使用するツールは何ですか？
 						</summary>
 						<p class="lesson-faq__answer">
-							チャットはSlack、オンライン通話はZOOMを使います。それぞれアプリをご用意ください。
+							チャットはココナラ内のチャットシステム、添削レッスンはZOOMを使います。それぞれアプリをご用意ください。
 						</p>
 					</details>
 					<details class="lesson-faq__group">

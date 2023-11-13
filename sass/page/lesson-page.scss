@@ -134,7 +134,7 @@ main {
 
 .lesson-header__heading {
   font-family: 'Sofia', cursive;
-  font-weight: 700;
+  font-weight: 500;
   font-size: rem.rem(24px);
   color: color.$main-colour;
   &:hover {
@@ -183,7 +183,7 @@ main {
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(24px, 48px)};
   font-family: fonts.$heading, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .lesson-home-catch__button {
@@ -195,6 +195,7 @@ main {
   color: color.$main-colour;
   font-size: #{clamp.sass_clamp(24px, 48px)};
   font-family: fonts.$heading, sans-serif;
+  font-weight: 500;
 }
 
 .lesson-section {
@@ -242,7 +243,7 @@ main {
 .lesson-section__heading {
   font-size: #{clamp.sass_clamp(24px, 40px)};
   color: color.$main-colour;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -296,7 +297,7 @@ main {
   font-size: #{clamp.sass_clamp(24px, 40px)};
   font-family: fonts.$heading, sans-serif;
   color: color.$main-colour;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -800,6 +801,7 @@ main {
 .feature-list__heading {
   font-size: rem.rem(20px);
   font-family: fonts.$heading, sans-serif;
+  font-weight: 500;
   color: color.$main-colour;
   text-align: center;
   margin: rem.rem(24px) auto 0;
@@ -872,6 +874,7 @@ main {
   padding: 0 0 5px;
   font-size: rem.rem(20px);
   font-family: fonts.$heading, sans-serif;
+  font-weight: 500;
 }
 
 .lesson-flow__item-step {
