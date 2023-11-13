@@ -4,6 +4,12 @@
 @use "../functions/clamp";
 @use "../mixins/responsive";
 
+html {
+  @include responsive.responsive(md) {
+    scroll-padding-top: 90px;
+  }
+}
+
 main {
   background: color.$light-sub;
   background-image:
@@ -28,6 +34,7 @@ main {
           calc(50% + 4960px) -250px,
           calc(50% - 150px) -150px;
   @include responsive.responsive(md) {
+    padding-top: rem.rem(90px);
     background-attachment: fixed;
   }
 }
@@ -38,6 +45,12 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: rem.rem(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: rem.rem(90px);
+    z-index: 10;
+    background: color.$white;
   }
 
   .menu-item {

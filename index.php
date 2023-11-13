@@ -329,7 +329,7 @@
 							</ul>
 						</div>
 						<div class="button-wrap">
-							<a href="/private-lesson" class="button services-prices__button">プライベートレッスンについて</a>
+							<a href="/private-lesson" class="button services-prices__button" target="_blank">プライベートレッスンについて</a>
 						</div>
 					</div>
 					<div class="services-prices__item">
@@ -373,7 +373,7 @@
 							</ul>
 						</div>
 						<div class="button-wrap">
-							<a href="/mentoring" class="button services-prices__button">メンタリングについて</a>
+							<a href="/mentoring" class="button services-prices__button" target="_blank">メンタリングについて</a>
 						</div>
 					</div>
 				</div>
