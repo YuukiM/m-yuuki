@@ -72,11 +72,34 @@
     border: 1px solid color.$accent-colour;
     color: color.$accent-colour;
     text-decoration: none;
+    transition: 0.2s;
     &::before,
     &::after {
       width: 0;
       background-color: color.$accent-colour;
     }
+    .button__inner {
+      &::after {
+        border-top: 2px solid color.$accent-colour;
+        border-right: 2px solid color.$accent-colour;
+      }
+    }
+  }
+}
+
+.button__inner {
+  display: flex;
+  align-items: center;
+  gap: rem.rem(10px);
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    transition: 0.2s;
+    border-top: 2px solid color.$white;
+    border-right: 2px solid color.$white;
+    margin-top: rem.rem(-3px);
+    rotate: 45deg;
   }
 }
 
