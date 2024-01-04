@@ -19,6 +19,18 @@ function enqueue_styles(){
 	}
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
+if (!is_admin()) {
+    function my_scripts()
+    {
+      wp_deregister_script('jquery');
+      wp_deregister_script('jquery-migrate');
+      wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '3.7.1', false);
+      wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true);
+    }
+
+    add_action('wp_enqueue_scripts', 'my_scripts');
+}
+
 // アイキャッチ画像を有効にする。
 add_theme_support('post-thumbnails');
 

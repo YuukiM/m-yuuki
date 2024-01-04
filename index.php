@@ -1,5 +1,5 @@
 <?php
-	/*
+  /*
    * Template Name: トップ
    *
    * */
@@ -36,7 +36,7 @@
           </p>
         </div>
 
-		  <?php /*<div class="introduction__socials">
+        <?php /*<div class="introduction__socials">
 						<a class="facebook" href="https://www.facebook.com/WebDesignMY" title="Facebookページ" target="_blank">
 								<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 										 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -90,14 +90,14 @@
       </div>
       <div class="image-area introduction__image">
         <div class="letters">
-          <div class="letters__top">
+          <p class="letters__top visible">
             Miyazaki<br>Yûki
-          </div>
-          <div class="letters__bottom">
+          </p>
+          <p class="letters__bottom visible">
             vous enseigne<br>le web design.
-          </div>
+          </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/portrait-full@2x.png'); ?>" alt="ポートレート" class="portrait" loading="lazy">
+        <img src="<?php echo get_theme_file_uri('/images/portrait-full@2x.png'); ?>" alt="ポートレート" class="portrait js-fade-in" loading="lazy">
         <a class="scroll sp-only" href="#Introduction"><span></span>Scroll</a>
       </div>
     </section>
@@ -172,14 +172,14 @@
       </div>
       <div class="image-area biography__image">
         <div class="letters">
-          <div class="letters__top">
+          <p class="letters__top js-fade-in">
             Biographie
-          </div>
-          <div class="letters__bottom">
+          </p>
+          <p class="letters__bottom js-fade-in">
             ma vie<br>professionnelle
-          </div>
+          </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/bio-portrait@2x.png'); ?>" alt="座っている写真" class="photo" loading="lazy">
+        <img src="<?php echo get_theme_file_uri('/images/bio-portrait@2x.png'); ?>" alt="座っている写真" class="photo js-fade-in" loading="lazy">
       </div>
     </section>
     <section class="section skills">
@@ -207,9 +207,9 @@
                 </div>
               </div>
               <svg class="skill-item__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24" xml:space="preserve">
-								<path d="M7.5 21.5v-1h4v-3H3c-.3 0-.5-.2-.5-.5V4c0-.3.2-.5.5-.5h18c.3 0 .5.2.5.5v13c0 .3-.2.5-.5.5h-8.5v3h4v1h-9zm-4-5h17v-12h-17v12z"/>
+                <path d="M7.5 21.5v-1h4v-3H3c-.3 0-.5-.2-.5-.5V4c0-.3.2-.5.5-.5h18c.3 0 .5.2.5.5v13c0 .3-.2.5-.5.5h-8.5v3h4v1h-9zm-4-5h17v-12h-17v12z"/>
                 <path d="M14.1 11.2c0 2.7-4.3 2.7-4.2 0-.1-2.7 4.3-2.7 4.2 0zm1.1 5.3c.1-4.1-6.4-4.1-6.4 0h6.4z" 　style="stroke-width:.5;stroke-miterlimit:10"/>
-							</svg>
+              </svg>
             </li>
           </ul>
           <ul class="skills__secondary">
@@ -255,23 +255,23 @@
                   d="M11.5 20.5c-3.1 0-7-1.2-9.3-2.4l-.3-.1.2-.2c2.5-2.1 2.6-3.7 2.7-5 0-.4.1-.7.2-1.1.8-3.1 3.4-5.1 6.5-5.1.6 0 1.1.1 1.7.2l.2.1 5.1-4c.1-.1.2-.1.3-.1.1 0 .3.1.4.1l3 3c.2.2.2.5 0 .7l-4 5.1.1.2c.3 1.1.3 2.3 0 3.5-.9 3-3.6 5.1-6.8 5.1zm-7.2-2.6c2.5 1 5.1 1.5 7.2 1.5 2.7 0 5.1-1.8 5.8-4.4.5-2 0-4.2-1.5-5.7l-.1-.1c-.8-.7-1.7-1.2-2.6-1.5-.5-.1-1-.2-1.6-.2-2.6 0-4.8 1.8-5.5 4.4-.1.2-.1.4-.1.9-.2 1.9-.6 3.2-1.7 4.4l-.5.5.6.2zM14.5 7.1c1.4.8 2.5 1.9 3.3 3.3l3.3-4.3-2.4-2.4-4.2 3.4z"/></svg>
             </li>
           </ul>
-			<?php /*
-					<div class="button-wrap">
-						<a href="https://www.foriio.com/miyazakiYuuki" target="_blank" class="button">ポートフォリオ</a>
-					</div>
- 					*/ ?>
+
+          <div class="button-wrap">
+            <a href="/portfolio/" target="_blank" class="button">ポートフォリオ</a>
+          </div>
+
         </div>
       </div>
       <div class="image-area skills__images">
         <div class="letters">
-          <div class="letters__top">
+          <p class="letters__top js-fade-in">
             Compétences
-          </div>
-          <div class="letters__bottom">
+          </p>
+          <p class="letters__bottom js-fade-in">
             voici ce que<br>je peux faire
-          </div>
+          </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/competences-portrait@2x.png'); ?>" alt="テーブルの写真" class="photo photo--large" loading="lazy">
+        <img src="<?php echo get_theme_file_uri('/images/competences-portrait@2x.png'); ?>" alt="テーブルの写真" class="photo photo--large js-fade-in" loading="lazy">
       </div>
     </section>
     <section class="section services-prices">
@@ -399,7 +399,8 @@
             </div>
             <div class="button-wrap">
               <a href="/private-lesson" class="button services-prices__button" target="_blank">
-                <span class="button__inner">プライベートレッスンについて</span></a>
+                <span class="button__inner">プライベートレッスンについて</span>
+              </a>
             </div>
           </div>
           <div class="services-prices__item">
@@ -501,14 +502,14 @@
       </div>
       <div class="image-area services-prices__image">
         <div class="letters">
-          <div class="letters__top">
-            Tarifs & Services
-          </div>
-          <div class="letters__bottom">
+          <p class="letters__top js-fade-in">
+            Leçons et Tarifs
+          </p>
+          <p class="letters__bottom js-fade-in">
             ce que<br>je peux vous offrir<br>et ces prix
-          </div>
+          </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/tarifs-portrait@2x.png'); ?>" alt="ベンチの写真" class="photo photo--large" loading="lazy">
+        <img src="<?php echo get_theme_file_uri('/images/tarifs-portrait@2x.png'); ?>" alt="ベンチの写真" class="photo photo--large js-fade-in" loading="lazy">
       </div>
     </section>
   </main>
