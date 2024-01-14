@@ -9,12 +9,12 @@
     <section class="section introduction">
       <div class="contents introduction__contents" id="Introduction">
         <h1 class="title">
-					<span class="title__top">
-					  Webデザイン講師
-					</span>
+          <span class="title__top">
+            Webデザイン講師
+          </span>
           <span class="title__bottom">
-							<span class="title__name">宮崎祐樹</span>です
-					</span>
+            <span class="title__name">宮崎祐樹</span>です
+          </span>
         </h1>
         <!--
 					<a class="button" href="#">
