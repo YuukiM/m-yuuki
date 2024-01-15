@@ -5,7 +5,7 @@
    * */
 ?>
 <?php get_header(); ?>
-  <main>
+  <main class="main">
     <section class="section introduction">
       <div class="contents introduction__contents" id="Introduction">
         <h1 class="title">
@@ -97,8 +97,6 @@
             vous enseigne<br>le web design.
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/portrait-full@2x.png'); ?>" alt="ポートレート" class="portrait js-fade-in" loading="lazy">
-        <a class="scroll sp-only" href="#Introduction"><span></span>Scroll</a>
       </div>
     </section>
     <section class="section biography">
@@ -179,7 +177,6 @@
             ma vie<br>professionnelle
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/bio-portrait@2x.png'); ?>" alt="座っている写真" class="photo js-fade-in" loading="lazy">
       </div>
     </section>
     <section class="section skills">
@@ -271,7 +268,6 @@
             voici ce que<br>je peux faire
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/competences-portrait@2x.png'); ?>" alt="テーブルの写真" class="photo photo--large js-fade-in" loading="lazy">
       </div>
     </section>
     <section class="section services-prices">
@@ -509,7 +505,6 @@
             ce que<br>je peux vous offrir<br>et ces prix
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/tarifs-portrait@2x.png'); ?>" alt="ベンチの写真" class="photo photo--large js-fade-in" loading="lazy">
       </div>
     </section>
   </main>

@@ -4,6 +4,11 @@
 @use "../functions/clamp";
 @use "../mixins/responsive";
 
+.main {
+  background: url(images/sky.jpg) top left no-repeat;
+  background-attachment: fixed;
+}
+
 /* Section */
 
 .section {
@@ -15,9 +20,8 @@
   position: sticky;
   top: 0;
   height: 100lvh;
-  overflow: hidden;
-  background: url(images/sky.jpg) bottom right no-repeat;
-  background-size: cover;
+  overflow: visible;
+  background-color: transparent;
   z-index: 0;
   /* Double line */
   &::before,
@@ -27,7 +31,7 @@
     position: absolute;
     background-color: transparentize(color.$white, 0.7);
     transform-origin: top right;
-    transform: skew(0, -30deg);
+    transform: skew(0, -20deg);
     z-index: -1;
   }
 
@@ -69,9 +73,8 @@
 /* Letters */
 
 .letters {
-  transform: skew(0deg, -30deg);
+  transform: skew(0deg, -20deg);
   transform-origin: top right;
-  font-size: 15vw;
   font-family: 'Sofia', cursive;
   padding-right: 30px;
   display: flex;
@@ -91,10 +94,12 @@
 
   &__top {
     color: color.$white;
+    font-size: 17vw;
   }
 
   &__bottom {
-    color: color.$sub-colour;
+    color: transparentize(color.$main-colour, 0.1);
+    font-size: 15vw;
   }
 }
 
@@ -596,7 +601,7 @@
 
   .image-area {
     width: 50vw;
-    background-color: #000000;
+    background-color: transparent;
 
     &::before,
     &::after {
@@ -636,7 +641,15 @@
   }
 
   .letters {
-    font-size: 10vw;
+    &__top {
+      font-size: 10vw;
+      line-height: 1.4;
+    }
+
+    &__bottom {
+      font-size: 10vw;
+      line-height: 1.4;
+    }
   }
 
   .skills__primary {
@@ -720,7 +733,13 @@
   }
 
   .letters {
-    font-size: 6vw;
+    &__top {
+      font-size: 8vw;
+    }
+
+    &__bottom {
+      font-size: 5vw;
+    }
   }
 
 }
