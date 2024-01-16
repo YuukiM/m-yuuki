@@ -4,11 +4,6 @@
 @use "../functions/clamp";
 @use "../mixins/responsive";
 
-.main {
-  background: url(images/sky.jpg) top left no-repeat;
-  background-attachment: fixed;
-}
-
 /* Section */
 
 .section {
@@ -17,14 +12,34 @@
 }
 
 .image-area {
-  display: grid;
-  place-content: center;
   position: sticky;
-  height: 100lvh;
-  overflow: visible;
-  background-color: transparent;
-  z-index: 0;
   top: 0;
+  height: 100lvh;
+  overflow: hidden;
+  background: url(images/sky.jpg) bottom right no-repeat;
+  background-size: cover;
+  z-index: 0;
+  /* Double line */
+  &::before,
+  &::after {
+    content: "";
+    width: 100vw;
+    position: absolute;
+    background-color: transparentize(color.$white, 0.7);
+    transform-origin: top right;
+    transform: skew(0, -30deg);
+    z-index: -1;
+  }
+
+  &::before {
+    height: 70px;
+    top: 20%;
+  }
+
+  &::after {
+    height: 15px;
+    bottom: 30%;
+  }
 }
 
 .header {
@@ -54,11 +69,19 @@
 /* Letters */
 
 .letters {
+  transform: skew(0deg, -30deg);
+  transform-origin: top right;
+  font-size: 15vw;
   font-family: 'Sofia', cursive;
-  width: 95%;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
 
   &__top,
   &__bottom {
+    text-align: right;
     opacity: 0;
     transition: opacity 1s ease-in-out 0.5s;
     &.visible {
@@ -68,12 +91,10 @@
 
   &__top {
     color: color.$white;
-    font-size: 50px;
   }
 
   &__bottom {
-    color: transparentize(color.$main-colour, 0.1);
-    font-size: 30px;
+    color: color.$sub-colour;
   }
 }
 
@@ -533,8 +554,8 @@
   }
 
   .header {
-    width: 70%;
-    left: 30%;
+    width: 50%;
+    left: 50%;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
   }
@@ -574,8 +595,8 @@
   }
 
   .image-area {
-    width: 30vw;
-    background-color: transparent;
+    width: 50vw;
+    background-color: #000000;
 
     &::before,
     &::after {
@@ -585,7 +606,7 @@
 
   .contents {
     background-color: #fff;
-    width: 70vw;
+    width: 50vw;
     min-height: 100lvh;
     padding: 100px 5%;
     margin: 0;
@@ -615,16 +636,7 @@
   }
 
   .letters {
-    writing-mode: vertical-rl;
-    &__top {
-      font-size: 13vh;
-      line-height: 1.4;
-    }
-
-    &__bottom {
-      font-size: 7vh;
-      line-height: 1.4;
-    }
+    font-size: 10vw;
   }
 
   .skills__primary {
@@ -707,7 +719,9 @@
     width: 75px;
   }
 
-
+  .letters {
+    font-size: 6vw;
+  }
 
 }
 
