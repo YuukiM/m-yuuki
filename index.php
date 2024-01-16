@@ -91,10 +91,10 @@
       <div class="image-area introduction__image">
         <div class="letters">
           <p class="letters__top visible">
-            Miyazaki<br>Yûki
+            Miyazaki Yûki
           </p>
           <p class="letters__bottom visible">
-            vous enseigne<br>le web design.
+            vous enseigne le web design.
           </p>
         </div>
       </div>
@@ -174,7 +174,7 @@
             Biographie
           </p>
           <p class="letters__bottom js-fade-in">
-            ma vie<br>professionnelle
+            ma vie professionnelle
           </p>
         </div>
       </div>
@@ -265,7 +265,7 @@
             Compétences
           </p>
           <p class="letters__bottom js-fade-in">
-            voici ce que<br>je peux faire
+            voici ce que je peux faire
           </p>
         </div>
       </div>
@@ -502,7 +502,7 @@
             Leçons et Tarifs
           </p>
           <p class="letters__bottom js-fade-in">
-            ce que<br>je peux vous offrir<br>et ces prix
+            ce que je peux<br>vous offrir et ces prix
           </p>
         </div>
       </div>
