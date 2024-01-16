@@ -5,7 +5,7 @@
    * */
 ?>
 <?php get_header(); ?>
-  <main>
+  <main class="main">
     <section class="section introduction">
       <div class="contents introduction__contents" id="Introduction">
         <h1 class="title">
@@ -91,14 +91,12 @@
       <div class="image-area introduction__image">
         <div class="letters">
           <p class="letters__top visible">
-            Miyazaki<br>Yûki
+            Miyazaki Yûki
           </p>
           <p class="letters__bottom visible">
-            vous enseigne<br>le web design.
+            vous enseigne le web design.
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/portrait-full@2x.png'); ?>" alt="ポートレート" class="portrait js-fade-in" loading="lazy">
-        <a class="scroll sp-only" href="#Introduction"><span></span>Scroll</a>
       </div>
     </section>
     <section class="section biography">
@@ -176,10 +174,9 @@
             Biographie
           </p>
           <p class="letters__bottom js-fade-in">
-            ma vie<br>professionnelle
+            ma vie professionnelle
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/bio-portrait@2x.png'); ?>" alt="座っている写真" class="photo js-fade-in" loading="lazy">
       </div>
     </section>
     <section class="section skills">
@@ -268,10 +265,9 @@
             Compétences
           </p>
           <p class="letters__bottom js-fade-in">
-            voici ce que<br>je peux faire
+            voici ce que je peux faire
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/competences-portrait@2x.png'); ?>" alt="テーブルの写真" class="photo photo--large js-fade-in" loading="lazy">
       </div>
     </section>
     <section class="section services-prices">
@@ -506,10 +502,9 @@
             Leçons et Tarifs
           </p>
           <p class="letters__bottom js-fade-in">
-            ce que<br>je peux vous offrir<br>et ces prix
+            ce que je peux<br>vous offrir et ces prix
           </p>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/tarifs-portrait@2x.png'); ?>" alt="ベンチの写真" class="photo photo--large js-fade-in" loading="lazy">
       </div>
     </section>
   </main>
