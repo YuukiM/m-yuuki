@@ -6,6 +6,10 @@
 ?>
 <?php get_header(); ?>
   <main class="main">
+    <section class="section above-the-fold">
+      <p class="above-the-fold__letters">Miyazaki Yûki</p>
+      <a class="scroll pc-only" href="#Introduction"><span class="scroll__icon"></span>Scroll</a>
+    </section>
     <section class="section introduction">
       <div class="contents introduction__contents" id="Introduction">
         <h1 class="title">
@@ -86,7 +90,7 @@
 
 						</a>
 				</div>*/ ?>
-        <a class="scroll pc-only" href="#Biography"><span class="scroll__icon"></span>Scroll</a>
+
       </div>
       <div class="image-area introduction__image">
         <div class="letters">

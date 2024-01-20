@@ -10,3 +10,13 @@ const fadeIn = function() {
   }
 };
 document.addEventListener('scroll', fadeIn);
+
+window.addEventListener("scroll", function() {
+  var element = document.getElementById("element");
+  var shrink = window.scrollY > 0;
+  if (shrink) {
+    element.classList.add("shrink");
+  } else {
+    element.classList.remove("shrink");
+  }
+});
