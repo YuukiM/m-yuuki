@@ -287,6 +287,15 @@
   justify-content: center;
 }
 
+.introduction__image {
+  margin: 80px auto 0;
+  width: 300px;
+  img {
+    border-radius: 50%;
+  }
+
+}
+
 .introduction__lead {
   margin: 40px auto 0;
   max-width: 500px;

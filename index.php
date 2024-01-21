@@ -26,6 +26,9 @@
                 お問合せ
             </a>
           -->
+          <div class="introduction__image">
+            <img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" alt="宮崎祐樹">
+          </div>
           <div class="introduction__lead">
             <p>
               こんにちは！Webデザイン講師の宮崎祐樹です。
