@@ -16,11 +16,12 @@
   background-color: color.$accent-colour;
   color: color.$white;
   border: 1px solid color.$accent-colour;
-  border-radius: 5px;
+  border-radius: 50px;
   margin: auto;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
   width: fit-content;
   transition: 0.2s;
+  overflow: hidden;
   &:hover {
     background-color: color.$white;
     color: color.$accent-colour;
@@ -43,12 +44,13 @@
   background-color: color.$accent-colour;
   border: 1px solid color.$accent-colour;
   color: color.$white;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: all .3s;
   text-decoration: none;
   font-size: #{clamp.sass_clamp(18px, 24px)};
   padding: #{clamp.sass_clamp(5px, 15px)} #{clamp.sass_clamp(30px, 60px)};
   margin-inline: auto;
+  overflow: hidden;
   &::before,
   &::after {
     content: '';
