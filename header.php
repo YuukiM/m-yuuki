@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onscroll="scrollFunction()">
 <?php if (is_page("home")): ?>
   <header class="header">
     <ul class="gnav">

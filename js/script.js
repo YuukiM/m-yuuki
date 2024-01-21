@@ -20,3 +20,11 @@ window.addEventListener("scroll", function() {
     element.classList.remove("shrink");
   }
 });
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("js-content").classList.add("scrolled");
+  } else {
+    document.getElementById("js-content").classList.remove("scrolled");
+  }
+}
