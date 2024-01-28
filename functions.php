@@ -8,6 +8,9 @@
     if (is_page('profile')) {
       wp_enqueue_style('profile-style', get_theme_file_uri('/page.css'), array(), filemtime(get_theme_file_path('/page.css')));
     }
+    if (is_home() || is_single() || is_category()) {
+      wp_enqueue_style('blog-style', get_theme_file_uri('/blog.css'), array(), filemtime(get_theme_file_path('/blog.css')));
+    }
     if (is_page('private-lesson-famm')) {
       wp_enqueue_style('famm-style', get_theme_file_uri('/lp.css'), array(), filemtime(get_theme_file_path('/lp.css')));
     }
@@ -84,3 +87,36 @@
   }
 
   add_action('after_setup_theme', 'register_my_menus');
+
+
+  if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+      'name' => 'Sidebar %d',
+      'id' => 'sidebar-1',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2>',
+      'after_title' => '</h2>'
+    ));
+  }
+
+  /* Get the first image of each post */
+
+  function catch_that_image() {
+    global $post, $posts;
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+    if(empty($first_img)){
+      // 記事内で画像がなかったときのためのデフォルト画像を指定
+      $first_img = "/images/default.jpg";
+    }
+    return $first_img;
+  }
+
+  function twpp_change_excerpt_length( $length ) {
+    return 70;
+  }
+  add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
