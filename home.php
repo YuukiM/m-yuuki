@@ -6,7 +6,7 @@
           <div class="blog-home-article__category">
             <?php
               $category = get_the_category();
-              echo $category[0] -> cat_name;
+              echo $category[0]->cat_name;
             ?>
           </div>
           <div class="blog-home-article__image">
@@ -39,28 +39,21 @@
         </a>
       <?php endwhile; ?>
       <?php else: ?>
-        <article class="blog-home-article" id="post-<?php the_ID(); ?>">
-          <h1 class="not-found">
-            <?php _e("ページが見つかりません"); ?>
-          </h1>
-          <div class="blog-home-article-content">
-            <div class="contents-text">
-              <p><?php _e("他のキーワードで検索して下さい。"); ?></p>
-            </div>
-          </div>
-        </article>
+        <p class="not-found">
+          <?php _e("投稿はありません"); ?>
+        </p>
       <?php endif; ?>
     </main>
 
-      <?php the_posts_pagination(
-        array(
-          'mid_size' => 2, // 現在ページの左右に表示するページ番号の数
-          'prev_next' => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
-          'prev_text' => '<',
-          'next_text' => '>',
-          'type' => 'list', // 戻り値の指定 (plain/list)
-        )
-      ); ?>
+    <?php the_posts_pagination(
+      array(
+        'mid_size' => 2, // 現在ページの左右に表示するページ番号の数
+        'prev_next' => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
+        'prev_text' => '<',
+        'next_text' => '>',
+        'type' => 'list', // 戻り値の指定 (plain/list)
+      )
+    ); ?>
 
     <?php //get_sidebar(); ?>
   </div>

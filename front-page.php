@@ -330,14 +330,16 @@
 
                 <?php endwhile; ?>
               <?php else : ?>
-                <li>投稿はありません。</li>
+                <p>Coming soon...</p>
               <?php endif; ?>
           </div>
+          <?php if ($the_query->have_posts()) : ?>
           <div class="button-wrap">
             <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="button" target="_blank">
               <span class="button__inner">ブログへ</span>
             </a>
           </div>
+          <?php endif; ?>
         </div>
         <div class="image-area ">
           <div class="letters">
