@@ -61,9 +61,9 @@
       </li>
     </ul>
   </header>
-<?php elseif (is_page('private-lesson-famm') || is_page('profile')): ?>
+<?php elseif (is_page(array('private-lesson-famm', 'profile'))): ?>
   <!--nothing-->
-<?php elseif (is_page('lessons') || is_page('private-lesson') || is_page('mentoring')): ?>
+<?php elseif (is_page(array('lessons', 'private-lesson', 'mentoring'))): ?>
 <header class="lesson-header">
   <h1 class="lesson-header__inner">
     <a href="<?php echo esc_url(home_url('/lessons/')); ?>" class="lesson-header__heading">

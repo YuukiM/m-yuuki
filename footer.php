@@ -7,8 +7,9 @@
   ©Miyazaki Y&ucirc;ki All Rights Reserved.
 </footer>
 
-<a href="<?php echo esc_url(home_url('/lessons/')); ?>" class="footer-lesson-button" target="_blank">レッスン<br>について</a>
-
+<?php if(is_page('home')) { ?>
+  <a href="<?php echo esc_url(home_url('/lessons/')); ?>" class="footer-lesson-button" target="_blank">レッスン<br>について</a>
+<?php } ?>
 <?php wp_footer(); ?>
 </body>
 </html>

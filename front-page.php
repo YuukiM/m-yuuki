@@ -23,15 +23,10 @@
           <span class="title__top">
             Webデザイン講師
           </span>
-            <span class="title__bottom">
+          <span class="title__bottom">
             <span class="title__name">宮崎祐樹</span>です
           </span>
           </h1>
-          <!--
-            <a class="button" href="#">
-                お問合せ
-            </a>
-          -->
           <div class="introduction__image">
             <img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" alt="宮崎祐樹">
           </div>
