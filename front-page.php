@@ -301,7 +301,7 @@
                 while ($the_query->have_posts()) :
                   $the_query->the_post();
                   ?>
-                  <a href="<?php echo get_permalink(get_the_ID()); ?>" class="front-blog-article" id="post-<?php the_ID(); ?>" title="<?php the_title(); ?>">
+                  <a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="front-blog-article" id="post-<?php the_ID(); ?>" title="<?php the_title(); ?>">
                     <div class="front-blog-article__category">
                       <?php
                         $category = get_the_category();

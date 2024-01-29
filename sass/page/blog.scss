@@ -37,6 +37,33 @@
   }
 }
 
+.blog-gnav {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  width: fit-content;
+  margin: #{clamp.sass_clamp(16px, 32px)} auto 0;
+  gap: rem.rem(10px);
+}
+
+.blog-gnav__item a {
+  display: block;
+  padding: rem.rem(10px) rem.rem(20px);
+  color: color.$accent-colour;
+  background-color: color.$white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border-radius: 50px;
+}
+
+.blog-gnav__item--lesson {
+  display: initial;
+  a {
+    color: color.$white;
+    background-color: color.$accent-colour;
+
+  }
+}
+
 .blog-description {
   text-align: center;
   margin-top: #{clamp.sass_clamp(8px, 16px)};

@@ -56,7 +56,7 @@
           </div>
           <div class="lesson-content__block">
             <p>
-              継続してレッスンを受講したい場合には、よりお得な<a href="https://m-yuuki.com/mentoring/" title="Web制作メンタリングサービス">メンタリングサービス</a>をお勧めしています。
+              継続してレッスンを受講したい場合には、よりお得な<a href="<?php echo esc_url(home_url('/mentoring/')); ?>" title="Web制作メンタリングサービス">メンタリングサービス</a>をお勧めしています。
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@
             <iframe class="lesson-video__item" width="560" height="315" src="https://www.youtube.com/embed/LV_w5xx6kQg?modestbranding=1&rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <p class="lesson-view-notes">
-            動画ご協力：岩野真由美さん（<a href="https://ku-fu-u.com/" target="_blank">https://ku-fu-u.com</a>/）
+            動画ご協力：岩野真由美さん（<a href="<?php echo esc_url('https://ku-fu-u.com/'); ?>" target="_blank">https://ku-fu-u.com</a>/）
           </p>
         </div>
       </div>
@@ -245,7 +245,7 @@
           </div>
         </div>
         <div class="lesson-button">
-          <a href="/profile" class="button" target="_blank">詳しい経歴はこちら</a>
+          <a href="<?php echo esc_url(home_url('/profile/')); ?>" class="button" target="_blank">詳しい経歴はこちら</a>
         </div>
       </div>
     </section>

@@ -185,7 +185,7 @@
           </div>
           <p class="lesson-view-notes">
             ※画像はクリックで拡大できます。<br>
-            動画・チャットご協力：岩野真由美さん（<a href="https://ku-fu-u.com/" target="_blank">https://ku-fu-u.com</a>/）
+            動画・チャットご協力：岩野真由美さん（<a href="<?php echo esc_url('https://ku-fu-u.com/'); ?>" target="_blank">https://ku-fu-u.com</a>/）
           </p>
         </div>
       </div>
@@ -205,7 +205,7 @@
                   <li class="lesson-detail__list-item">ビデオ通話 1時間</li>
                   <li class="lesson-detail__list-item">チャットでの無制限質問</li>
                 </ul>
-                <a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2605?conversion_name=direct_message&tracking_code=25b2398615054ed9fe3f39b4235e0d2e" target="_blank">
+                <a class="lesson-detail__link" href="<?php echo esc_url('https://www.street-academy.com/subscription/services/2605?conversion_name=direct_message&tracking_code=25b2398615054ed9fe3f39b4235e0d2e'); ?>" target="_blank">
                   <span>ストアカでプランを見る</span>
                 </a>
               </div>
@@ -225,7 +225,7 @@
                   <li class="lesson-detail__list-item">チャットでの無制限質問</li>
                   <li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
                 </ul>
-                <a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2607?conversion_name=direct_message&tracking_code=73d78411ab559313fcb8affbee0beb72" target="_blank">
+                <a class="lesson-detail__link" href="<?php echo esc_url('https://www.street-academy.com/subscription/services/2607?conversion_name=direct_message&tracking_code=73d78411ab559313fcb8affbee0beb72/'); ?>" target="_blank">
                   <span>ストアカでプランを見る</span>
                 </a>
               </div>
@@ -243,7 +243,7 @@
                   <li class="lesson-detail__list-item">ビデオ通話での作品の添削</li>
                   <li class="lesson-detail__list-item">チャットでの作品の添削</li>
                 </ul>
-                <a class="lesson-detail__link" href="https://www.street-academy.com/subscription/services/2608?conversion_name=direct_message&tracking_code=f389b41e157b494f5f645768b5002816" target="_blank">
+                <a class="lesson-detail__link" href="<?php echo esc_url('https://www.street-academy.com/subscription/services/2608?conversion_name=direct_message&tracking_code=f389b41e157b494f5f645768b5002816/'); ?>" target="_blank">
                   <span>ストアカでプランを見る</span>
                 </a>
               </div>
@@ -396,7 +396,7 @@
           </div>
         </div>
         <div class="lesson-button">
-          <a href="/profile" class="button" target="_blank">詳しい経歴はこちら</a>
+          <a href="<?php echo esc_url(home_url('/profile/')); ?>" class="button" target="_blank">詳しい経歴はこちら</a>
         </div>
       </div>
     </section>
@@ -409,7 +409,7 @@
               <dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>1</strong></span>まずはご相談ください
               </dt>
               <dd class="lesson-flow__item-content">
-                下記のご相談フォーム・もしくは<a href="https://www.street-academy.com/steachers/66562#subscription_service" target="_blank">ストアカ</a>からご相談ください。
+                下記のご相談フォーム・もしくは<a href="<?php echo esc_url('https://www.street-academy.com/steachers/66562#subscription_service'); ?>" target="_blank">ストアカ</a>からご相談ください。
                 できればその際に現在のご状況やご希望のレッスン内容などをご連絡ください。
                 宮崎から改めてご連絡差し上げます。<br>
               </dd>
@@ -443,7 +443,7 @@
         <div class="lesson-content">
           <p class="lesson-section__center-text">単発でご受講を希望の方はプライベートレッスンをお勧めしています。
           <div class="lesson-button">
-            <a class="button" href="/private-lesson">
+            <a class="button" href="<?php echo esc_url(home_url('/private-lesson/')); ?>">
               プライベートレッスンを見る
             </a>
           </div>

@@ -31,6 +31,14 @@
         宮崎祐樹のブログ
       </div>
     </div>
+    <ul class="blog-gnav">
+      <li class="blog-gnav__item">
+        <a href="<?php echo esc_url(home_url('/')); ?>">メインサイト</a>
+      </li>
+      <li class="blog-gnav__item blog-gnav__item--lesson">
+        <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank">レッスンについて</a>
+      </li>
+    </ul>
   </header>
 <?php endif; ?>
 <?php if (is_page("home")): ?>
@@ -58,7 +66,7 @@
 <?php elseif (is_page('lessons') || is_page('private-lesson') || is_page('mentoring')): ?>
 <header class="lesson-header">
   <h1 class="lesson-header__inner">
-    <a href="/lessons" class="lesson-header__heading">
+    <a href="<?php echo esc_url(home_url('/lessons/')); ?>" class="lesson-header__heading">
       Yûki's Web Design Lessons
     </a>
     <span class="lesson-header__sub-heading">宮崎祐樹のWeb制作レッスン</span>
