@@ -13,6 +13,7 @@
 
 .main-content {
   transition: backdrop-filter 1s;
+
   &.scrolled {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -44,17 +45,16 @@
   z-index: 110;
   width: 100%;
   padding-top: rem.rem(10px);
-  //background-color: transparentize(color.$white, 0.6);
 }
 
 .gnav {
   display: flex;
   justify-content: center;
-  background-color: color.$white;
+  background-color: transparentize(color.$white, 0.3);
   border-radius: 50px;
   width: fit-content;
   margin-inline: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .gnav__item a {
@@ -67,19 +67,22 @@
   display: none;
 }
 
-.gnav--bottom {
-  background-color: #fafafa;
-}
-
 .above-the-fold {
   height: 100vh;
   position: relative;
   display: grid;
   place-content: center;
+
+  &__sup-letters {
+    font-size: #{clamp.sass_clamp(16px,24px)};
+    color: color.$white;
+  }
+
   &__letters {
     font-family: 'Sofia', cursive;
-    font-size: 50px;
+    font-size: #{clamp.sass_clamp(36px,56px)};
     color: color.$white;
+    line-height: 1;
   }
 }
 
@@ -93,6 +96,7 @@
   &__bottom {
     opacity: 0;
     transition: opacity 0.5s ease-in-out 0.2s;
+
     &.visible {
       opacity: 1;
     }
@@ -207,6 +211,7 @@
   z-index: 100;
   opacity: 0;
   transition: opacity 1s ease-in-out 0.5s;
+
   &.visible {
     opacity: 1;
   }
@@ -243,6 +248,7 @@
   font-weight: 500;
   margin-inline: auto;
   padding: 0 0 10px 0;
+  font-family: fonts.$heading, sans-serif;
 
   &::after {
     content: "";
@@ -300,6 +306,7 @@
 .introduction__image {
   margin: rem.rem(80px) auto 0;
   width: min(90%, 300px);
+
   img {
     border-radius: 50%;
   }
@@ -448,6 +455,7 @@
 
 .skill-item__heading {
   text-align: center;
+  font-family: fonts.$heading, sans-serif;
 }
 
 .skill-item__detail {
@@ -550,7 +558,7 @@
   height: rem.rem(100px);
   padding: rem.rem(10px);
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   font-size: rem.rem(14px);
 }
 
@@ -568,11 +576,6 @@
     bottom: 10px;
   }
 
-  .header {
-    /*-webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);*/
-  }
-
   .above-the-fold {
     &__letters {
       font-size: 100px;
@@ -581,10 +584,17 @@
 
   .gnav__item--lesson {
     display: initial;
+
     a {
       color: color.$white;
-      background-color: color.$accent-colour;
+      background-color: transparentize(color.$accent-colour, 0.2);
       border-radius: 50px;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: color.$accent-colour;
+        text-decoration: none;
+      }
     }
   }
 
@@ -595,6 +605,7 @@
   .section__heading {
     margin-inline: auto;
     padding: 0 0 20px 0;
+
     &::after {
       width: 48px;
       height: 5px;
@@ -607,7 +618,7 @@
   }
 
   .section:nth-of-type(2n) .contents {
-    background-color: #fbfbfb;
+    background-color: #fff;
   }
 
   .image-area {
@@ -621,7 +632,7 @@
   }
 
   .contents {
-    background-color: #fff;
+    background-color: #fbfbfb;
     width: 70vw;
     min-height: 100lvh;
     padding: 100px 5%;
@@ -657,6 +668,7 @@
 
   .letters {
     writing-mode: vertical-rl;
+
     &__top {
       font-size: 13vh;
       line-height: 1.4;
@@ -705,6 +717,7 @@
   .item-heading {
     margin: 0 auto 32px;
     padding: 0 0 16px 0;
+
     &::after {
       width: 40px;
     }
@@ -733,6 +746,7 @@
       align-items: center;
       gap: 10%;
     }
+
     .skill-item__img {
       flex-shrink: 0;
       width: 125px;
@@ -750,9 +764,6 @@
   .skill-item__img {
     width: 75px;
   }
-
-
-
 }
 
 @include responsive.responsive(xxl) {
