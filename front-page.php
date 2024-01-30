@@ -8,7 +8,7 @@
   <main class="main">
     <div id="js-content" class="main-content">
       <section class="above-the-fold">
-        <p class="above-the-fold__sup-letters">Webデザイン講師</p>
+        <p class="above-the-fold__sup-letters">Webデザイン講師 / Webデザイナー</p>
         <p class="above-the-fold__letters">Miyazaki Yûki</p>
         <div class="button-wrap">
           <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank" class="button button--ghost">
