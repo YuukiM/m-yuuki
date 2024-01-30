@@ -43,23 +43,24 @@
 <?php endif; ?>
 <?php if (is_page("home")): ?>
   <header class="header">
-    <ul class="gnav">
-      <li class="gnav__item">
-        <a href="#">top</a>
-      </li>
-      <li class="gnav__item">
-        <a href="#Biography">経歴</a>
-      </li>
-      <li class="gnav__item">
-        <a href="#Skills">スキル</a>
-      </li>
-      <li class="gnav__item">
-        <a href="#Blog">ブログ</a>
-      </li>
-      <li class="gnav__item gnav__item--lesson">
-        <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank">レッスンについて</a>
-      </li>
-    </ul>
+    <div class="gnav-wrap">
+      <ul class="gnav">
+        <li class="gnav__item">
+          <a href="#">top</a>
+        </li>
+        <li class="gnav__item">
+          <a href="#Biography">経歴</a>
+        </li>
+        <li class="gnav__item">
+          <a href="#Skills">スキル</a>
+        </li>
+        <li class="gnav__item">
+          <a href="#Blog">ブログ</a>
+        </li>
+      </ul>
+      <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank" class="lesson-button">レッスンについて</a>
+    </div>
+
   </header>
 <?php elseif (is_page(array('private-lesson-famm', 'profile'))): ?>
   <!--nothing-->

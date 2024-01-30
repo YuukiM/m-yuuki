@@ -21,7 +21,7 @@
         <div class="contents introduction__contents" id="Introduction">
           <h1 class="title">
           <span class="title__top">
-            Webデザイン講師
+            Webデザイン講師 / Webデザイナー
           </span>
           <span class="title__bottom">
             <span class="title__name">宮崎祐樹</span>です
