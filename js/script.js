@@ -10,3 +10,21 @@ const fadeIn = function() {
   }
 };
 document.addEventListener('scroll', fadeIn);
+
+window.addEventListener("scroll", function() {
+  var element = document.getElementById("element");
+  var shrink = window.scrollY > 0;
+  if (shrink) {
+    element.classList.add("shrink");
+  } else {
+    element.classList.remove("shrink");
+  }
+});
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("js-content").classList.add("scrolled");
+  } else {
+    document.getElementById("js-content").classList.remove("scrolled");
+  }
+}

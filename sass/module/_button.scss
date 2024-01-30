@@ -16,11 +16,13 @@
   background-color: color.$accent-colour;
   color: color.$white;
   border: 1px solid color.$accent-colour;
-  border-radius: 5px;
+  border-radius: 50px;
   margin: auto;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
   width: fit-content;
   transition: 0.2s;
+  overflow: hidden;
+
   &:hover {
     background-color: color.$white;
     color: color.$accent-colour;
@@ -31,7 +33,7 @@
 /* Button */
 
 .button-wrap {
-  margin: 40px auto 0;
+  margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
   width: fit-content;
 }
 
@@ -43,12 +45,14 @@
   background-color: color.$accent-colour;
   border: 1px solid color.$accent-colour;
   color: color.$white;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: all .3s;
   text-decoration: none;
   font-size: #{clamp.sass_clamp(18px, 24px)};
   padding: #{clamp.sass_clamp(5px, 15px)} #{clamp.sass_clamp(30px, 60px)};
   margin-inline: auto;
+  overflow: hidden;
+
   &::before,
   &::after {
     content: '';
@@ -61,27 +65,49 @@
     background-color: color.$accent-colour;
     transition: all .3s;
   }
+
   &::before {
     right: 0;
   }
+
   &::after {
     left: 0;
   }
+
   &:hover {
-    background-color: #fff;
+    background-color: color.$white;
     border: 1px solid color.$accent-colour;
     color: color.$accent-colour;
     text-decoration: none;
     transition: 0.2s;
+
     &::before,
     &::after {
       width: 0;
       background-color: color.$accent-colour;
     }
+
     .button__inner {
       &::after {
         border-top: 2px solid color.$accent-colour;
         border-right: 2px solid color.$accent-colour;
+      }
+    }
+  }
+  &--ghost {
+    background-color: transparent;
+    border: 1px solid color.$white;
+    color: color.$white;
+
+    &::before,
+    &::after {
+      background-color: transparent;
+    }
+
+    .button__inner {
+      &::after {
+        border-top: 2px solid color.$white;
+        border-right: 2px solid color.$white;
       }
     }
   }
@@ -91,6 +117,7 @@
   display: flex;
   align-items: center;
   gap: rem.rem(10px);
+
   &::after {
     content: "";
     width: 15px;
