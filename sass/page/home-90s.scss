@@ -1,0 +1,418 @@
+@use "../variables/color";
+@use "../variables/fonts";
+@use "../functions/rem";
+@use "../functions/clamp";
+@use "../mixins/responsive";
+
+.home-style-90s {
+  @include responsive.responsive(md) {
+    max-width: 640px;
+    color: #000;
+    font-family: fonts.$nineties, sans-serif;
+    animation: fadeIn90 2s ease-in;
+
+    @keyframes fadeIn90 {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+    a {
+      color: #00f;
+      text-decoration: underline;
+    }
+
+    header {
+      border-right: 2px ridge #ccc;
+      height: 100vh;
+      position: fixed;
+      background-color: color.$white;
+      padding: rem.rem(10px);
+      width: 140px;
+    }
+
+    .era-switcher {
+      display: initial;
+      position: initial;
+      margin-inline: initial;
+      width: initial;
+    }
+
+    .era-switcher__item {
+      border-radius: 50%;
+      box-shadow: initial;
+      a {
+        display: initial;
+        width: initial;
+        height: initial;
+        padding: initial;
+        background-color: initial;
+        border-radius: initial;
+      }
+    }
+
+    .gnav-wrap {
+      display: initial;
+    }
+
+    .gnav {
+      display: initial;
+      background-color: initial;
+      border-radius: initial;
+      width: initial;
+      box-shadow: initial;
+    }
+
+    .gnav__item a {
+      display: initial;
+      padding: initial;
+    }
+
+    .lesson-button {
+      display: initial;
+      color: #00f;
+      background-color: initial;
+      border-radius: initial;
+      transition: initial;
+      mix-blend-mode: initial;
+      padding: initial;
+      box-shadow: initial;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    main {
+      background: #0ff;
+      padding: rem.rem(24px);
+      overflow: hidden;
+      width: 500px;
+      margin-left: 140px;
+    }
+
+    .above-the-fold {
+      height: initial;
+      position: initial;
+      display: initial;
+      place-content: initial;
+    }
+
+    .above-the-fold__letters-group {
+      display: grid;
+      place-content: center;
+      background: url('images/sky-shinjuku256.gif') center center/cover no-repeat;
+      width: rem.rem(250px);
+      aspect-ratio: 4/3;
+      margin-inline: auto;
+    }
+
+    .above-the-fold__sup-letters {
+      display: none;
+    }
+
+    .above-the-fold__letters {
+      font-family: "Comic Sans MS", sans-serif;
+      text-align: center;
+      font-size: rem.rem(32px);
+      color: #000;
+    }
+
+    .contents {
+      background-color: initial;
+      width: initial;
+      min-height: initial;
+      padding: initial;
+      margin: initial;
+      scroll-margin-top: initial;
+      -webkit-backdrop-filter: initial;
+      backdrop-filter: initial;
+      box-shadow: initial;
+      border-radius: initial;
+      border: none;
+    }
+
+    .title {
+      color: #f00;
+      animation: flowing 20s linear infinite;
+      display: flex;
+      white-space: nowrap;
+      transform: translateX(-200%);
+      font-size: rem.rem(24px);
+      flex-direction: initial;
+      align-items: initial;
+      margin: initial;
+      font-weight: initial;
+      font-family: initial;
+    }
+
+    .title__top,
+    .title__bottom {
+      white-space: nowrap;
+    }
+
+    @keyframes flowing {
+      0% {
+        transform: translateX(100%);
+      }
+    }
+
+    .scroll-button {
+      display: none;
+    }
+
+    .introduction__contents {
+      border-radius: initial;
+      display: initial;
+      gap: initial;
+      align-items: initial;
+      justify-content: initial;
+    }
+
+    .introduction__image {
+      margin: rem.rem(24px) auto 0;
+      width: rem.rem(100px);
+
+      img {
+        border-radius: initial;
+      }
+    }
+
+    .introduction__lead {
+      text-align: center;
+    }
+
+    .letters {
+      display: none;
+    }
+
+    .counter {
+      display: block;
+      text-align: center;
+
+      p {
+        display: inline;
+      }
+
+      img {
+        width: 85px;
+      }
+    }
+
+    .image-area {
+      display: initial;
+      place-content: initial;
+      position: initial;
+      height: initial;
+      overflow: initial;
+      background-color: initial;
+      z-index: initial;
+      top: initial;
+    }
+
+    .section {
+      display: block;
+      margin: rem.rem(60px) auto 0;
+
+      &:nth-of-type(2n) {
+        .contents {
+          background-color: initial;
+        }
+      }
+    }
+
+    .section__wrap {
+      margin-top: initial;
+    }
+
+    .section__heading {
+      text-align: center;
+      color: #f00;
+      text-shadow: 3px 3px 3px #00f, -3px -3px 3px #00f,
+      -3px 3px 3px #00f, 3px -3px 3px #00f,
+      3px 0px 3px #00f, -3px -0px 3px #00f,
+      0px 3px 3px #00f, 0px -3px 3px #00f;
+      position: initial;
+      width: initial;
+      font-size: 34px;
+      font-weight: initial;
+      margin-inline: initial;
+      padding: initial;
+      font-family: fonts.$nineties;
+      font-style: italic;
+
+      &::after {
+        content: none;
+      }
+
+    }
+
+    .biography-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #000;
+      border-collapse: separate;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .biography-list__text {
+      display: flex;
+      gap: 2px;
+
+      dt, dd {
+        padding: 5px;
+        border: 1px solid #000;
+        font-size: 16px;
+        color: initial;
+        margin: initial;
+      }
+
+      dt {
+        width: 15%;
+        font-weight: normal;
+      }
+
+      dd {
+        width: 85%;
+      }
+    }
+
+
+    .skills__primary {
+      margin-top: rem.rem(24px);
+      border-radius: initial;
+      padding: initial;
+      background-color: initial;
+    }
+
+    .skills__secondary {
+      margin-top: rem.rem(24px);
+      display: grid;
+      gap: rem.rem(24px);
+    }
+
+    .skill-item {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: rem.rem(20px);
+    }
+
+    .skill-item__img {
+      width: rem.rem(50px);
+      border: 2px ridge color.$white;
+      background-color: #eee;
+      color: #000;
+    }
+
+    .skill-item__heading {
+      font-size: rem.rem(20px);
+      font-family: fonts.$nineties;
+      text-align: initial;
+      color: #000;
+    }
+
+    .skill-item__text {
+      flex: 1;
+    }
+
+    .front-blog-section {
+      display: grid;
+      gap: rem.rem(24px);
+    }
+
+    .front-blog-article {
+      text-align: center;
+      position: initial;
+      background-color: initial;
+      box-shadow: initial;
+      border: initial;
+      border-radius: initial;
+      overflow: initial;
+      display: initial;
+
+      .post-image {
+        img {
+          width: initial;
+          height: initial;
+          object-fit: initial;
+          object-position: center;
+          transition: initial;
+        }
+      }
+
+      &:hover {
+        text-decoration: initial;
+        color: blue;
+        text-decoration: underline;
+
+        img {
+          scale: initial;
+        }
+      }
+
+      .front-blog-article__image {
+        width: 150px;
+        margin-inline: auto;
+      }
+
+      .front-blog-article__heading {
+        font-size: rem.rem(16px);
+      }
+
+      .front-blog-article__category {
+        position: initial;
+        z-index: 10;
+        background-color: initial;
+        color: #00f;
+        padding: initial;
+        font-size: initial;
+        border-radius: initial;
+      }
+    }
+
+    .footer {
+      position: initial;
+      width: initial;
+    }
+
+  }
+
+  @include responsive.responsive(lg) {
+
+    .item-heading {
+      margin: inherit;
+      padding: inherit;
+
+      &::after {
+        width: inherit;
+      }
+    }
+
+    .title__top {
+      font-size: inherit;
+    }
+
+    .title__bottom {
+      font-size: inherit;
+    }
+
+    .title__name {
+      font-size: inherit;
+    }
+
+    .services-prices__item {
+      margin: inherit;
+    }
+
+    .biography__list {
+      gap: inherit;
+    }
+  }
+}

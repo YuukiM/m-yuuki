@@ -47,6 +47,10 @@
   padding-top: rem.rem(10px);
 }
 
+.era-switcher {
+  display: none;
+}
+
 .gnav-wrap {
   display: flex;
   justify-content: center;
@@ -194,6 +198,10 @@
   100% {
     opacity: 0;
   }
+}
+
+.counter {
+  display: none;
 }
 
 /* Pic */
@@ -574,7 +582,22 @@
   }
 
   .pc-only {
-    display: block !important;
+    //display: block !important;
+  }
+
+  body {
+    animation: fadeIn 2s ease-in;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
   }
 
   .scroll-button {
@@ -601,6 +624,30 @@
       background-color: color.$accent-colour;
       text-decoration: none;
       color: color.$white;
+    }
+  }
+
+  .era-switcher {
+    position: absolute;
+    top: rem.rem(5px);
+    right: rem.rem(5px);
+    display: flex;
+    gap: rem.rem(10px);
+    margin-inline: auto;
+    width: fit-content;
+  }
+
+  .era-switcher__item {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 50%;
+    a {
+      display: grid;
+      place-content: center;
+      width: rem.rem(50px);
+      height: rem.rem(50px);
+      padding: rem.rem(5px);
+      background-color: #fff;
+      border-radius: 50%;
     }
   }
 

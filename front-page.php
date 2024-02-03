@@ -8,8 +8,19 @@
   <main class="main">
     <div id="js-content" class="main-content">
       <section class="above-the-fold">
-        <p class="above-the-fold__sup-letters">Webデザイン講師 / Webデザイナー</p>
-        <p class="above-the-fold__letters">Miyazaki Yûki</p>
+        <div class="above-the-fold__letters-group">
+          <p class="above-the-fold__sup-letters">Webデザイン講師 / Webデザイナー</p>
+          <p class="above-the-fold__letters">Miyazaki Yûki</p>
+        </div>
+        <div class="counter">
+          <p>
+            あなたは
+          </p>
+          <img src="<?php echo get_theme_file_uri('/images/counter.gif'); ?>" alt="カウンター">
+          <p>
+            人目の訪問者です！
+          </p>
+        </div>
         <div class="button-wrap">
           <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank" class="button button--ghost">
             <span class="button__inner">レッスンご希望の方</span>
@@ -20,12 +31,12 @@
       <section class="section introduction">
         <div class="contents introduction__contents" id="Introduction">
           <h1 class="title">
-          <span class="title__top">
-            Webデザイン講師 / Webデザイナー
-          </span>
-          <span class="title__bottom">
-            <span class="title__name">宮崎祐樹</span>です
-          </span>
+            <span class="title__top">
+              Webデザイン講師 / Webデザイナー
+            </span>
+            <span class="title__bottom">
+              <span class="title__name">宮崎祐樹</span>です
+            </span>
           </h1>
           <div class="introduction__image">
             <img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" alt="宮崎祐樹">
