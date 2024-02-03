@@ -121,6 +121,14 @@
       text-align: center;
       font-size: rem.rem(32px);
       color: #000;
+
+      &::after {
+        font-family: fonts.$nineties;
+        content: "のほめぱげ";
+        display: block;
+        font-size: rem.rem(18px);
+        margin-top: rem.rem(8px);
+      }
     }
 
     .contents {
