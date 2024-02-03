@@ -6,7 +6,6 @@
 
 .home-style-90s {
   @include responsive.responsive(md) {
-    max-width: 640px;
     color: #000;
     font-family: fonts.$nineties, sans-serif;
     animation: fadeIn90 2s ease-in;
@@ -89,11 +88,15 @@
     }
 
     main {
-      background: #0ff;
+      background: url("images/bg.png") cyan;
+      background-size: 150px;
       padding: rem.rem(24px);
       overflow: hidden;
-      width: 500px;
       margin-left: 140px;
+    }
+
+    .main-content.scrolled {
+      backdrop-filter: none;
     }
 
     .above-the-fold {
@@ -150,7 +153,7 @@
       animation: flowing 20s linear infinite;
       display: flex;
       white-space: nowrap;
-      transform: translateX(-200%);
+      transform: translateX(-100%);
       font-size: rem.rem(24px);
       flex-direction: initial;
       align-items: initial;
@@ -253,10 +256,18 @@
       padding: initial;
       font-family: fonts.$nineties;
       font-style: italic;
+      animation: blinking 1.5s step-end infinite;
 
       &::after {
         content: none;
       }
+
+      @keyframes blinking {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
 
     }
 
@@ -310,6 +321,7 @@
       flex-direction: row-reverse;
       align-items: center;
       gap: rem.rem(20px);
+      margin: initial;
     }
 
     .skill-item__img {
