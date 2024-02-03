@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?> onscroll="scrollFunction()">
+<body <?php body_class(); ?> onscroll="scrollFunction()" id="body">
 <?php if (is_home() || is_single() || is_category()): ?>
   <header class="blog-header">
     <div class="title-zone">
@@ -60,6 +60,10 @@
       </ul>
       <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank" class="lesson-button">レッスンについて</a>
     </div>
+    <ul class="era-switcher">
+      <li class="era-switcher__item"><a href="#" onclick="eraSwitcher90();">1990s</a></li>
+      <li class="era-switcher__item"><a href="#" onclick="eraSwitcher20();">2020s</a></li>
+    </ul>
 
   </header>
 <?php elseif (is_page(array('private-lesson-famm', 'profile'))): ?>

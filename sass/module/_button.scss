@@ -35,6 +35,10 @@
 .button-wrap {
   margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
   width: fit-content;
+
+  .home-style-90s & {
+    margin: rem.rem(24px) auto;
+  }
 }
 
 .button {
@@ -53,6 +57,40 @@
   margin-inline: auto;
   overflow: hidden;
 
+  .home-style-90s & {
+    position: initial;
+    display: initial;
+    width: initial;
+    z-index: 2;
+    background-color: initial;
+    border: initial;
+    color: #00f;
+    border-radius: initial;
+    transition: initial;
+    text-decoration: underline;
+    font-size: initial;
+    padding: initial;
+    margin-inline: auto;
+    overflow: initial;
+  }
+
+  .background-color & {
+    position: initial;
+    display: initial;
+    width: initial;
+    background-color: initial;
+    border: initial;
+    color: #00f;
+    border-radius: initial;
+    transition: initial;
+    text-decoration: initial;
+    font-size: initial;
+    padding: initial;
+    overflow: initial;
+    text-decoration: underline;
+
+  }
+
   &::before,
   &::after {
     content: '';
@@ -64,6 +102,11 @@
     height: 100%;
     background-color: color.$accent-colour;
     transition: all .3s;
+
+    .home-style-90s & {
+      content: none;
+    }
+
   }
 
   &::before {
@@ -81,6 +124,12 @@
     text-decoration: none;
     transition: 0.2s;
 
+    .home-style-90s & {
+      transition: none;
+      text-decoration: underline;
+      color: #00f;
+    }
+
     &::before,
     &::after {
       width: 0;
@@ -94,6 +143,7 @@
       }
     }
   }
+
   &--ghost {
     background-color: transparent;
     border: 1px solid color.$white;
@@ -108,9 +158,14 @@
       &::after {
         border-top: 2px solid color.$white;
         border-right: 2px solid color.$white;
+
+        .nineties & {
+          content: none;
+        }
       }
     }
   }
+
 }
 
 .button__inner {
@@ -127,6 +182,11 @@
     border-right: 2px solid color.$white;
     margin-top: rem.rem(-3px);
     rotate: 45deg;
+
+    .home-style-90s & {
+      content: none;
+    }
+
   }
 }
 

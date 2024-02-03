@@ -1,5 +1,5 @@
 <footer class="footer">
-	<?php if(is_page( array('home', 'lessons', 'mentoring', 'private-lesson', 'private-lesson-famm') )) { ?>
+	<?php if(is_page( array('lessons', 'mentoring', 'private-lesson', 'private-lesson-famm') )) { ?>
 		<small>アイコン提供：<a href="<?php echo esc_url('https://imagemart.aflo.com/ja/@MakotoHara'); ?>" target="_blank">MakotoHara</a>/イメージマート</small><br>
 	<?php } else { ?>
 
