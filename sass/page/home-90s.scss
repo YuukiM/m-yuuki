@@ -146,6 +146,10 @@
       white-space: nowrap;
     }
 
+    .title__name {
+      font-size: inherit;
+    }
+
     @keyframes flowing {
       0% {
         transform: translateX(100%);
@@ -376,15 +380,15 @@
     }
 
     .title__top {
-      all: inherit;
+      font-size: inherit;
     }
 
     .title__bottom {
-      all: inherit;
+      font-size: inherit;
     }
 
     .title__name {
-      all: inherit;
+      font-size: inherit;
     }
 
     .services-prices__item {
