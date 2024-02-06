@@ -6,7 +6,6 @@
 
 .home-style-90s {
   @include responsive.responsive(md) {
-    max-width: 640px;
     color: #000;
     font-family: fonts.$nineties, sans-serif;
     animation: fadeIn90 2s ease-in;
@@ -37,15 +36,12 @@
     }
 
     .era-switcher {
-      display: initial;
-      position: initial;
-      margin-inline: initial;
-      width: initial;
+      all: initial;
     }
 
     .era-switcher__item {
-      border-radius: 50%;
-      box-shadow: initial;
+      all: initial;
+      border-radius: 0;
       a {
         display: initial;
         width: initial;
@@ -74,7 +70,6 @@
     }
 
     .lesson-button {
-      display: initial;
       color: #00f;
       background-color: initial;
       border-radius: initial;
@@ -89,18 +84,19 @@
     }
 
     main {
-      background: #0ff;
+      background: url("images/bg.png") cyan;
+      background-size: 150px;
       padding: rem.rem(24px);
       overflow: hidden;
-      width: 500px;
       margin-left: 140px;
     }
 
+    .main-content.scrolled {
+      backdrop-filter: none;
+    }
+
     .above-the-fold {
-      height: initial;
-      position: initial;
-      display: initial;
-      place-content: initial;
+      all: initial;
     }
 
     .above-the-fold__letters-group {
@@ -121,39 +117,37 @@
       text-align: center;
       font-size: rem.rem(32px);
       color: #000;
+
+      &::after {
+        font-family: fonts.$nineties;
+        content: "のほめぱげ";
+        display: block;
+        font-size: rem.rem(18px);
+        margin-top: rem.rem(8px);
+      }
     }
 
     .contents {
-      background-color: initial;
-      width: initial;
-      min-height: initial;
-      padding: initial;
-      margin: initial;
-      scroll-margin-top: initial;
-      -webkit-backdrop-filter: initial;
-      backdrop-filter: initial;
-      box-shadow: initial;
-      border-radius: initial;
-      border: none;
+      all: initial;
     }
 
     .title {
+      all: initial;
       color: #f00;
       animation: flowing 20s linear infinite;
       display: flex;
       white-space: nowrap;
-      transform: translateX(-200%);
+      transform: translateX(-100%);
       font-size: rem.rem(24px);
-      flex-direction: initial;
-      align-items: initial;
-      margin: initial;
-      font-weight: initial;
-      font-family: initial;
     }
 
     .title__top,
     .title__bottom {
       white-space: nowrap;
+    }
+
+    .title__name {
+      font-size: inherit;
     }
 
     @keyframes flowing {
@@ -167,11 +161,7 @@
     }
 
     .introduction__contents {
-      border-radius: initial;
-      display: initial;
-      gap: initial;
-      align-items: initial;
-      justify-content: initial;
+      all: initial;
     }
 
     .introduction__image {
@@ -205,14 +195,7 @@
     }
 
     .image-area {
-      display: initial;
-      place-content: initial;
-      position: initial;
-      height: initial;
-      overflow: initial;
-      background-color: initial;
-      z-index: initial;
-      top: initial;
+      all: initial;
     }
 
     .section {
@@ -231,24 +214,30 @@
     }
 
     .section__heading {
+      all: initial;
+      display: block;
       text-align: center;
       color: #f00;
       text-shadow: 3px 3px 3px #00f, -3px -3px 3px #00f,
       -3px 3px 3px #00f, 3px -3px 3px #00f,
       3px 0px 3px #00f, -3px -0px 3px #00f,
       0px 3px 3px #00f, 0px -3px 3px #00f;
-      position: initial;
-      width: initial;
       font-size: 34px;
-      font-weight: initial;
-      margin-inline: initial;
-      padding: initial;
       font-family: fonts.$nineties;
       font-style: italic;
+      animation: blinking 1.5s step-end infinite;
+      margin-bottom: rem.rem(24px);
 
       &::after {
         content: none;
       }
+
+      @keyframes blinking {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
 
     }
 
@@ -302,6 +291,7 @@
       flex-direction: row-reverse;
       align-items: center;
       gap: rem.rem(20px);
+      margin: initial;
     }
 
     .skill-item__img {
@@ -328,32 +318,28 @@
     }
 
     .front-blog-article {
+      all: inherit;
       text-align: center;
-      position: initial;
-      background-color: initial;
-      box-shadow: initial;
-      border: initial;
-      border-radius: initial;
-      overflow: initial;
-      display: initial;
+      color: #00f;
+      text-decoration: underline;
+      cursor: pointer;
 
       .post-image {
         img {
-          width: initial;
-          height: initial;
-          object-fit: initial;
-          object-position: center;
-          transition: initial;
+          all: inherit;
+          width: 100%;
+          height: auto;
+          cursor: pointer;
         }
       }
 
       &:hover {
-        text-decoration: initial;
+        text-decoration: inherit;
         color: blue;
         text-decoration: underline;
 
         img {
-          scale: initial;
+          scale: inherit;
         }
       }
 
@@ -367,19 +353,17 @@
       }
 
       .front-blog-article__category {
-        position: initial;
-        z-index: 10;
-        background-color: initial;
+        all: inherit;
         color: #00f;
-        padding: initial;
-        font-size: initial;
-        border-radius: initial;
       }
     }
 
     .footer {
-      position: initial;
-      width: initial;
+      all: initial;
+      display: block;
+      width: calc(100% - 140px);
+      margin-left: 140px;
+      text-align: center;
     }
 
   }
@@ -387,11 +371,11 @@
   @include responsive.responsive(lg) {
 
     .item-heading {
-      margin: inherit;
-      padding: inherit;
+      all: inherit;
+      font-weight: bold;
 
       &::after {
-        width: inherit;
+        all: inherit;
       }
     }
 
@@ -408,11 +392,11 @@
     }
 
     .services-prices__item {
-      margin: inherit;
+      all: inherit;
     }
 
     .biography__list {
-      gap: inherit;
+      all: inherit;
     }
   }
 }

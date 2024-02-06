@@ -37,7 +37,9 @@
   width: fit-content;
 
   .home-style-90s & {
-    margin: rem.rem(24px) auto;
+    @include responsive.responsive(md) {
+      margin: rem.rem(24px) auto;
+    }
   }
 }
 
@@ -58,36 +60,11 @@
   overflow: hidden;
 
   .home-style-90s & {
-    position: initial;
-    display: initial;
-    width: initial;
-    z-index: 2;
-    background-color: initial;
-    border: initial;
-    color: #00f;
-    border-radius: initial;
-    transition: initial;
-    text-decoration: underline;
-    font-size: initial;
-    padding: initial;
-    margin-inline: auto;
-    overflow: initial;
-  }
-
-  .background-color & {
-    position: initial;
-    display: initial;
-    width: initial;
-    background-color: initial;
-    border: initial;
-    color: #00f;
-    border-radius: initial;
-    transition: initial;
-    text-decoration: initial;
-    font-size: initial;
-    padding: initial;
-    overflow: initial;
-    text-decoration: underline;
+    @include responsive.responsive(md) {
+      all: inherit;
+      text-decoration: underline;
+      color: #00f;
+    }
 
   }
 
@@ -104,7 +81,9 @@
     transition: all .3s;
 
     .home-style-90s & {
-      content: none;
+      @include responsive.responsive(md) {
+        content: none;
+      }
     }
 
   }
@@ -125,9 +104,12 @@
     transition: 0.2s;
 
     .home-style-90s & {
-      transition: none;
-      text-decoration: underline;
-      color: #00f;
+      @include responsive.responsive(md) {
+        all: inherit;
+        text-decoration: underline;
+        color: #00f;
+        cursor: pointer;
+      }
     }
 
     &::before,
@@ -159,8 +141,10 @@
         border-top: 2px solid color.$white;
         border-right: 2px solid color.$white;
 
-        .nineties & {
-          content: none;
+        .home-style-90s & {
+          @include responsive.responsive(md) {
+            content: none;
+          }
         }
       }
     }
@@ -184,7 +168,9 @@
     rotate: 45deg;
 
     .home-style-90s & {
-      content: none;
+      @include responsive.responsive(md) {
+        content: none;
+      }
     }
 
   }

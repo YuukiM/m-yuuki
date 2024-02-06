@@ -177,7 +177,7 @@
               <li class="biography-list__item">
                 <dl class="biography-list__text">
                   <dt>1998</dt>
-                  <dd>高校2年生。はじめてHTMLでウェブサイトを作る。</dd>
+                  <dd>高校2年生。はじめてHTMLでウェブサイトを作る。<a href="#" onclick="eraSwitcher90();">当時って、みんなこんなWebサイトでした。</a></dd>
                 </dl>
               </li>
             </ul>
