@@ -247,7 +247,7 @@
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 30px;
   border: 1px solid transparentize(color.$white, 0.6);
   border-right-color: transparentize(color.$white, 0.8);
   border-bottom-color: transparentize(color.$white, 0.8);
@@ -421,7 +421,7 @@
 
 .skills__primary {
   background-color: color.$translucent;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10%;
 }
 
@@ -702,7 +702,7 @@
   }
 
   .title__top {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .title__bottom {
@@ -777,11 +777,11 @@
   }
 
   .title__top {
-    font-size: 48px;
+    font-size: 32px;
   }
 
   .title__bottom {
-    font-size: 52px;
+    font-size: 48px;
   }
 
   .title__name {
