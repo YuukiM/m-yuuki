@@ -2,6 +2,7 @@
   function enqueue_styles()
   {
     wp_enqueue_style('style', get_stylesheet_uri(), array(), filemtime(get_theme_file_path('style.css')));
+    wp_enqueue_style('common-style', get_theme_file_uri('common.css'), array(), filemtime(get_theme_file_path('common.css')));
     if (is_page("home")) {
       wp_enqueue_style('home-style', get_theme_file_uri('/home.css'), array(), filemtime(get_theme_file_path('/home.css')));
       wp_enqueue_style('home-style-90s', get_theme_file_uri('/home-90s.css'), array(), filemtime(get_theme_file_path('/home-90s.css')));
