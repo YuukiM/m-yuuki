@@ -1,4 +1,10 @@
 <?php
+
+/*  function phi_theme_support() {
+    remove_theme_support( 'widgets-block-editor' );
+  }
+  add_action( 'after_setup_theme', 'phi_theme_support' );*/
+
   function enqueue_styles()
   {
     wp_enqueue_style('style', get_stylesheet_uri(), array(), filemtime(get_theme_file_path('style.css')));
@@ -91,9 +97,10 @@
   add_action('after_setup_theme', 'register_my_menus');
 
 
-  if (function_exists('register_sidebar')) {
+  function my_widgets_init(): void
+  {
     register_sidebar(array(
-      'name' => 'Sidebar %d',
+      'name' => 'ウィジェットエリア',
       'id' => 'sidebar-1',
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget' => '</div>',
@@ -101,6 +108,8 @@
       'after_title' => '</h2>'
     ));
   }
+  add_action( 'widgets_init', 'my_widgets_init' );
+
 
   /* Get the first image of each post */
 
