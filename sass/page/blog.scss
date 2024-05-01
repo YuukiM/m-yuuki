@@ -135,10 +135,8 @@
 }
 
 .blog-page-contents {
-  display: grid;
   max-width: rem.rem(1000px);
   margin: auto;
-  gap: #{clamp.sass_clamp(16px,24px)};
   padding: #{clamp.sass_clamp(10px, 40px)};
 }
 
@@ -379,6 +377,7 @@ ul.page-numbers {
   border-radius: rem.rem(20px);
   overflow: hidden;
   align-self: flex-start;
+  margin-top: 16px;
 
   .wp-block-categories {
 
@@ -422,6 +421,12 @@ ul.page-numbers {
   }
 
   .blog-page-contents {
+    display: grid;
     grid-template-columns: 75% 1fr;
+    gap: #{clamp.sass_clamp(16px,24px)};
+  }
+
+  .sidebar {
+    margin-top: 0;
   }
 }
