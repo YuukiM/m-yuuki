@@ -1,6 +1,10 @@
 
 @use "../variables/color";
 @use "../variables/fonts";
+@use "../functions/rem";
+@use "../functions/clamp";
+@use "../mixins/responsive";
+
 /*
   form
 */
@@ -17,7 +21,8 @@
   background: color.$accent-colour !important;
   color: color.$white !important;
   border: 1px solid color.$accent-colour !important;
-  border-radius: 5px !important;
+  border-radius: 50px !important;
+  padding: #{clamp.sass_clamp(5px, 15px)} #{clamp.sass_clamp(30px, 60px)} !important;
   margin: auto !important;
   width: 190px !important;
   box-shadow: none !important;
