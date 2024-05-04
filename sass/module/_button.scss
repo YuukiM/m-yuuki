@@ -58,6 +58,9 @@
   padding: #{clamp.sass_clamp(5px, 15px)} #{clamp.sass_clamp(30px, 60px)};
   margin-inline: auto;
   overflow: hidden;
+  .lesson-page & {
+    box-shadow: 0 0 20px transparentize(color.$lesson-dark, 0.6);
+  }
 
   .home-style-90s & {
     @include responsive.responsive(md) {

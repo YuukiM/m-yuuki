@@ -6,11 +6,11 @@
 ?>
 
 <?php get_header(); ?>
-  <main class="private-lesson">
+  <main class="private-lesson lesson-page">
     <section class="lesson-hero-section">
       <p class="lesson-sub-heading">どうしてもわからないときの駆け込み寺</p>
       <h1 class="lesson-hero-section__heading">
-		  <?php the_title(); ?>
+        <?php the_title(); ?>
       </h1>
     </section>
 
@@ -226,7 +226,7 @@
         <h2 class="lesson-section__heading">講師について</h2>
         <div class="teacher">
           <div class="teacher__image">
-            <img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
+            <img src="<?php echo get_theme_file_uri('/images/portrait1x1.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
           </div>
           <div class="teacher__profile">
             <p>

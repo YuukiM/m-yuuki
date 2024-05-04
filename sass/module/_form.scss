@@ -48,16 +48,12 @@ div.wpforms-container-full {
   border-left: 4px solid color.$accent-colour !important;
   padding-left: 10px !important;
   margin-bottom: 10px !important;
-  color: color.$main-colour !important;
+  color: color.$font-colour !important;
 }
 
 .wpforms-error {
   font-size: 14px !important;
   color: color.$important-colour !important;
-}
-
-.pc-only {
-  //display: none !important;
 }
 
 .notes {

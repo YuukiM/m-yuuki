@@ -328,7 +328,7 @@
 
 .introduction__lead {
   margin-inline: auto;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: rem.rem(20px);
@@ -404,6 +404,8 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .biography-list__text dt {

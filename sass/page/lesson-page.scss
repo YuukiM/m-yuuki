@@ -11,13 +11,13 @@ html {
 }
 
 main {
-  background: color.$light-sub;
-  background-image: radial-gradient(290px 300px, transparentize(color.$light-main, 0.7) 20%, transparent 20%),
-  radial-gradient(800px 780px, transparentize(color.$light-main, 0.6) 20%, transparent 20%),
-  radial-gradient(1000px 990px, transparentize(color.$light-main, 0.5) 20%, transparent 20%),
-  radial-gradient(400px 380px, transparentize(color.$light-main, 0.9) 20%, transparent 20%),
-  radial-gradient(750px 750px, transparentize(color.$light-main, 0.6) 20%, transparent 20%),
-  radial-gradient(100px 100px, transparentize(color.$light-main, 0.8) 20%, transparent 20%);
+  background: color.$lesson-light;
+  background-image: radial-gradient(290px 300px, transparentize(color.$lesson-sub, 0.7) 20%, transparent 20%),
+  radial-gradient(800px 780px, transparentize(color.$lesson-sub, 0.6) 20%, transparent 20%),
+  radial-gradient(1000px 990px, transparentize(color.$lesson-sub, 0.5) 20%, transparent 20%),
+  radial-gradient(400px 380px, transparentize(color.$lesson-sub, 0.9) 20%, transparent 20%),
+  radial-gradient(750px 750px, transparentize(color.$lesson-sub, 0.6) 20%, transparent 20%),
+  radial-gradient(100px 100px, transparentize(color.$lesson-sub, 0.8) 20%, transparent 20%);
   background-size: 1230px 1280px,
   810px 910px,
   1470px 990px,
@@ -55,7 +55,7 @@ main {
       position: relative;
       display: block;
       padding: rem.rem(20px);
-      color: color.$main-colour;
+      color: color.$lesson-main;
       @include responsive.responsive(lg) {
         background-color: transparent;
         padding: rem.rem(10px) rem.rem(10px);
@@ -68,7 +68,7 @@ main {
             content: '';
             width: 50px;
             height: 2px;
-            background-color: color.$accent-colour;
+            background-color: color.$lesson-important;
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -81,7 +81,7 @@ main {
     &.current-menu-item {
       position: relative;
       font-weight: 700;
-      border-left: 5px solid color.$accent-colour;
+      border-left: 5px solid color.$lesson-important;
       background-color: #fafafa;
       @include responsive.responsive(lg) {
         border-left: none;
@@ -90,7 +90,7 @@ main {
           content: '';
           width: 50px;
           height: 2px;
-          background-color: color.$accent-colour;
+          background-color: color.$lesson-important;
           position: absolute;
           bottom: 0;
           left: 50%;
@@ -149,7 +149,7 @@ main {
   font-family: 'Sofia', cursive;
   font-weight: 500;
   font-size: rem.rem(24px);
-  color: color.$main-colour;
+  color: color.$lesson-main;
 
   &:hover {
     text-decoration: none;
@@ -157,57 +157,71 @@ main {
 }
 
 .lesson-header__sub-heading {
-  color: color.$main-colour;
+  color: color.$lesson-main;
   font-size: rem.rem(14px);
 }
 
 .lesson-hero-section {
   position: relative;
-  padding: #{clamp.sass_clamp(40px, 80px)};
   background: transparent;
+  padding: rem.rem(48px);
 }
 
-.lesson-hero-section--top {
+.lesson-top__hero {
+  position: relative;
+  background-color: color.$lesson-light;
+}
+
+.lesson-hero-portrait {
+  display: block;
+}
+
+
+.lesson-hero-catch {
   display: flex;
-  align-items: flex-end;
-  height: 70vh;
-  background: url(images/lesson-top.jpg) 70% top/cover no-repeat;
-  @include responsive.responsive(lg) {
-    background: url(images/lesson-top.jpg) center top/cover no-repeat;
-    align-items: center;
-  }
-}
-
-
-.lesson-home-catch {
+  flex-direction: column;
+  gap: rem.rem(24px);
   position: relative;
   z-index: 2;
-  background-color: transparentize(color.$white, 0.5);
   width: fit-content;
   padding: rem.rem(24px);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  box-shadow: 0 2rem 1.5rem -2rem rgba(26, 60, 77, .4);
-  @include responsive.responsive(xxl) {
-    margin-left: 200px;
+  margin: auto;
+  .pc-only {
+    display: none;
+  }
+  @include responsive.responsive(md) {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    background-color: transparentize(color.$white, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    translate: 0 -50%;
+    box-shadow: 0 2rem 1.5rem -2rem rgba(26, 60, 77, .4);
+    .pc-only {
+      display: block;
+    }
   }
 }
 
-.lesson-home-catch__text {
-  color: color.$main-colour;
-  font-size: #{clamp.sass_clamp(24px, 48px)};
+.lesson-hero-catch__text {
+  color: color.$lesson-main;
+  font-size: #{clamp.sass_clamp(24px, 32px)};
   font-family: fonts.$heading, sans-serif;
   font-weight: 500;
-}
-
-.lesson-home-catch__button {
-  margin-top: #{clamp.sass_clamp(16px, 24px)};
+  line-height: 1.5;
+  @include responsive.responsive(lg) {
+    font-size: rem.rem(40px);
+  }
+  @include responsive.responsive(xl) {
+    font-size: rem.rem(48px);
+  }
 }
 
 .lesson-hero-section__heading {
   text-align: center;
-  color: color.$main-colour;
+  color: color.$lesson-main;
   font-size: #{clamp.sass_clamp(24px, 48px)};
   font-family: fonts.$heading, sans-serif;
   font-weight: 500;
@@ -228,11 +242,11 @@ main {
   }
 
   &.lesson-section--private {
-    background-color: transparentize(color.$main-colour, 0.8);
+    background-color: transparentize(color.$lesson-main, 0.8);
   }
 
   &.lesson-section--mentoring {
-    background-color: transparentize(color.$main-colour, 0.2);
+    background-color: transparentize(color.$lesson-main, 0.2);
   }
 }
 
@@ -243,7 +257,7 @@ main {
 .lesson-section--solved {
   position: relative;
   padding-top: 100px;
-  background-color: color.$light-sub;
+  background-color: color.$lesson-light;
 
   &::before {
     position: absolute;
@@ -259,7 +273,8 @@ main {
 
 .lesson-section__heading {
   font-size: #{clamp.sass_clamp(24px, 40px)};
-  color: color.$main-colour;
+  color: color.$lesson-main;
+  font-family: fonts.$heading, sans-serif;
   font-weight: 500;
   text-align: center;
 }
@@ -270,7 +285,7 @@ main {
 
 .lesson-sub-heading {
   text-align: center;
-  color: color.$main-colour;
+  color: color.$lesson-main;
   font-size: #{clamp.sass_clamp(16px, 20px)};
   font-family: fonts.$heading, sans-serif;
 }
@@ -280,12 +295,8 @@ main {
 }
 
 .lesson-section__inner {
-  max-width: 1024px;
+  max-width: 880px;
   margin-inline: auto;
-  @include responsive.responsive(md) {
-    flex-direction: row;
-    gap: rem.rem(20px);
-  }
 }
 
 .lesson-section__center-text {
@@ -313,7 +324,7 @@ main {
 .lesson-catch {
   font-size: #{clamp.sass_clamp(24px, 40px)};
   font-family: fonts.$heading, sans-serif;
-  color: color.$main-colour;
+  color: color.$lesson-main;
   font-weight: 500;
   text-align: center;
 }
@@ -336,7 +347,7 @@ main {
 }
 
 .lesson-content--chat {
-  max-width: 1024px;
+  max-width: rem.rem(1024px);
   margin-top: rem.rem(40px);
 }
 
@@ -346,7 +357,7 @@ main {
 }
 
 .lesson-content--mentoring {
-  max-width: 1024px;
+  max-width: rem.rem(1024px);
   @include responsive.responsive(md) {
     flex-direction: row;
   }
@@ -354,12 +365,9 @@ main {
 
 .lesson-introduction {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   gap: rem.rem(48px);
-  @include responsive.responsive(md) {
-    flex-direction: row-reverse;
-  }
 }
 
 .lesson-introduction__text {
@@ -389,18 +397,18 @@ main {
     padding: rem.rem(5px) rem.rem(20px);
     color: color.$white;
     text-align: center;
-    background-color: color.$light-main;
-    border: 1px solid color.$light-main;
+    background-color: color.$lesson-sub;
+    border: 1px solid color.$lesson-sub;
     transition: 0.2s;
 
     &:hover {
       text-decoration: none;
-      color: color.$light-main;
+      color: color.$lesson-main;
       background-color: color.$white;
 
       &::after {
-        border-right: 1px solid color.$light-main;
-        border-bottom: 1px solid color.$light-main;
+        border-right: 1px solid color.$lesson-main;
+        border-bottom: 1px solid color.$lesson-main;
         transition: 0.2s;
       }
     }
@@ -423,7 +431,7 @@ main {
 }
 
 .lesson-button {
-  margin: 40px auto 0;
+  margin: rem.rem(40px) auto 0;
   width: fit-content;
 }
 
@@ -481,7 +489,8 @@ main {
 }
 
 .lesson-choice__heading {
-  color: color.$main-colour;
+  color: color.$lesson-main;
+  font-weight: normal;
   text-align: center;
   font-family: fonts.$heading, sans-serif;
 }
@@ -506,22 +515,22 @@ main {
     align-items: center;
     justify-content: center;
     padding: rem.rem(20px);
-    background-color: color.$main-colour;
+    background-color: color.$lesson-sub;
     color: color.$white;
-    width: 250px;
+    width: rem.rem(250px);
     border-radius: 10px;
     text-align: center;
-    border: 1px solid color.$main-colour;
+    border: 1px solid color.$lesson-sub;
     transition: 0.2s;
 
     &:hover {
       text-decoration: none;
-      color: color.$main-colour;
+      color: color.$lesson-sub;
       background-color: color.$white;
 
       &::after {
-        border-right: 1px solid color.$light-main;
-        border-bottom: 1px solid color.$light-main;
+        border-right: 1px solid color.$lesson-sub;
+        border-bottom: 1px solid color.$lesson-sub;
         transition: 0.2s;
       }
     }
@@ -542,7 +551,7 @@ main {
 .teacher {
   margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
   display: flex;
-  gap: rem.rem(24px);
+  gap: rem.rem(32px);
   flex-direction: column;
   @include responsive.responsive(md) {
     flex-direction: row;
@@ -557,7 +566,40 @@ main {
 
   img {
     border-radius: 50%;
+    animation-name: fuwafuwa;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
   }
+
+  @keyframes fuwafuwa{
+    0%{
+      border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    }
+    14%{
+      border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+    28%{
+      border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+    42%{
+      border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+    56%{
+      border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+    70%{
+      border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+    84%{
+      border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+    100%{
+      border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    }
+  }
+
 }
 
 .teacher__profile {
@@ -588,7 +630,7 @@ main {
   color: color.$white;
   font-size: rem.rem(16px);
   font-family: fonts.$heading, sans-serif;
-  background: color.$main-colour;
+  background: color.$lesson-main;
   border-radius: 50px;
   text-align: center;
   line-height: 1;
@@ -606,14 +648,14 @@ main {
       left: 50%;
       translate: -50% 0;
       border: 10px solid transparent;
-      border-top: 10px solid color.$main-colour;
+      border-top: 10px solid color.$lesson-main;
     }
   }
 }
 
 .lesson-box--recommended {
   box-shadow: 0 2rem 1.5rem -2rem hsl(200 50% 20% / 40%);
-  border: 2px solid color.$main-colour;
+  border: 2px solid color.$lesson-main;
   @include responsive.responsive(md) {
     padding: rem.rem(56px) rem.rem(20px);
   }
@@ -646,14 +688,14 @@ main {
 }
 
 .lesson-price-title {
-  color: color.$main-colour;
+  color: color.$lesson-main;
   text-align: center;
   font-size: #{clamp.sass_clamp(16px, 24px)};
   font-family: fonts.$heading, sans-serif;
 }
 
 .lesson-price {
-  color: color.$main-colour;
+  color: color.$lesson-main;
   text-align: center;
   font-size: #{clamp.sass_clamp(24px, 24px)};
 
@@ -669,7 +711,7 @@ main {
 .lesson-detail__heading {
   font-size: #{clamp.sass_clamp(16px, 24px)};
   text-align: center;
-  border-bottom: 1px dotted color.$main-colour;
+  border-bottom: 1px dotted color.$lesson-main;
 }
 
 .lesson-detail__content {
@@ -721,7 +763,7 @@ main {
   padding: 1em 2em 1em 3em;
   font-weight: 600;
   cursor: pointer;
-  color: color.$font-colour;
+  color: color.$lesson-accent;
 
   &::before {
     position: absolute;
@@ -737,8 +779,8 @@ main {
     width: 10px;
     height: 10px;
     margin-left: 10px;
-    border-bottom: 2px solid color.$main-colour;
-    border-right: 2px solid color.$main-colour;
+    border-bottom: 2px solid color.$lesson-main;
+    border-right: 2px solid color.$lesson-main;
     content: '';
     transition: transform .5s;
   }
@@ -761,7 +803,7 @@ main {
   transition: transform .5s, opacity .5s;
 
   &::before {
-    color: color.$important-colour;
+    color: color.$lesson-important;
     line-height: 1.2;
     content: "A";
     padding: rem.rem(3px);
@@ -781,8 +823,8 @@ main {
     height: 10px;
     rotate: 45deg;
     margin-top: -3px;
-    border-top: 2px solid color.$main-colour;
-    border-right: 2px solid color.$main-colour;
+    border-top: 2px solid color.$lesson-main;
+    border-right: 2px solid color.$lesson-main;
   }
 }
 
@@ -820,7 +862,7 @@ main {
   width: rem.rem(100px);
   height: rem.rem(100px);
   border-radius: 50%;
-  background-color: color.$accent-colour;
+  background-color: color.$important-colour;
 
   i {
     color: color.$white;
@@ -843,15 +885,16 @@ main {
   font-size: rem.rem(20px);
   font-family: fonts.$heading, sans-serif;
   font-weight: 500;
-  color: color.$main-colour;
+  color: color.$lesson-main;
   text-align: center;
   margin: rem.rem(24px) auto 0;
 }
 
 .feature-list__text-wrap {
   position: relative;
-  background-color: color.$sub-colour;
+  background-color: color.$lesson-light;
   border-radius: 20px;
+  color: color.$font-colour;
   padding: rem.rem(20px);
   display: flex;
   flex-direction: column;
@@ -864,7 +907,7 @@ main {
     left: 50%;
     translate: -50% 0;
     border: 10px solid transparent;
-    border-top: 10px solid color.$sub-colour;
+    border-top: 10px solid color.$lesson-light;
   }
 }
 
@@ -888,7 +931,7 @@ main {
     translate: -50% 0;
     width: 10px;
     border: 10px solid rgba(0, 0, 0, 0);
-    border-top: 15px solid color.$important-colour;
+    border-top: 15px solid color.$lesson-important;
   }
 
   &:last-of-type {
@@ -910,7 +953,7 @@ main {
   display: flex;
   align-items: center;
   gap: rem.rem(24px);
-  color: color.$main-colour;
+  color: color.$lesson-main;
   border-bottom: 1px dotted #ccc;
   margin: 0 0 10px;
   padding: 0 0 5px;
@@ -924,7 +967,7 @@ main {
 
   strong {
     font-size: rem.rem(28px);
-    color: color.$important-colour;
+    color: color.$lesson-important;
   }
 }
 
@@ -933,7 +976,7 @@ main {
   margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
 
   .emphasis {
-    color: color.$important-colour;
+    color: color.$lesson-important;
   }
 }
 
@@ -944,7 +987,7 @@ main {
 .mentoring-worries__item {
   position: relative;
   padding: rem.rem(24px);
-  background-color: color.$sub-colour;
+  background-color: color.$lesson-light;
   border-radius: #{clamp.sass_clamp(20px, 50px)};
   width: 80%;
 
@@ -954,19 +997,27 @@ main {
     top: 100%;
     left: 10%;
     border: 10px solid transparent;
-    border-top: 10px solid color.$sub-colour;
+    border-top: 10px solid color.$lesson-light;
   }
 }
 
 .mentoring-worries__item--right {
   margin: rem.rem(24px) 0 0 auto;
-  background-color: color.$light-main;
+  background-color: color.$lesson-sub;
   color: color.$white;
 
   &::before {
     left: auto;
     right: 10%;
-    border-top: 10px solid color.$light-main;
+    border-top: 10px solid color.$lesson-sub;
+  }
+}
+
+.mentoring-worries__item--white {
+  background-color: color.$white;
+
+  &::before {
+    border-top: 10px solid color.$white;
   }
 }
 
@@ -994,7 +1045,7 @@ main {
 
 .brush-up-sub-heading {
   align-self: flex-start;
-  color: color.$main-colour;
+  color: color.$lesson-main;
   padding-top: rem.rem(24px);
   font-size: #{clamp.sass_clamp(18px, 24px)};
   font-family: fonts.$heading, sans-serif;
@@ -1002,7 +1053,7 @@ main {
 }
 
 .brush-up-icon {
-  color: color.$accent-colour;
+  color: color.$lesson-important;
 }
 
 .brush-up-notices {

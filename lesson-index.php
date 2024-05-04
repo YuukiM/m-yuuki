@@ -6,14 +6,17 @@
 ?>
 
 <?php get_header(); ?>
-  <main class="lesson-top">
-    <section class="lesson-hero-section lesson-hero-section--top">
-      <div class="lesson-home-catch">
-        <p class="lesson-home-catch__text">
-          Yûki's Web Design Lessonsで、<br>
-          プロの技術とノウハウを学ぼう！
+  <main class="lesson-top lesson-page">
+    <section class="lesson-top__hero">
+      <picture class="lesson-hero-portrait">
+        <source srcset="<?php echo get_theme_file_uri('/images/portrait.jpg'); ?>" media="(min-width: 768px)">
+        <img src="<?php echo get_theme_file_uri('/images/portraitSP.jpg'); ?>" alt="">
+      </picture>
+      <div class="lesson-hero-catch">
+        <p class="lesson-hero-catch__text">
+          Yûki's Web Design Lessonsで、<br class="pc-only">プロの技術とノウハウを学ぼう！
         </p>
-        <div class="lesson-home-catch__button">
+        <div class="lesson-hero-catch__button">
           <a class="button" href="#inquiry">
             まずは無料カウンセリング！
           </a>
@@ -256,7 +259,7 @@
         <h2 class="lesson-section__heading">講師について</h2>
         <div class="teacher">
           <div class="teacher__image">
-            <img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
+            <img src="<?php echo get_theme_file_uri('/images/portrait1x1.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
           </div>
           <div class="teacher__profile">
             <p>

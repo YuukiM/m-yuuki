@@ -12,12 +12,12 @@
       background-color: rgba(0,0,0,.8);
     }
     & + .drawer-open {
-      background: color.$sub-colour;
+      background: color.$lesson-sub;
       transform: translateX(-280px);
       span,
       &::before,
       &::after {
-        border-color: color.$main-colour;
+        border-color: color.$lesson-main;
       }
       span {
         transform: scaleX(0);
@@ -48,7 +48,7 @@
   width: rem.rem(50px);
   height: rem.rem(50px);
   border-radius: 50%;
-  background: transparentize(color.$main-colour, 0.2);
+  background: transparentize(color.$lesson-main, 0.2);
   transition: background .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
   @include responsive.responsive(lg) {
     display: none;

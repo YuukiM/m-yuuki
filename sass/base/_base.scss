@@ -3,6 +3,7 @@
 @forward "../variables/color";
 @use "../variables/fonts";
 @use "../variables/color";
+@use "../mixins/responsive";
 
 html {
   scroll-behavior: smooth;
@@ -38,7 +39,7 @@ ul, li {
 
 .c,
 .g {
-  fill: color.$sub-colour;
+  fill: color.$lesson-sub;
 }
 
 .d,

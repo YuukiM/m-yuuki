@@ -6,7 +6,7 @@
 ?>
 
 <?php get_header(); ?>
-  <main class="mentoring">
+  <main class="mentoring lesson-page">
     <section class="lesson-hero-section">
       <p class="lesson-sub-heading">継続受講でモチベーションもスキルもアップ！</p>
       <h1 class="lesson-hero-section__heading">
@@ -137,10 +137,12 @@
         <h2 class="lesson-section__heading">メンタリングで解決！！</h2>
         <div class="lesson-content">
           <div class="mentoring-worries">
-            <p class="mentoring-worries__item">
-              製作段階のアドバイスのほかに、クライアントとのやり取りの方法、納品の流れまで教えてくれた！</p>
+            <p class="mentoring-worries__item mentoring-worries__item--white">
+              製作段階のアドバイスのほかに、クライアントとのやり取りの方法、納品の流れまで教えてくれた！
+            </p>
             <p class="mentoring-worries__item mentoring-worries__item--right">
-              定期的に進捗の確認、勉強の方向性までチェックしてくれるから、モチベーションが上がった！</p>
+              定期的に進捗の確認、勉強の方向性までチェックしてくれるから、モチベーションが上がった！
+            </p>
           </div>
           <div class="mentoring-content-images">
             <div class="mentoring-content-image">
@@ -199,7 +201,7 @@
             <p class="lesson-price-title">ライトプラン</p>
             <p class="lesson-price">月 <strong>5,000</strong>円</p>
             <div class="lesson-detail">
-              <h3 class="lesson-detail__heading">プランに含まれるもの</h3>
+              <h3 class="lesson-detail__heading">プラン内容</h3>
               <div class="lesson-detail__content">
                 <ul class="lesson-detail__list">
                   <li class="lesson-detail__list-item">ビデオ通話 1時間</li>
@@ -218,7 +220,7 @@
             <p class="lesson-price-title">スタンダードプラン</p>
             <p class="lesson-price">月 <strong>10,000</strong>円</p>
             <div class="lesson-detail">
-              <h3 class="lesson-detail__heading">プランに含まれるもの</h3>
+              <h3 class="lesson-detail__heading">プラン内容</h3>
               <div class="lesson-detail__content">
                 <ul class="lesson-detail__list">
                   <li class="lesson-detail__list-item">ビデオ通話 2時間30分</li>
@@ -235,7 +237,7 @@
             <p class="lesson-price-title">アドバンスドプラン</p>
             <p class="lesson-price">月 <strong>15,000</strong>円</p>
             <div class="lesson-detail">
-              <h3 class="lesson-detail__heading">プランに含まれるもの</h3>
+              <h3 class="lesson-detail__heading">プラン内容</h3>
               <div class="lesson-detail__content">
                 <ul class="lesson-detail__list">
                   <li class="lesson-detail__list-item">ビデオ通話3時間</li>
@@ -377,7 +379,7 @@
         <h2 class="lesson-section__heading">講師について</h2>
         <div class="teacher">
           <div class="teacher__image">
-            <img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
+            <img src="<?php echo get_theme_file_uri('/images/portrait1x1.jpg'); ?>" loading="lazy" alt="宮崎祐樹 写真">
           </div>
           <div class="teacher__profile">
             <p>
