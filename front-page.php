@@ -39,7 +39,7 @@
             </span>
           </h1>
           <div class="introduction__image">
-            <img src="<?php echo get_theme_file_uri('/images/teacher.jpg'); ?>" alt="宮崎祐樹">
+            <img src="<?php echo get_theme_file_uri('/images/portrait1x1.jpg'); ?>" alt="宮崎祐樹 写真">
           </div>
           <div class="introduction__lead">
             <p>
