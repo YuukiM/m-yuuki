@@ -193,7 +193,7 @@
           <li class="feature-list__item">
             <div class="feature-list__text-wrap">
               <p class="feature-list__text">
-                ただ知識だけを教えてもらえるサイトや動画はたくさんありますが、1つ1つ例を用意して頂いたり質問形式でお話し頂けたので理解が深まったと思います。
+                ただ知識だけを教えてもらえるサイトや動画はたくさんありますが、1つ1つ例を用意して頂いたり質問形式でお話し頂けたので理解が深まったと思います。<br>&ensp;
               </p>
             </div>
             <div class="feature-list__user">

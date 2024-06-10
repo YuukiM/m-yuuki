@@ -272,6 +272,7 @@ main {
 }
 
 .lesson-section__heading {
+  position: relative;
   font-size: #{clamp.sass_clamp(24px, 40px)};
   color: color.$lesson-main;
   font-family: fonts.$heading, sans-serif;
@@ -279,8 +280,20 @@ main {
   text-align: center;
 }
 
+.lesson-section__heading::after {
+  content: '';
+  position: absolute;
+  bottom: rem.rem(-30px);
+  left: 50%;
+  transform: translate(-50%) rotate(30deg);
+  width: 2px;
+  height: 20px;
+  background-color: color.$accent-colour;
+}
+
 .lesson-section__heading--mentoring {
   color: color.$white;
+  margin: #{clamp.sass_clamp(40px, 80px)} auto 0;
 }
 
 .lesson-sub-heading {
@@ -359,6 +372,7 @@ main {
 .lesson-content--mentoring {
   max-width: rem.rem(1024px);
   @include responsive.responsive(md) {
+    margin-top: rem.rem(96px);
     flex-direction: row;
   }
 }
@@ -913,7 +927,6 @@ main {
 
 .feature-list__text {
   position: relative;
-  margin-top: rem.rem(16px);
 }
 
 .lesson-flow {
