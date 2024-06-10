@@ -9,6 +9,8 @@
     <title><?php the_title(); ?> | 宮崎祐樹のブログ</title>
   <?php elseif(is_category()): ?>
     <title>カテゴリ：<?php single_cat_title(); ?> | 宮崎祐樹のブログ</title>
+  <?php elseif(is_page('naro-kai') || is_singular('event')): ?>
+    <title>Webデザイナーになろう会</title>
   <?php else: ?>
     <title>宮崎祐樹・Webデザイン講師｜「わかった！」につなげるWebデザイン講師</title>
   <?php endif; ?>
@@ -19,7 +21,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> onscroll="scrollFunction()" id="body">
-<?php if (is_home() || is_single() || is_category()): ?>
+<?php if (is_home() || is_singular('post') || is_category()): ?>
   <header class="blog-header">
     <div class="title-zone">
       <h1 class="blog-heading">
@@ -39,6 +41,17 @@
         <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank">レッスンについて</a>
       </li>
     </ul>
+  </header>
+<?php endif; ?>
+<?php if (is_singular('event') || is_page('naro-kai')): ?>
+  <header class="naro-kai-header">
+    <div class="title-zone">
+      <h1 class="naro-kai-heading">
+        <a href="<?php echo esc_url(home_url('/naro-kai/')); ?>" title="<?php bloginfo('name'); ?>">
+          Webデザイナーになろう会
+        </a>
+      </h1>
+    </div>
   </header>
 <?php endif; ?>
 <?php if (is_page("home")): ?>

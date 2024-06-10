@@ -19,8 +19,11 @@
     if (is_home() || is_single() || is_category()) {
       wp_enqueue_style('blog-style', get_theme_file_uri('/blog.css'), array(), filemtime(get_theme_file_path('/blog.css')));
     }
-    if (is_page(array('private-lesson-famm', 'naro-kai'))) {
+    if (is_page(array('private-lesson-famm'))) {
       wp_enqueue_style('famm-style', get_theme_file_uri('/lp.css'), array(), filemtime(get_theme_file_path('/lp.css')));
+    }
+    if (is_page(array('naro-kai'))) {
+      wp_enqueue_style('naro-kai-style', get_theme_file_uri('/naro-kai.css'), array(), filemtime(get_theme_file_path('/naro-kai.css')));
     }
     if (is_page('reservation')) {
       wp_enqueue_style('reservation-style', get_theme_file_uri('/reservation.css'), array(), filemtime(get_theme_file_path('/reservation.css')));
