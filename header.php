@@ -38,7 +38,7 @@
         <a href="<?php echo esc_url(home_url('/')); ?>">メインサイト</a>
       </li>
       <li class="blog-gnav__item blog-gnav__item--lesson">
-        <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank">レッスンについて</a>
+        <a href="https://studio-lapin.jp/lessons/" target="_blank">レッスンについて</a>
       </li>
     </ul>
   </header>
@@ -71,7 +71,7 @@
           <a href="#Blog">ブログ</a>
         </li>
       </ul>
-      <a href="<?php echo esc_url(home_url('/lessons/')); ?>" target="_blank" class="lesson-button">レッスンについて</a>
+      <a href="https://studio-lapin.jp/lessons/" target="_blank" class="lesson-button">レッスンについて</a>
     </div>
     <ul class="era-switcher">
       <li class="era-switcher__item"><a href="#" onclick="eraSwitcher90();">1990s</a></li>
@@ -84,7 +84,7 @@
 <?php elseif (is_page(array('lessons', 'private-lesson', 'mentoring'))): ?>
 <header class="lesson-header">
   <h1 class="lesson-header__inner">
-    <a href="<?php echo esc_url(home_url('/lessons/')); ?>" class="lesson-header__heading">
+    <a href="https://studio-lapin.jp/lessons/" class="lesson-header__heading">
       Yûki's Web Design Lessons
     </a>
     <span class="lesson-header__sub-heading">宮崎祐樹のWeb制作レッスン</span>

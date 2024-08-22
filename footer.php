@@ -8,7 +8,7 @@
 </footer>
 
 <?php if(is_page('home')) { ?>
-  <a href="<?php echo esc_url(home_url('/lessons/')); ?>" class="footer-lesson-button" target="_blank">レッスン<br>について</a>
+  <a href="https://studio-lapin.jp/lessons/" class="footer-lesson-button" target="_blank">レッスン<br>について</a>
 <?php } ?>
 <?php wp_footer(); ?>
 </body>
