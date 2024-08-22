@@ -26,7 +26,7 @@ img {
   width: 100%;
 }
 
-ul, li {
+ul, ol, li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -52,4 +52,8 @@ ul, li {
 .footer {
   padding: 20px;
   text-align: center;
+}
+
+.spectra-image-gallery__control-lightbox--main .swiper-slide img {
+  width: auto;
 }
