@@ -7,9 +7,9 @@
 /* 予約ページ */
 
 .reservation {
-  padding: 1rem !important;
-  max-width: 780px !important;
-  margin-inline: auto !important;
+  padding: 1rem;
+  max-width: 780px;
+  margin-inline: auto;
 }
 
 .reservation__heading {
@@ -26,7 +26,7 @@
     gap: 10px;
   }
   li {
-    list-style-type: disc !important;
+    list-style-type: disc;
 
   }
 }
@@ -34,12 +34,12 @@
 /* カレンダーページ */
 #booking-package_calendarPage {
   .selectPanel, .selectPanel {
-    font-weight: bold !important;
+    font-weight: bold;
   }
   .pointer {
     &:hover {
-      background-color: color.$light-main !important;
-      color: color.$white !important;
+      background-color: color.$light-main;
+      color: color.$white;
     }
   }
 }
@@ -47,21 +47,21 @@
 /* 時間選択ページ */
 #booking-package_schedulePage {
   .selectPanelError {
-    background-color: #efefef !important;
+    background-color: #efefef;
   }
   .selectPanelActive {
-    background-color: color.$light-main !important;
-    color: color.$white !important;
+    background-color: color.$light-main;
+    color: color.$white;
   }
 
   .selectPanel {
     &:hover {
-      background-color: color.$light-main !important;
-      color: color.$white !important;
+      background-color: color.$light-main;
+      color: color.$white;
     }
   }
   #returnToCalendarButton {
-    padding: rem.rem(10px) !important;
+    padding: rem.rem(10px);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -82,24 +82,24 @@
 /* フォーム */
 #booking-package_inputFormPanel {
   input[type=text] {
-    padding: 10px !important;
+    padding: 10px;
   }
 
   label {
-    margin-top: rem.rem(10px) !important;
+    margin-top: rem.rem(10px);
   }
 
   .description {
-    margin-top: rem.rem(10px) !important;
-    margin-left: rem.rem(24px) !important;
-    font-size: rem.rem(14px) !important;
+    margin-top: rem.rem(10px);
+    margin-left: rem.rem(24px);
+    font-size: rem.rem(14px);
   }
 
   #returnToSchedules {
-    padding: rem.rem(10px) !important;
-    width: rem.rem(100px) !important;
-    margin-inline: auto !important;
-    border-radius: 5px !important;
+    padding: rem.rem(10px);
+    width: rem.rem(100px);
+    margin-inline: auto;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -116,7 +116,7 @@
   }
 
   .bottomBarPanel {
-    text-align: center !important;
+    text-align: center;
   }
 
   textarea {
@@ -136,19 +136,25 @@
 }
 
 #booking-package {
-  .bookingButton {
-    border: none !important;
-    background-color: color.$accent-colour !important;
-    color: #fff !important;
-    padding: rem.rem(10px) !important;
-    width: rem.rem(200px) !important;
-    margin-inline: auto !important;
+
+  .numberInsteadOfSymbols {
+    color: #aaaaaa;  
+  }
+
+  .book_now_button {
+    border: 1px solid color.$accent-colour;
+    background-color: color.$accent-colour;
+    color: #fff;
+    padding: rem.rem(10px);
+    width: rem.rem(200px);
+    margin-inline: auto;
     font-size: rem.rem(24px);
-    border-radius: 5px !important;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: .2s;
     &::before {
       content: "";
       display: block;
@@ -158,6 +164,16 @@
       border-left: 3px solid color.$white;
       rotate: -45deg;
       margin-top: -5px;
+      transition: .2s;
+    }
+    &:hover {
+      background-color: #fff;
+      color: color.$accent-colour;
+      cursor: pointer;
+      &::before {
+        border-bottom: 3px solid color.$accent-colour;
+        border-left: 3px solid color.$accent-colour;
+      }
     }
   }
 

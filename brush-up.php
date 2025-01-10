@@ -34,11 +34,10 @@
             <p>皆さんが作ったWebサイトのデザインカンプを、宮崎が徹底的に添削しクオリティアップのお手伝いをします。</p>
             <p>通常であればそれなりの指導料がかかるところを、圧倒的リーズナブルな価格でサービスご提供。</p>
             <p>もちろん、制作物はご自身のポートフォリオに掲載できます。</p>
-            <p>希望者にはココナラでのお取引も可能です。</p>
           </div>
           <div class="lesson-content__block">
             <p>
-              超リーズナブルな価格の条件はひとつだけ。作ったデザインを宮崎に使わせてください。将来的に立ち上げ予定のコーディング学習サイトの課題として提供する予定です。
+              超リーズナブルな価格の条件はひとつだけ。作ったデザインを宮崎に使わせてください。<a href="https://codage.studio-lapin.jp/" target="_blank">現在制作中のコーディング学習サイト</a>の課題として提供する予定です。
             </p>
           </div>
           <div class="lesson-button">
@@ -108,7 +107,7 @@
           <p>
             デザイン添削レッスンという体裁ですが、進行は実際のお仕事と同じように行います。
             宮崎がデザイン業務の発注をし、キックオフミーティングで内容のすり合わせ。
-            その後は週に1時間程度の添削ミーティングを行いながら完成に近づけていきます。
+            その後は週に30分程度の添削ミーティングを行いながら完成に近づけていきます。
             また、添削ミーティング以外に、チャットでも質問・やり取りが可能です。
             <a href="#flow">詳しくは「受講から納品の流れ」をご覧ください。</a>
           </p>
@@ -117,7 +116,7 @@
           </h3>
           <p>
             これだけのサービスを4,000円からという低価格で実現しているのには訳があります。
-            みなさまのデザインを宮崎が今後オープン予定の「コーディング学習サイト」の素材として使わせていただきたいのです。
+            みなさまのデザインを宮崎が<a href="https://codage.studio-lapin.jp/" target="_blank">現在制作中のコーディング学習サイト</a>の素材として使わせていただきたいのです。
             そのためにはデザインのクオリティを担保しなければいけないため、今回のご依頼となります。
           </p>
           <h3 class="brush-up-sub-heading">
@@ -177,12 +176,11 @@
                   <li class="lesson-detail__list-item">ZOOMミーティング：<strong>30分ｘ4回</strong></li>
                   <li class="lesson-detail__list-item">延長料金：<strong>5,000円/月</strong></li>
                 </ul>
-                <p class="">デザインをもとにコーディングするプランです。現在は受付停止中です</p>
+                <p class="">コーディングのみ。現在は受付停止中です</p>
               </div>
             </div>
           </div>
         </div>
-        <p>※ ココナラでの発注をご希望の場合には、別途ココナラの手数料がかかります。</p>
       </div>
     </section>
 
@@ -195,7 +193,7 @@
               <dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>1</strong></span>まずはお申し込み
               </dt>
               <dd class="lesson-flow__item-content">
-                下記のお申し込みフォームからお申し込みください。ココナラ経由をご希望の場合、ココナラで出品中のデザインサービスURLとその金額をご記入ください。
+                下記のお申し込みフォームからお申し込みください。
               </dd>
             </dl>
           </div>
@@ -204,7 +202,7 @@
               <dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>2</strong></span>制作依頼
               </dt>
               <dd class="lesson-flow__item-content">
-                宮崎より実際に制作のご依頼をいたします。ココナラ希望者はココナラで、希望しない場合にはチャットなどでご依頼します。
+                宮崎より実際に制作のご依頼をいたします。チャットかメールでご依頼します。
               </dd>
             </dl>
           </div>
@@ -213,11 +211,7 @@
               <dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>3</strong></span>ストアカでレッスン受講
               </dt>
               <dd class="lesson-flow__item-content">
-                ストアカでレッスンの受講をお申し込みください。金額、ストアカ決済リンクのご案内はメールにていたします。<br>
-                レッスンの受講額は下記のようになります。<br>
-                例1：ココナラでデザイン作業を10,000円で出品されていて、デザインプラン4,000円をお申し込みの場合 →
-                14,000円のお支払い。<br>
-                例2：ココナラを経由せず、デザインプラン4,000円をお申し込みの場合 → 4,000円のお支払い。<br>
+                決済ページから決済をお願いいたします。チャットかメールにて、金額・決済ページへのご案内をいたします。
               </dd>
             </dl>
           </div>
@@ -239,15 +233,6 @@
               </dd>
             </dl>
           </div>
-          <div class="lesson-flow__item-wrap">
-            <dl class="lesson-flow__item">
-              <dt class="lesson-flow__item-title"><span class="lesson-flow__item-step">STEP <strong>6</strong></span>ココナラでのお支払い
-              </dt>
-              <dd class="lesson-flow__item-content">
-                ココナラ経由をご希望された場合、宮崎よりココナラでお支払いをします。
-              </dd>
-            </dl>
-          </div>
         </div>
       </div>
     </section>
@@ -259,7 +244,8 @@
           <ul class="brush-up-notices">
             <li>
               本レッスンの参加資格：<br>
-              ご自身考案のWebページのデザインカンプを1ページ分以上、最後まで仕上げたことがある方。
+              デザインプラン：Webページのデザインカンプを1ページ、最後まで仕上げたことがある方。<br>
+              コンプリートプラン：Webページ1ページ分のデザインからコーディングまでを、最後まで仕上げたことがある方。
             </li>
             <li>
               本レッスンは、デザインもしくはコーディングが完成するまで宮崎がしっかりとサポートするレッスンです。
@@ -292,7 +278,7 @@
               デザインを作成するツールはなんですか？
             </summary>
             <p class="lesson-faq__answer">
-              Figmaを想定しています。Figmaを使ったことなくてもXDなど同様のツールを使ったことがあればOKです。
+              Figmaを想定しています。
             </p>
           </details>
           <details class="lesson-faq__group">
@@ -300,7 +286,7 @@
               添削レッスンに使用するツールは何ですか？
             </summary>
             <p class="lesson-faq__answer">
-              チャットはココナラ内のチャットシステム、添削レッスンはZOOMを使います。
+              チャットはSlack、添削レッスンはZOOMを使います。
             </p>
           </details>
           <details class="lesson-faq__group">
@@ -309,8 +295,7 @@
             </summary>
             <p class="lesson-faq__answer">
               はい。デザイン自体は自由です。
-              ただし、盛り込む内容はこちらである程度指定します。
-              また、
+              ただし、盛り込む内容はこちらである程度指定指せていただきます。
             </p>
           </details>
           <details class="lesson-faq__group">
