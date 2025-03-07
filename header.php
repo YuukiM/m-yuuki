@@ -38,7 +38,7 @@
         <a href="<?php echo esc_url(home_url('/')); ?>">メインサイト</a>
       </li>
       <li class="blog-gnav__item blog-gnav__item--lesson">
-        <a href="https://studio-lapin.jp/lessons/" target="_blank">レッスンについて</a>
+        <a href="https://studio-lapin.jp/web-design-support/" target="_blank">レッスンについて</a>
       </li>
     </ul>
   </header>
@@ -71,46 +71,14 @@
           <a href="#Blog">ブログ</a>
         </li>
       </ul>
-      <a href="https://studio-lapin.jp/lessons/" target="_blank" class="lesson-button">レッスンについて</a>
+      <a href="https://studio-lapin.jp/web-design-support/" target="_blank" class="lesson-button">レッスンについて</a>
     </div>
     <ul class="era-switcher">
       <li class="era-switcher__item"><a href="#" onclick="eraSwitcher90();">1990s</a></li>
       <li class="era-switcher__item"><a href="#" onclick="eraSwitcher20();">2020s</a></li>
     </ul>
-
   </header>
 <?php elseif (is_page(array('private-lesson-famm', 'profile'))): ?>
   <!--nothing-->
-<?php elseif (is_page(array('lessons', 'private-lesson', 'mentoring'))): ?>
-<header class="lesson-header">
-  <h1 class="lesson-header__inner">
-    <a href="https://studio-lapin.jp/lessons/" class="lesson-header__heading">
-      Yûki's Web Design Lessons
-    </a>
-    <span class="lesson-header__sub-heading">宮崎祐樹のWeb制作レッスン</span>
-  </h1>
-  <div class="lesson-gnav">
-    <?php
-      wp_nav_menu(array(
-        'theme_location' => 'lesson-page-menu'
-      ));
-    ?>
-  </div>
-  <a class="header-button" href="#inquiry">
-    無料カウンセリング！
-  </a>
-  <input type="checkbox" class="drawer" id="drawer">
-  <label for="drawer" class="drawer-open">
-    <span></span>
-  </label>
-  <label for="drawer" class="drawer-close"></label>
-  <div class="lesson-nav-sp">
-    <?php
-      wp_nav_menu(array(
-        'theme_location' => 'lesson-page-sp'
-      ));
-    ?>
-  </div>
-</header>
 
 <?php endif; ?>

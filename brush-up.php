@@ -130,7 +130,6 @@
       </div>
     </section>
 
-
     <section class="lesson-section lesson-section--price" id="price">
       <div class="lesson-section__inner">
         <h2 class="lesson-section__heading">料金</h2>

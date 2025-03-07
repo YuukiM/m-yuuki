@@ -22,7 +22,7 @@
           </p>
         </div>
         <div class="button-wrap">
-          <a href="https://studio-lapin.jp/lessons/" target="_blank" class="button button--ghost">
+          <a href="https://studio-lapin.jp/web-design-support/" target="_blank" class="button button--ghost">
             <span class="button__inner">レッスンご希望の方</span>
           </a>
         </div>
