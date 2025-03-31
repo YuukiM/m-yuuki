@@ -363,6 +363,78 @@
           </div>
         </div>
       </section>
+			<section class="section blog">
+				<div class="contents services-prices__contents" id="Blog">
+					<h2 class="section__heading">
+						ブログ
+					</h2>
+					<div class="section__wrap front-blog-section">
+						<?php
+						$the_query = new WP_Query(
+							array(
+								'post_type' => 'post',
+								'posts_per_page' => 3
+							)
+						);
+						if ($the_query->have_posts()) :
+							while ($the_query->have_posts()) :
+								$the_query->the_post();
+								?>
+								<a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="front-blog-article" id="post-<?php the_ID(); ?>" title="<?php the_title(); ?>">
+									<div class="front-blog-article__category">
+										<?php
+										$category = get_the_category();
+										echo $category[0]->cat_name;
+										?>
+									</div>
+									<div class="front-blog-article__image">
+										<?php
+										$thumbnail = get_the_post_thumbnail(get_the_ID());
+										if ($thumbnail):
+											?>
+											<picture class="post-image">
+												<?php echo $thumbnail; ?>
+											</picture>
+										<?php else: ?>
+											<picture class="post-image">
+												<img src="<?php echo get_theme_file_uri('/images/no-image.png'); ?>" alt="画像はありません">
+											</picture>
+										<?php endif; ?>
+									</div>
+									<h2 class="front-blog-article__heading">
+										<?php the_title(); ?>
+									</h2>
+									<div class="front-blog-article__bottom">
+										<div class="date">
+											<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d H:i'); ?></time>
+										</div>
+									</div>
+								</a>
+
+							<?php endwhile; ?>
+						<?php else : ?>
+							<p>Coming soon...</p>
+						<?php endif; ?>
+					</div>
+					<?php if ($the_query->have_posts()) : ?>
+						<div class="button-wrap">
+							<a href="<?php echo esc_url(home_url('/blog/')); ?>" class="button" target="_blank">
+								<span class="button__inner">ブログへ</span>
+							</a>
+						</div>
+					<?php endif; ?>
+				</div>
+				<div class="image-area ">
+					<div class="letters">
+						<p class="letters__top js-fade-in">
+							Blog
+						</p>
+						<p class="letters__bottom js-fade-in">
+							ce à quoi je pense...
+						</p>
+					</div>
+				</div>
+			</section>
     </div>
   </main>
 <?php get_footer(); ?>
